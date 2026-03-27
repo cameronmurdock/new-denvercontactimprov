@@ -1,19 +1,29 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { contactInfo } from "@/lib/site-data";
 import { imagePath } from "@/lib/paths";
 
 export const metadata: Metadata = {
   title: "Jam :: Denver Contact Improv",
-  description: "Join us every Monday for our Denver Contact Improv Jam.",
+  description: "Join us every Monday for our Denver Contact Improv Jam",
 };
 
-const jamNotes = [
-  "A jam is a shared space for spontaneous movement through touch, weight, momentum, and attentive listening.",
-  "Because the form is open, a little skill and sensitivity go a long way. We strongly encourage classes or series before diving fully into the jam.",
-  "Our Monday Jam is community-led by rotating space holders, keeping the room welcoming, dynamic, and grounded in care.",
-] as const;
+const introParagraphs = [
+  "A contact improvisation jam is a shared space for spontaneous movement, where dancers connect through touch, weight, and momentum. There's no choreography or performance just real-time exploration, where a simple point of contact can evolve into something playful, dynamic, or deeply attentive. It's a practice rooted in listening, presence, and mutual awareness.",
+  "Because the form is so open, it also asks for a certain level of skill and sensitivity. Knowing how to share weight safely, how to fall and recover, how to give and receive touch with clarity, and how to read another person's physical cues makes the experience more enjoyable for everyone.",
+  "This is why we strongly encourage attending at least a few classes or series before joining a jam. Classes provide a foundation: they introduce the principles of alignment, momentum, and listening through the body, while also creating a space to practice boundaries, consent, and communication.",
+  "A jam is also a kind of living laboratory, a space to explore, test, and integrate what you've learned in class. Without the structure of exercises or instruction, you're free to follow your curiosity, discover new possibilities, and deepen your understanding through direct experience.",
+  "With that groundwork in place, a jam becomes something truly special! A space where you can relax into the unknown, trust your body and your partners, and discover the joy of movement as a shared, unfolding experience.",
+];
+
+const jamParagraphs = [
+  "Every Monday from 6:00 to 8:00 PM, we open the space for a Contact Improvisation jam — a space to explore connection, movement, and play through shared physical practice.",
+  "Whether you're experienced or brand new, you're welcome here. Show up, move, listen, and follow curiosity in the body.",
+  "The Monday Jam is a recurring, community-led practice facilitated by a core group of ten dedicated members, referred to as “Angels.” Each Angel takes turns holding the space, ensuring that facilitation rotates on a weekly basis and that a diversity of perspectives, styles, and approaches are consistently integrated into the experience.",
+  "This rotating facilitation model allows the Jam to remain dynamic and participant-driven, while maintaining a stable foundation of experienced guides. Rather than operating within a traditional teacher-student framework, all participants are invited to engage as active contributors in a shared process of listening, exploration, and connection.",
+  "To stay informed about the current week's facilitator, participants are encouraged to join the community WhatsApp group. This serves as the primary channel for weekly updates, announcements, and coordination.",
+  "The Monday Jam is sustained through community support. Donations directly fund the space, support logistical needs, and enable the continued growth and accessibility of this offering.",
+];
 
 export default function JamPage() {
   return (
@@ -21,13 +31,13 @@ export default function JamPage() {
       <section className="relative min-h-[88svh] overflow-hidden">
         <Image
           src={imagePath("/images/featured-jam.jpg")}
-          alt="Denver Contact Improv jam"
+          alt="Denver Contact Improv Jam group"
           fill
           className="object-cover"
           priority
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(27,19,13,0.35),rgba(27,19,13,0.7))]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(24,17,12,0.3),rgba(24,17,12,0.7))]" />
         <div className="relative mx-auto flex min-h-[88svh] max-w-6xl items-end px-6 pb-16 pt-32">
           <div className="max-w-3xl text-white">
             <p className="mb-4 text-sm uppercase tracking-[0.35em] text-white/70">
@@ -39,63 +49,80 @@ export default function JamPage() {
             >
               Denver Contact Improv Jam
             </h1>
-            <p className="mt-5 text-xl text-white/80">
-              6:00pm - 8:00pm at {contactInfo.locationName}
-            </p>
+            <p className="mt-5 text-xl text-white/85">Every Monday 6:00 - 8:00 PM</p>
           </div>
         </div>
       </section>
 
       <section className="px-6 py-24">
-        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="space-y-6">
-            <h2
-              className="text-3xl font-bold text-foreground md:text-4xl"
-              style={{ fontFamily: "var(--font-playfair)" }}
-            >
-              A living laboratory for skill, trust, and play.
-            </h2>
-            {jamNotes.map((note) => (
-              <p key={note} className="text-lg leading-relaxed text-muted-foreground">
-                {note}
-              </p>
+        <div className="mx-auto max-w-5xl">
+          <h2
+            className="text-3xl font-bold text-foreground md:text-4xl"
+            style={{ fontFamily: "var(--font-playfair)" }}
+          >
+            What is a contact improvisation jam?
+          </h2>
+          <div className="mt-8 space-y-5 text-lg leading-relaxed text-muted-foreground">
+            {introParagraphs.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
+        </div>
+      </section>
 
-          <div className="rounded-[2rem] border border-warm/20 bg-card p-8 shadow-[0_24px_80px_rgba(58,37,24,0.08)]">
+      <section className="bg-card/30 px-6 py-24">
+        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+          <div>
+            <p className="text-sm uppercase tracking-[0.3em] text-warm">
+              Denver Contact Improv Jam
+            </p>
+            <h2
+              className="mt-4 text-3xl font-bold text-foreground md:text-4xl"
+              style={{ fontFamily: "var(--font-playfair)" }}
+            >
+              Come dance with us.
+            </h2>
+            <div className="mt-8 space-y-5 leading-relaxed text-muted-foreground">
+              {jamParagraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+          </div>
+
+          <aside className="rounded-[2rem] border border-warm/20 bg-card p-8 shadow-[0_24px_80px_rgba(58,37,24,0.08)]">
             <p className="text-xs uppercase tracking-[0.3em] text-warm">
               Jam Details
             </p>
             <div className="mt-6 space-y-5 text-muted-foreground">
-              <p>
-                <span className="font-medium text-foreground">Location:</span>{" "}
-                {contactInfo.addressLine1}, {contactInfo.addressLine2}
-              </p>
-              <p>
-                <span className="font-medium text-foreground">Contribution:</span>{" "}
-                $10-$20 suggested, no one turned away for lack of funds.
-              </p>
-              <p>
-                <span className="font-medium text-foreground">Updates:</span>{" "}
-                Weekly facilitation details are shared through the community
-                channel and on Instagram.
-              </p>
+              <div>
+                <p className="font-medium text-foreground">Location</p>
+                <p>125 S. Sherman St.</p>
+                <p>Denver, CO</p>
+              </div>
+              <div>
+                <p className="font-medium text-foreground">Pay What You Can</p>
+                <p>$10-$20 We believe in accessibility. Contribute what you're able — no one turned away.</p>
+              </div>
+              <div>
+                <p className="font-medium text-foreground">Questions?</p>
+                <p>Go to Contact</p>
+              </div>
             </div>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 href="/guidelines"
                 className="rounded-full bg-warm px-5 py-3 text-sm font-medium text-background transition-colors hover:bg-warm-light"
               >
-                Read guidelines
+                Read Now
               </Link>
               <Link
                 href="/contact"
                 className="rounded-full border border-border/60 px-5 py-3 text-sm font-medium text-foreground transition-colors hover:border-warm/50 hover:text-warm"
               >
-                Ask a question
+                Contact
               </Link>
             </div>
-          </div>
+          </aside>
         </div>
       </section>
     </>

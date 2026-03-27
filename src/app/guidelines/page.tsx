@@ -22,9 +22,10 @@ export default function GuidelinesPage() {
             Consent, clarity, and collective care.
           </h1>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground">
-            The live site treats these guidelines as required reading before
-            attending a jam. This page restores that entry point locally and
-            keeps the expectations visible and easy to reference.
+            Explore the values and guidelines of Denver Contact Improv,
+            including principles of consent, safety, inclusion, and collective
+            care. Learn how we cultivate a supportive, respectful, and mindful
+            dance space for all participants.
           </p>
         </div>
       </section>
