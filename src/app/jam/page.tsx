@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { contactInfo } from "@/lib/site-data";
+import { imagePath } from "@/lib/paths";
 
 export const metadata: Metadata = {
   title: "Jam :: Denver Contact Improv",
@@ -19,7 +20,7 @@ export default function JamPage() {
     <>
       <section className="relative min-h-[88svh] overflow-hidden">
         <Image
-          src="/images/featured-jam.jpg"
+          src={imagePath("/images/featured-jam.jpg")}
           alt="Denver Contact Improv jam"
           fill
           className="object-cover"

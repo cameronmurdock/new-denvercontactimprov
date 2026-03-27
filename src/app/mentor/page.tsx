@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { contactInfo } from "@/lib/site-data";
+import { imagePath } from "@/lib/paths";
 
 export const metadata: Metadata = {
   title: "Mentorship :: Denver Contact Improv",
@@ -63,7 +64,7 @@ export default function MentorPage() {
 
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] border border-border/50">
             <Image
-              src="/images/mentorship.jpg"
+              src={imagePath("/images/mentorship.jpg")}
               alt="Michael Bernal mentorship"
               fill
               className="object-cover"

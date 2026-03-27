@@ -2,66 +2,67 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { imagePath } from "@/lib/paths";
 
 const TESTIMONIALS = [
   {
     name: "Brooke Alexander",
-    image: "/images/testimonial-brooke.jpg",
+    image: imagePath("/images/testimonial-brooke.jpg"),
     text: "Michael Bernal is a rare kind of human and facilitator! One who effortlessly invites in a deep return to the body, while also invoking the wisdom of play, connection, and collaboration. In his contact improv series, the Art of Living, Michael holds a space for both physical and emotional contact to be explored. His skill as a teacher lies not only in his deep knowledge of contact improv and embodiment, but also in his capacity to hold a space where vulnerability and joy can co-exist. Every class with Michael feels like a return to what matters: presence, connection, and curiosity. He weaves technical guidance with intuitive emergence, creating openings for both beginners and seasoned movers to explore their own edges with care and courage. This work reminds us that being in true & meaningful contact with one another is one of the most natural and necessary acts of being alive. What emerges in his sessions is more than just movement - it's community, it's trust, it's the art of living!",
   },
   {
     name: "Amy Longe",
-    image: "/images/testimonial-amy.jpg",
+    image: imagePath("/images/testimonial-amy.jpg"),
     text: "Michael is a gifted human with a passion for contact improvisation that is palpable. He is extremely present & attentive creating a safe space to explore CI. I always look forward and feel energized after class. I am so grateful to Michael for sharing contact improv with Denver.",
   },
   {
     name: "Gabrielle Hillis",
-    image: "/images/testimonial-gabrielle.jpg",
+    image: imagePath("/images/testimonial-gabrielle.jpg"),
     text: "For me, what is so enthralling and addictive about Michael's CI series is that they feel like laboratory spaces—places where we get to be true students of this sport, students of this art form. I was a highly competitive athlete for most of my life, and when I retired, I experienced an identity and purpose crisis. I deeply missed the mind-body connection required to excel in sport. Michael's classes have become that place for me again. I feel nourished, accomplished, fulfilled, and grounded when I am a student of contact improv, a student of my own body and mind, and a student of others. It is a brilliant and safe space curated for curiosity—where questions are welcomed, experiments unfold, and new concepts are continuously uncovered. Thank you, thank you, thank you for creating and holding this recurring space where mind meets body and body meets mind and we all learn together!",
   },
   {
     name: "Heidi Fredere",
-    image: "/images/testimonial-heidi.jpg",
+    image: imagePath("/images/testimonial-heidi.jpg"),
     text: "Michael's presence and ability to instruct and lead us as a group as well as hold the container was paramount. I left class every time feeling more connected to a community, more grounded, and with a much more regulated nervous system.",
   },
   {
     name: "Anastasia Hill",
-    image: "/images/testimonial-anastasia.jpg",
+    image: imagePath("/images/testimonial-anastasia.jpg"),
     text: "I had no idea what I was getting into when I took Michael's Art of Living series, and was honestly hesitant bc not all dance spaces are as safe as they seem, but the container Michael creates is truly life changing. Michael has an almost therapeutic approach, focusing on somatic experience and self-awareness through platonic connection. This practice has softened my spirit to deeper connection and deepened my listening to both my own body and others'. Not only do I feel more embodied than I ever have, but I feel more regulated and full of love. 10/10 highly recommend his transformational teachings!",
   },
   {
     name: "Nick",
-    image: "/images/testimonial-nick.jpg",
+    image: imagePath("/images/testimonial-nick.jpg"),
     text: "Michael's Art of Living series has been one of the most unique and special experiences of my life. I am so grateful for the connection, awareness, joy, laughter, and tears I have found here, and for the beautiful souls who co-create this truly magical and supportive space!",
   },
   {
     name: "Ashley Stenger",
-    image: "/images/testimonial-ashley.jpg",
+    image: imagePath("/images/testimonial-ashley.jpg"),
     text: "I have been in the dance world for many years, but just recently got introduced to contact improv. I was so nervous my first class, but the community and Michael made me feel so welcome. Emotions are talked about, there is support in every class if needed, and autonomy is first priority. I was pleasantly surprised at how I was able to do 'edgy' things for the first time in a while, like contact dancing with a partner. Most of my dance experience is solo, in community, but not partners. I have explored new edges of creativity, trust, surrender, and some pretty cool things my body can do, even more cool with the help from others! I highly recommend signing up for and being in the same room as Michael, such a special and beautifully grounded facilitator in a space that can be so ungrounding and intimidating.",
   },
   {
     name: "Ryan Greenhalgh",
-    image: "/images/testimonial-ryan.jpg",
+    image: imagePath("/images/testimonial-ryan.jpg"),
     text: "I would like to vouch for Michael's classes. They are a beautiful container to explore what it means to be human and feel safe and have fun. One of the greatest gifts in life is to learn from people who love what they teach and I can vouch that Michael loves contact improv.",
   },
   {
     name: "Adam Samuel Escobar",
-    image: "/images/testimonial-adam.jpg",
+    image: imagePath("/images/testimonial-adam.jpg"),
     text: "Perfection is impossible and it stands in the way of authentic expression. Michael's Contact Improv courses helped me understand this in my core. The Art of Living has given me practices that allow me to experience authentic expression in ways I have never been able to.",
   },
   {
     name: "Matt Koch",
-    image: "/images/testimonial-matt.jpg",
+    image: imagePath("/images/testimonial-matt.jpg"),
     text: "Finding Contact Improv through Michael's teaching has made an incredible impact on my life. I find myself feeling more confident and easy going in my daily social interactions. Michael's approach challenges students to recognize their boundaries and contemplate the invitation to push them.",
   },
   {
     name: "Austin Hammer",
-    image: "/images/testimonial-austin.jpg",
+    image: imagePath("/images/testimonial-austin.jpg"),
     text: "For some time, I have been curious how dance might help me feel more grounded. I'm happy to have dipped my toe into that exploration in the supportive, accepting space that Michael cultivates. I know that they have left me feeling lighter than I have felt in a long time.",
   },
   {
     name: "Karina Okoren",
-    image: "/images/testimonial-karina.jpg",
+    image: imagePath("/images/testimonial-karina.jpg"),
     text: "I'm a dance teacher and dancer and was amazed by Michael's wealth of knowledge paired with passion and kindness. It is rare in the dance community to find such a great blend of freedom and structure in a class. His series was seriously a highlight of my year last year and recommend it anyone and everyone! The community is so welcoming and warm and truly a no pressure learning environment where it feels safe and fun. I felt like it was a dose of therapy each week and practice life principles in a physical and relational way. Truly recommend!!!! Can't wait to do it again!!",
   },
 ] as const;

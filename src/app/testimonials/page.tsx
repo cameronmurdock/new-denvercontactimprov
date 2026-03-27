@@ -1,35 +1,36 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { imagePath } from "@/lib/paths";
 
 const TESTIMONIALS = [
   {
     name: "Brooke Alexander",
-    image: "/images/testimonial-brooke.jpg",
+    image: imagePath("/images/testimonial-brooke.jpg"),
     text: "Michael Bernal is a rare kind of human and facilitator. Every class feels like a return to what matters: presence, connection, and curiosity.",
   },
   {
     name: "Amy Longe",
-    image: "/images/testimonial-amy.jpg",
+    image: imagePath("/images/testimonial-amy.jpg"),
     text: "Michael is extremely present and attentive, creating a safe space to explore CI. I always leave energized and grateful.",
   },
   {
     name: "Gabrielle Hillis",
-    image: "/images/testimonial-gabrielle.jpg",
+    image: imagePath("/images/testimonial-gabrielle.jpg"),
     text: "These classes feel like laboratory spaces where curiosity, experimentation, and real learning are welcomed and supported.",
   },
   {
     name: "Ashley Stenger",
-    image: "/images/testimonial-ashley.jpg",
+    image: imagePath("/images/testimonial-ashley.jpg"),
     text: "I was so nervous my first class, but the community and Michael made me feel welcome, supported, and safe to explore.",
   },
   {
     name: "Karina Okoren",
-    image: "/images/testimonial-karina.jpg",
+    image: imagePath("/images/testimonial-karina.jpg"),
     text: "It is rare in the dance community to find such a great blend of freedom and structure in a class. Truly recommend.",
   },
   {
     name: "Matt Koch",
-    image: "/images/testimonial-matt.jpg",
+    image: imagePath("/images/testimonial-matt.jpg"),
     text: "Finding Contact Improv through Michael's teaching has made a real impact on my confidence, ease, and daily social life.",
   },
 ] as const;

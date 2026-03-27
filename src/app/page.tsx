@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Testimonials } from "@/components/testimonials";
 import { contactInfo } from "@/lib/site-data";
+import { imagePath } from "@/lib/paths";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
         {/* Background image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/hero-main.jpg"
+            src={imagePath("/images/hero-main.jpg")}
             alt="Denver Contact Improv community dancing"
             fill
             className="object-cover"
@@ -99,7 +100,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src="/images/featured-jam.jpg"
+                src={imagePath("/images/featured-jam.jpg")}
                 alt="The Art of Living contact improvisation series"
                 fill
                 className="object-cover"
@@ -237,7 +238,7 @@ export default function Home() {
 
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden order-1 lg:order-2">
               <Image
-                src="/images/mentorship.jpg"
+                src={imagePath("/images/mentorship.jpg")}
                 alt="Michael Bernal mentorship"
                 fill
                 className="object-cover"

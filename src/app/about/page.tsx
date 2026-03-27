@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { imagePath } from "@/lib/paths";
 
 export const metadata: Metadata = {
   title: "About Us :: Denver Contact Improv",
@@ -37,7 +38,7 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[3/2] rounded-2xl overflow-hidden">
               <Image
-                src="/images/about-1.jpg"
+                src={imagePath("/images/about-1.jpg")}
                 alt="Denver Contact Improv community gathering"
                 fill
                 className="object-cover"
@@ -107,7 +108,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="relative aspect-[3/2] rounded-2xl overflow-hidden">
               <Image
-                src="/images/about-2.jpg"
+                src={imagePath("/images/about-2.jpg")}
                 alt="Contact improvisation practice"
                 fill
                 className="object-cover"
@@ -116,7 +117,7 @@ export default function AboutPage() {
             </div>
             <div className="relative aspect-[3/2] rounded-2xl overflow-hidden">
               <Image
-                src="/images/about-3.jpg"
+                src={imagePath("/images/about-3.jpg")}
                 alt="Community dance session"
                 fill
                 className="object-cover"
