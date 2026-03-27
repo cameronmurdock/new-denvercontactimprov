@@ -1,50 +1,6 @@
-"use client";
-
-import { useMemo, useState } from "react";
-import type { FormEvent } from "react";
 import { contactInfo } from "@/lib/site-data";
 
-function buildMailtoUrl(subject: string, body: string) {
-  const params = new URLSearchParams({
-    subject,
-    body,
-  });
-
-  return `mailto:?${params.toString()}`;
-}
-
 export default function ContactPage() {
-  const [status, setStatus] = useState<"idle" | "opening">("idle");
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const canSubmit = useMemo(() => message.trim().length > 0, [message]);
-
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    if (!canSubmit) return;
-
-    setStatus("opening");
-
-    const details = [
-      `Name: ${name || "Anonymous"}`,
-      `Email: ${email || "Not provided"}`,
-      "",
-      message.trim(),
-      "",
-      `Instagram: ${contactInfo.instagramHandle}`,
-      `Text: ${contactInfo.textNumber}`,
-    ].join("\n");
-
-    window.location.href = buildMailtoUrl(
-      "Denver Contact Improv inquiry",
-      details
-    );
-
-    window.setTimeout(() => setStatus("idle"), 800);
-  }
-
   return (
     <>
       <section className="relative overflow-hidden px-6 pb-20 pt-32">
@@ -60,9 +16,8 @@ export default function ContactPage() {
             Reach out with questions, feedback, or curiosity.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            The previous local form only faked a success state. This version
-            opens a real outbound message flow and also exposes direct contact
-            options so people are not blocked if mail isn&apos;t configured.
+            Send a message directly here, or use the contact options alongside
+            the form if you prefer text or Instagram.
           </p>
         </div>
       </section>
@@ -77,10 +32,21 @@ export default function ContactPage() {
               Send a message
             </h2>
             <p className="mt-2 text-sm text-muted-foreground">
-              This opens your default mail app with the message prefilled.
+              Messages from this form are sent to Michael by email.
             </p>
 
-            <form onSubmit={handleSubmit} className="mt-8 space-y-5">
+            <form
+              action="https://formsubmit.co/michaelbernallifecoach@gmail.com"
+              method="POST"
+              className="mt-8 space-y-5"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="Denver Contact Improv inquiry"
+              />
+              <input type="hidden" name="_template" value="table" />
+
               <div>
                 <label
                   htmlFor="name"
@@ -90,9 +56,8 @@ export default function ContactPage() {
                 </label>
                 <input
                   id="name"
+                  name="name"
                   type="text"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
                   className="w-full rounded-xl border border-border/50 bg-secondary/50 px-4 py-3 text-foreground outline-none transition-all placeholder:text-muted-foreground/50 focus:border-warm/50 focus:ring-2 focus:ring-warm/30"
                   placeholder="Optional"
                 />
@@ -107,11 +72,11 @@ export default function ContactPage() {
                 </label>
                 <input
                   id="email"
+                  name="email"
                   type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  required
                   className="w-full rounded-xl border border-border/50 bg-secondary/50 px-4 py-3 text-foreground outline-none transition-all placeholder:text-muted-foreground/50 focus:border-warm/50 focus:ring-2 focus:ring-warm/30"
-                  placeholder="Optional"
+                  placeholder="you@example.com"
                 />
               </div>
 
@@ -124,10 +89,9 @@ export default function ContactPage() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   required
                   rows={6}
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
                   className="w-full resize-none rounded-xl border border-border/50 bg-secondary/50 px-4 py-3 text-foreground outline-none transition-all placeholder:text-muted-foreground/50 focus:border-warm/50 focus:ring-2 focus:ring-warm/30"
                   placeholder="Questions about the jam, class registration, accessibility, or mentorship..."
                 />
@@ -135,10 +99,9 @@ export default function ContactPage() {
 
               <button
                 type="submit"
-                disabled={!canSubmit || status === "opening"}
-                className="w-full rounded-xl bg-warm py-3.5 font-medium text-background transition-colors hover:bg-warm-light disabled:cursor-not-allowed disabled:opacity-50"
+                className="w-full rounded-xl bg-warm py-3.5 font-medium text-background transition-colors hover:bg-warm-light"
               >
-                {status === "opening" ? "Opening mail app..." : "Open message draft"}
+                Send message
               </button>
             </form>
           </div>
