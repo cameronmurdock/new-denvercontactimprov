@@ -19,35 +19,41 @@ export default function Home() {
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(234,223,205,0.78)_0%,rgba(234,223,205,0.62)_26%,rgba(33,26,22,0.38)_58%,rgba(234,223,205,0.92)_100%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,248,239,0.22),transparent_40%)]" />
         </div>
 
-        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto pt-16">
+        <div className="relative z-10 mx-auto max-w-4xl px-6 pt-16 text-center">
+          <div className="rounded-[2rem] border border-background/45 bg-background/28 px-5 py-8 shadow-[0_24px_80px_rgba(36,26,18,0.18)] backdrop-blur-[10px] md:px-10 md:py-10">
           <div className="mb-6 animate-fade-in">
             <Link
               href="/events/art-of-living-round-12"
-              className="inline-flex max-w-full items-center justify-center rounded-full border border-warm-dark/50 bg-warm-dark px-6 py-3 text-sm font-semibold text-background shadow-[0_16px_40px_rgba(58,37,24,0.28)] transition-all hover:-translate-y-0.5 hover:bg-warm"
+              className="inline-flex max-w-full items-center justify-center rounded-full border border-warm-dark/50 bg-warm-dark px-6 py-3 text-sm font-semibold text-background shadow-[0_16px_40px_rgba(58,37,24,0.28)] transition-all hover:-translate-y-0.5 hover:bg-warm sm:px-8"
             >
               Join us for our next series: Art of Living Round 12
             </Link>
           </div>
           <h1
-            className="text-5xl md:text-7xl lg:text-8xl font-bold mb-2 animate-fade-up"
-            style={{ fontFamily: "var(--font-playfair)" }}
+            className="mb-2 animate-fade-up text-6xl font-bold tracking-tight md:text-7xl lg:text-8xl"
+            style={{
+              fontFamily: "var(--font-playfair)",
+              textShadow: "0 10px 28px rgba(255, 248, 239, 0.18)",
+            }}
           >
             <span className="text-foreground">DENVER</span>
           </h1>
           <h2
-            className="text-4xl md:text-6xl lg:text-7xl font-light text-warm mb-8 animate-fade-up"
+            className="mb-8 animate-fade-up text-5xl font-light text-warm md:text-6xl lg:text-7xl"
             style={{
               fontFamily: "var(--font-playfair)",
               animationDelay: "0.1s",
+              textShadow: "0 10px 24px rgba(255, 248, 239, 0.14)",
             }}
           >
             Contact Improv
           </h2>
           <p
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed animate-fade-up"
+            className="mx-auto max-w-2xl animate-fade-up text-xl leading-relaxed text-foreground/88 md:text-2xl"
             style={{ animationDelay: "0.2s" }}
           >
             Beginner-friendly Contact Improvisation classes, weekly jam, and a
@@ -72,13 +78,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 rounded-full border-2 border-muted-foreground/30 flex items-start justify-center p-1.5">
-            <div className="w-1 h-2.5 rounded-full bg-muted-foreground/50" />
           </div>
-        </div>
       </section>
 
       {/* Description */}

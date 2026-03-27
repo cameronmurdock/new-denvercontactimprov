@@ -84,14 +84,14 @@ export function Footer() {
             &copy; 2026 Denver Contact Improv. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground">
-            Website by{" "}
+            website by{" "}
             <a
-              href="https://www.jacobbyers.me/"
+              href="https://camalot.me"
               target="_blank"
               rel="noopener noreferrer"
               className="text-warm hover:text-warm-light transition-colors"
             >
-              Jacob Byers
+              Cameron Ely-Murdock
             </a>
           </p>
         </div>

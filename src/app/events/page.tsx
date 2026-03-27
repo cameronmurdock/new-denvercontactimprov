@@ -24,9 +24,8 @@ export default function EventsPage() {
             Weekly practice, immersive series, and community gatherings.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            The local rebuild was missing an events hub, so all event links
-            dead-ended into a single page. This index restores the route
-            structure and gives people a clear way into the current offerings.
+            Explore current classes, workshops, and community gatherings in the
+            Denver Contact Improv orbit.
           </p>
         </div>
       </section>
@@ -56,7 +55,6 @@ export default function EventsPage() {
                 {event.dates}
               </p>
               <p className="mt-2 text-muted-foreground">{event.schedule}</p>
-              <p className="mt-2 text-muted-foreground">{event.price}</p>
               <p className="mt-6 leading-relaxed text-muted-foreground">
                 {event.description}
               </p>

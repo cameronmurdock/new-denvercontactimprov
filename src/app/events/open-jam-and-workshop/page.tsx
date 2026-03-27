@@ -22,9 +22,8 @@ export default function OpenJamAndWorkshopPage() {
             Open Jam & Workshop
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            Come jam and practice with us. This route existed on the live site
-            but not in the rebuild, so the local events experience had no
-            landing page for the community’s most consistent offering.
+            Come jam and practice with us in a welcoming weekly container for
+            skill-building, listening, and shared exploration.
           </p>
         </div>
       </section>
