@@ -27,7 +27,7 @@ const EVENT_TESTIMONIALS = [
   {
     name: "Ashley Stenger",
     image: imagePath("/images/testimonial-ashley.jpg"),
-    text: "I have been in the dance world for many years, but just recently got introduced to contact improv. I was so nervous my first class, but the community and Michael made me feel so welcome. Emotions are talked about, there is support in every class if needed, and autonomy is first priority. I was pleasantly surprised at how I was able to do 'edgy' things for the first time in a while, like contact dancing with a partner. Most of my dance experience is solo, in community, but not partners. I have explored new edges of creativity, trust, surrender, and some pretty cool things my body can do, even more cool with the help from others! I highly recommend signing up for and being in the same room as Michael, such a special and beautifully grounded facilitator in a space that can be so ungrounding and intimidating.",
+    text: "I have been in the dance world for many years, but just recently got introduced to contact improv. I was so nervous my first class, but the community and Michael made me feel so welcome. Emotions are talked about, there is support in every class if needed, and autonomy is first priority. I was pleasantly surprised at how I was able to do \"edgy\" things for the first time in a while, like contact dancing with a partner. Most of my dance experience is solo, in community, but not partners. I have explored new edges of creativity, trust, surrender, and some pretty cool things my body can do, even more cool with the help from others!\nI highly recommend signing up for and being in the same room as Michael, such a special and beautifully grounded facilitator in a space that can be so ungrounding and intimidating",
   },
   {
     name: "Gabrielle Hillis",
@@ -37,7 +37,7 @@ const EVENT_TESTIMONIALS = [
   {
     name: "Karina Okoren",
     image: imagePath("/images/testimonial-karina.jpg"),
-    text: "I'm a dance teacher and dancer and was amazed by Michael's wealth of knowledge paired with passion and kindness. It is rare in the dance community to find such a great blend of freedom and structure in a class. His series was seriously a highlight of my year last year and recommend it anyone and everyone! The community is so welcoming and warm and truly a no pressure learning environment where it feels safe and fun. I felt like it was a dose of therapy each week and practice life principles in a physical and relational way. Truly recommend!!!! Can't wait to do it again!!",
+    text: "Hello! Just wanted to get on and share about my experience in the CI series with Michael. I'm a dance teacher and dancer and was amazed by Michael's wealth of knowledge paired with passion and kindness. It is rare in the dance community to find such a great blend of freedom and structure in a class. His series was seriously a highlight of my year last year and recommend it anyone and everyone! The community is so welcoming and warm and truly a no pressure learning environment where it feels safe and fun. I felt like it was a dose of therapy each week and practice life principles in a physical and relational way. Truly recommend!!!!\nCan't wait to do it again!!",
   },
 ] as const;
 
@@ -252,7 +252,7 @@ export default function EventPage() {
                   </div>
                   <p className="text-sm font-semibold text-warm">{t.name}</p>
                 </div>
-                <p className="text-sm text-muted-foreground leading-relaxed line-clamp-6">
+                <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
                   &ldquo;{t.text}&rdquo;
                 </p>
               </div>

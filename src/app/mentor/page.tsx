@@ -11,16 +11,21 @@ export const metadata: Metadata = {
 };
 
 const included = [
-  "3 hours per week for 6 weeks of in-person mentorship with room to extend.",
-  "A complimentary place in an ongoing series to observe and learn in real class settings.",
-  "Daily support via WhatsApp voice notes for questions, feedback, and integration.",
-  "Curated exercises, lesson structures, and guidance for developing your teaching voice.",
+  "In-Person Mentorship: 3 hours per week for 6 weeks (18 hours total), with the flexibility to extend—and you're welcome to bring a friend or loved one along.",
+  "Real-World Teaching Experience: Receive a complimentary place in my ongoing 5–6 week series, with the opportunity to shadow, observe, and engage in real class settings as part of your learning journey (12 hours)",
+  "Ongoing Support: Daily access to me via WhatsApp voice notes for questions, feedback, and real-time guidance",
+] as const;
+
+const alsoIncluded = [
+  "Foundations & Practice: Deepen your understanding of the core principles and embodied techniques of Contact Improvisation",
+  "How to Learn, How to Teach: Explore effective methods for refining your personal practice and developing your unique teaching voice",
+  "Teaching Resources: Full access to curated lesson plans, exercises, and weekly session summaries throughout the mentorship.",
 ] as const;
 
 const forWho = [
-  "Dancers and movers ready to deepen their practice",
-  "Aspiring or current teachers who want more confidence and clarity",
-  "Anyone seeking direct, personalized guidance in Contact Improvisation",
+  "Dancers and movers ready to expand and refine their practice",
+  "Aspiring or current teachers who want to share Contact Improvisation with confidence and clarity",
+  "Anyone seeking personalized guidance in developing both skill and teaching artistry",
 ] as const;
 
 export default function MentorPage() {
@@ -37,12 +42,15 @@ export default function MentorPage() {
               className="text-4xl font-bold text-foreground md:text-6xl"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              The art of sharing Contact Improvisation.
+              The Art of sharing Contact Improvisation
             </h1>
+            <p className="mt-2 text-lg text-muted-foreground">
+              A 1:1 Mentorship in Teaching CI
+            </p>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-              A deeply personalized teacher-training experience with Michael
-              Bernal for movers who want to embody the practice more fully and
-              learn how to share it with others.
+              A deeply personalized, immersive teacher training designed to help
+              you embody the art of Contact Improvisation and confidently share
+              it with others.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -75,43 +83,94 @@ export default function MentorPage() {
       </section>
 
       <section className="px-6 pb-24">
-        <div className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-2">
-          <article className="rounded-[2rem] border border-border/50 bg-card p-8">
-            <h2
-              className="text-3xl font-bold text-foreground"
-              style={{ fontFamily: "var(--font-playfair)" }}
-            >
-              What&apos;s included
-            </h2>
-            <ul className="mt-6 space-y-4 text-muted-foreground">
-              {included.map((item) => (
-                <li key={item} className="flex gap-3">
-                  <span className="mt-2 h-2 w-2 rounded-full bg-warm" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </article>
+        <div className="mx-auto max-w-6xl space-y-6">
+          <div className="grid gap-6 lg:grid-cols-2">
+            <article className="rounded-[2rem] border border-border/50 bg-card p-8">
+              <h2
+                className="text-3xl font-bold text-foreground"
+                style={{ fontFamily: "var(--font-playfair)" }}
+              >
+                What&apos;s Included
+              </h2>
+              <ul className="mt-6 space-y-4 text-muted-foreground">
+                {included.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-warm" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
 
-          <article className="rounded-[2rem] border border-warm/25 bg-card/70 p-8">
-            <h2
-              className="text-3xl font-bold text-foreground"
-              style={{ fontFamily: "var(--font-playfair)" }}
-            >
-              Who it&apos;s for
-            </h2>
-            <ul className="mt-6 space-y-4 text-muted-foreground">
-              {forWho.map((item) => (
-                <li key={item} className="flex gap-3">
-                  <span className="mt-2 h-2 w-2 rounded-full bg-warm" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="mt-8 leading-relaxed text-muted-foreground">
-              Sliding scale pricing is available. Reach out via text at{" "}
-              {contactInfo.textNumber} or on Instagram to start the
-              conversation.
+            <article className="rounded-[2rem] border border-border/50 bg-card p-8">
+              <h2
+                className="text-3xl font-bold text-foreground"
+                style={{ fontFamily: "var(--font-playfair)" }}
+              >
+                What else is included
+              </h2>
+              <ul className="mt-6 space-y-4 text-muted-foreground">
+                {alsoIncluded.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-warm" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+          </div>
+
+          <div className="grid gap-6 lg:grid-cols-2">
+            <article className="rounded-[2rem] border border-warm/25 bg-card/70 p-8">
+              <h2
+                className="text-3xl font-bold text-foreground"
+                style={{ fontFamily: "var(--font-playfair)" }}
+              >
+                Who Is This For?
+              </h2>
+              <ul className="mt-6 space-y-4 text-muted-foreground">
+                {forWho.map((item) => (
+                  <li key={item} className="flex gap-3">
+                    <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-warm" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </article>
+
+            <article className="rounded-[2rem] border border-warm/25 bg-card/70 p-8">
+              <h2
+                className="text-3xl font-bold text-foreground"
+                style={{ fontFamily: "var(--font-playfair)" }}
+              >
+                Investment
+              </h2>
+              <p className="mt-6 leading-relaxed text-muted-foreground">
+                Sliding scale: send a message if interested via text{" "}
+                {contactInfo.textNumber} or Instagram{" "}
+                <a
+                  href={contactInfo.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-warm transition-colors hover:text-warm-light"
+                >
+                  {contactInfo.instagramHandle}
+                </a>
+              </p>
+              <p className="mt-4 text-muted-foreground">
+                Payment can be divided into 2 or 3 installments.
+              </p>
+            </article>
+          </div>
+
+          <article className="rounded-[2rem] border border-border/50 bg-card p-8 text-center">
+            <p className="text-lg leading-relaxed text-muted-foreground">
+              This mentorship is designed to be an intimate, transformative, and
+              highly tailored experience! Meeting you exactly where you are and
+              supporting your growth as both a practitioner and a teacher.
+            </p>
+            <p className="mt-4 text-lg font-medium text-warm">
+              I look forward to growing together!
             </p>
           </article>
         </div>

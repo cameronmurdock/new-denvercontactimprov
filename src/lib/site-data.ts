@@ -11,28 +11,46 @@ export const contactInfo = {
 
 export const upcomingEvents = [
   {
-    slug: "art-of-living-round-12",
-    title: "Art of Living Round 12",
-    subtitle: "4-week CI series with Michael Bernal",
-    dates: "April 22 - May 13, 2026",
-    schedule: "Wednesdays, 6:15pm - 8:45pm",
+    slug: "art-of-living-round-11",
+    type: "series",
+    title: "Art of Living Round 11",
+    subtitle: "A Four-Week Contact Improvisation Series with Michael Bernal",
+    dates: "March 18 - April 8, 2026",
+    schedule: "Wednesdays 6:15pm - 8:45pm",
+    location: "125 South Sherman Street",
     price: "$333 regular",
     description:
-      "A four-week series for nervous-system awareness, consent, relational intelligence, and grounded movement practice.",
-    cta: "Reserve your spot",
-    featured: true,
+      "A four-week series utilizing the interplay between solo & partner (ensemble) practices & games. Learning to self and co-regulate our nervous systems. Growing trust, listening & care for ourselves & each other.",
+    cta: "View details",
+    featured: false,
   },
   {
-    slug: "open-jam-and-workshop",
-    title: "Open Jam & Workshop",
-    subtitle: "Skill-building workshop plus open jam",
-    dates: "Ongoing community offering",
-    schedule: "Mondays, 6:00pm - 8:00pm",
-    price: "$10-$20 suggested donation",
+    slug: "durango-ci-intensive",
+    type: "workshop",
+    title: "The Art of Living: Durango CI Intensive",
+    subtitle: "A Contact Improvisation Intensive with Michael Bernal",
+    dates: "April 19, 2026",
+    schedule: "Sunday 10 am - 6 pm (1-3 pm break)",
+    location: "Smiley Building Studio 208 Durango, CO",
+    price: "$222 regular",
     description:
-      "An accessible weekly entry point for practice, skill-building, and community connection on the dance floor.",
-    cta: "See jam details",
+      "A full-day intensive utilizing the interplay between solo & partner (ensemble) practices & games. Learning to self and co-regulate our nervous systems. Growing trust, listening & care for ourselves & each other.",
+    cta: "View details",
     featured: false,
+  },
+  {
+    slug: "art-of-living-round-12",
+    type: "series",
+    title: "Art of Living Round 12",
+    subtitle: "A Four-Week Contact Improvisation Series with Michael Bernal",
+    dates: "April 22 - May 13, 2026",
+    schedule: "Wednesdays 6:15pm - 8:45pm",
+    location: "125 South Sherman Street",
+    price: "$333 regular",
+    description:
+      "A four-week series utilizing the interplay between solo & partner (ensemble) practices & games. Learning to self and co-regulate our nervous systems. Growing trust, listening & care for ourselves & each other.",
+    cta: "Reserve your spot",
+    featured: true,
   },
 ] as const;
 
@@ -80,7 +98,7 @@ export const guidelineSections = [
   {
     title: "Ask When in Doubt",
     body:
-      "Clarify rather than assume. Consent, comfort, and access all improve when questions are welcomed.",
+      "If something is unclear, ask. Clarify rather than remain in confusion or assumption.",
   },
   {
     title: "Take Radical Responsibility",
@@ -158,7 +176,7 @@ export const guidelineSections = [
       "We strive to support diverse access needs, including sensory and hearing considerations. If you need support, please speak with a Space Holder so we can explore what is possible.",
   },
   {
-    title: "Clarifying the Jam's Purpose",
+    title: "Clarifying the Jam's purpose",
     body:
       "This jam exists in service of the larger Wiggle Room community. Participation supports the sustainability of the space and the offerings held here.",
   },

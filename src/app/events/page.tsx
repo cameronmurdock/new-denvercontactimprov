@@ -37,12 +37,12 @@ export default function EventsPage() {
               key={event.slug}
               className={`rounded-[2rem] border p-8 ${
                 event.featured
-                  ? "border-warm/30 bg-card shadow-[0_24px_80px_rgba(58,37,24,0.08)]"
+                  ? "border-warm/30 bg-card shadow-[0_24px_80px_rgba(58,37,24,0.08)] lg:col-span-2"
                   : "border-border/60 bg-card/60"
               }`}
             >
               <p className="text-xs uppercase tracking-[0.28em] text-warm/80">
-                {event.featured ? "Featured" : "Community Offering"}
+                {event.featured ? "Featured" : event.type}
               </p>
               <h2
                 className="mt-4 text-3xl font-bold text-foreground"

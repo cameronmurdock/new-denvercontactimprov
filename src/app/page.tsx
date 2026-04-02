@@ -222,17 +222,11 @@ export default function Home() {
               <p className="text-lg text-muted-foreground mb-8">
                 Mentorship with Michael Bernal
               </p>
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                Deepen your practice through one-on-one guidance. Michael offers
-                personalized mentorship for those seeking to explore the depths
-                of contact improvisation, somatic awareness, and relational
-                intelligence.
-              </p>
               <Link
-                href="/mentor"
+                href="/contact"
                 className="inline-flex items-center gap-2 px-8 py-3.5 border border-warm/50 text-warm font-medium rounded-full hover:bg-warm hover:text-background transition-all"
               >
-                Explore Mentorship
+                Contact Michael
               </Link>
             </div>
 
