@@ -7,7 +7,7 @@ import { imagePath } from "@/lib/paths";
 const TESTIMONIALS = [
   {
     name: "Linda",
-    image: imagePath("/images/testimonial-linda.jpg"),
+    image: "",
     text: "Thanks so much for leading me to do things I thought impossible.\nMagical! Contact Improv dance with Michael hits all aspects of the perfect activity. Classes are structured to learn new dance moves, build community and friendships, expand self awareness and confidence in a safe environment as well as provide great exercise. Thank you Michael for a truly magical experience!",
   },
   {
@@ -97,13 +97,19 @@ export function Testimonials() {
         <div className="relative">
           <div className="flex flex-col items-center text-center">
             <div className="relative w-20 h-20 rounded-full overflow-hidden mb-6 ring-2 ring-warm/30">
-              <Image
-                src={testimonial.image}
-                alt={testimonial.name}
-                fill
-                className="object-cover"
-                sizes="80px"
-              />
+              {testimonial.image ? (
+                <Image
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  fill
+                  className="object-cover"
+                  sizes="80px"
+                />
+              ) : (
+                <div className="flex h-full w-full items-center justify-center bg-warm/15 text-warm text-2xl font-semibold">
+                  {testimonial.name.charAt(0)}
+                </div>
+              )}
             </div>
 
             <blockquote className="text-base md:text-lg leading-relaxed text-muted-foreground max-w-2xl mb-8 min-h-[120px] whitespace-pre-line">

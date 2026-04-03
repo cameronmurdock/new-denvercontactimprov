@@ -15,7 +15,7 @@ const TESTIMONIALS = [
   },
   {
     name: "Linda",
-    image: imagePath("/images/testimonial-linda.jpg"),
+    image: "",
     text: "Thanks so much for leading me to do things I thought impossible.\nMagical! Contact Improv dance with Michael hits all aspects of the perfect activity. Classes are structured to learn new dance moves, build community and friendships, expand self awareness and confidence in a safe environment as well as provide great exercise. Thank you Michael for a truly magical experience!",
   },
   {
@@ -102,13 +102,19 @@ export default function TestimonialsPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="relative h-14 w-14 overflow-hidden rounded-full ring-1 ring-warm/20">
-                  <Image
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    fill
-                    className="object-cover"
-                    sizes="56px"
-                  />
+                  {testimonial.image ? (
+                    <Image
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      fill
+                      className="object-cover"
+                      sizes="56px"
+                    />
+                  ) : (
+                    <div className="flex h-full w-full items-center justify-center bg-warm/15 text-warm text-lg font-semibold">
+                      {testimonial.name.charAt(0)}
+                    </div>
+                  )}
                 </div>
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-warm">
                   {testimonial.name}

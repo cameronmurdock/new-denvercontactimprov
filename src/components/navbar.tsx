@@ -8,6 +8,8 @@ const NAV_LINKS = [
   { href: "/jam", label: "Jam" },
   { href: "/events", label: "Events" },
   { href: "/about", label: "About" },
+  { href: "/testimonials", label: "Testimonials" },
+  { href: "/mentor", label: "Mentorship" },
   { href: "/guidelines", label: "Guidelines" },
   { href: "/contact", label: "Contact" },
 ] as const;
@@ -70,7 +72,7 @@ export function Navbar() {
       {/* Mobile menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ${
-          isOpen ? "max-h-64 border-b border-border/50" : "max-h-0"
+          isOpen ? "max-h-96 border-b border-border/50" : "max-h-0"
         }`}
       >
         <div className="px-6 py-4 flex flex-col gap-4 bg-background/95 backdrop-blur-xl">
