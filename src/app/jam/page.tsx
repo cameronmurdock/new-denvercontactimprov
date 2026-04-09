@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { imagePath } from "@/lib/paths";
+import { fetchJamPage } from "@/lib/sanity/queries";
 
 export const metadata: Metadata = {
   title: "Jam :: Denver Contact Improv",
@@ -23,7 +24,11 @@ const jamParagraphs = [
   "For more information about the jam go to denvercontactjam.com",
 ];
 
-export default function JamPage() {
+export default async function JamPage() {
+  const jamData = await fetchJamPage();
+  const intro: string[] = jamData?.introParagraphs ?? introParagraphs;
+  const jam: string[] = jamData?.jamParagraphs ?? jamParagraphs;
+
   return (
     <>
       <section className="relative min-h-[88svh] overflow-hidden">
@@ -61,7 +66,7 @@ export default function JamPage() {
             What is a contact improvisation jam?
           </h2>
           <div className="mt-8 space-y-5 text-lg leading-relaxed text-muted-foreground">
-            {introParagraphs.map((paragraph) => (
+            {intro.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
@@ -81,7 +86,7 @@ export default function JamPage() {
               Come dance with us.
             </h2>
             <div className="mt-8 space-y-5 leading-relaxed text-muted-foreground">
-              {jamParagraphs.map((paragraph) => (
+              {jam.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
             </div>

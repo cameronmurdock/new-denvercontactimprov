@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { imagePath } from "@/lib/paths";
+import { fetchAboutPage } from "@/lib/sanity/queries";
 
 export const metadata: Metadata = {
   title: "About :: Denver Contact Improv",
@@ -29,7 +30,11 @@ const michaelParagraphs = [
   "He remains, above all, a student continually listening for what the body remembers, and what it might be ready to discover next.",
 ];
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const aboutData = await fetchAboutPage();
+  const story: string[] = aboutData?.storyParagraphs ?? storyParagraphs;
+  const bio: string[] = aboutData?.michaelParagraphs ?? michaelParagraphs;
+
   return (
     <>
       <section className="relative px-6 pb-24 pt-32">
@@ -91,7 +96,7 @@ export default function AboutPage() {
                 Our Story
               </p>
               <div className="space-y-6 leading-relaxed">
-                {storyParagraphs.map((paragraph, index) => (
+                {story.map((paragraph, index) => (
                   <p
                     key={paragraph}
                     className={
@@ -145,7 +150,7 @@ export default function AboutPage() {
                 About Michael
               </p>
               <div className="space-y-5 leading-relaxed text-muted-foreground">
-                {michaelParagraphs.map((paragraph) => (
+                {bio.map((paragraph) => (
                   <p key={paragraph}>{paragraph}</p>
                 ))}
               </div>

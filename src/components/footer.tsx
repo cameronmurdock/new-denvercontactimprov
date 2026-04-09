@@ -1,7 +1,15 @@
 import Link from "next/link";
 import { contactInfo } from "@/lib/site-data";
+import { fetchSiteSettings } from "@/lib/sanity/queries";
 
-export function Footer() {
+const DEFAULT_TAGLINE = "Movement. Connection. Community.";
+const DEFAULT_DESCRIPTION =
+  "Weekly jams, classes, workshops, and mentorship rooted in belonging, resiliency, and embodied presence.";
+
+export async function Footer() {
+  const settings = await fetchSiteSettings();
+  const tagline = settings?.footerTagline ?? DEFAULT_TAGLINE;
+  const description = settings?.footerDescription ?? DEFAULT_DESCRIPTION;
   return (
     <footer className="border-t border-border/50 bg-background">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-12">
@@ -15,11 +23,10 @@ export function Footer() {
               Denver Contact Improv
             </Link>
             <p className="text-sm text-muted-foreground">
-              Movement. Connection. Community.
+              {tagline}
             </p>
             <p className="text-sm text-muted-foreground max-w-sm">
-              Weekly jams, classes, workshops, and mentorship rooted in
-              belonging, resiliency, and embodied presence.
+              {description}
             </p>
           </div>
 

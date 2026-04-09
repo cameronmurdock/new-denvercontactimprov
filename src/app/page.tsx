@@ -1,10 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Testimonials } from "@/components/testimonials";
+import { fetchHomePage } from "@/lib/sanity/queries";
 
 import { imagePath } from "@/lib/paths";
 
-export default function Home() {
+const DEFAULT_DESCRIPTION = [
+  "In Denver, we gather to move, to listen with our bodies, to meet uncertainty with curiosity and care.",
+  "Contact Improvisation is our language, a place to practice presence, collaboration, and the quiet courage of leaning on one another.",
+  "This website is created and maintained by Michael Bernal. It shares information about his classes, guest teachers, and other Contact Improvisation opportunities in Denver.",
+  "Our weekly jam, co-founded and held by a group of ten space holders, is a space to play, explore, and be fully seen.",
+  "For details about the jam, please visit denvercontactjam.com (coming soon)",
+  "Come dance with us, everyone is welcome!",
+];
+
+export default async function Home() {
+  const homeData = await fetchHomePage();
+  const paragraphs: string[] = homeData?.descriptionParagraphs ?? DEFAULT_DESCRIPTION;
   return (
     <>
       {/* Hero */}
@@ -78,31 +90,16 @@ export default function Home() {
       {/* Description */}
       <section className="py-24 px-6">
         <div className="mx-auto max-w-3xl text-center flex flex-col gap-6">
-          <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-            In Denver, we gather to move, to listen with our bodies, to meet
-            uncertainty with curiosity and care.
-          </p>
-          <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-            Contact Improvisation is our language, a place to practice presence,
-            collaboration, and the quiet courage of leaning on one another.
-          </p>
-          <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-            This website is created and maintained by Michael Bernal. It shares
-            information about his classes, guest teachers, and other Contact
-            Improvisation opportunities in Denver.
-          </p>
-          <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-            Our weekly jam, co-founded and held by a group of ten space holders,
-            is a space to play, explore, and be fully seen.
-          </p>
-          <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-            For details about the jam, please visit{" "}
-            <span className="text-warm">denvercontactjam.com</span>{" "}
-            (coming soon)
-          </p>
-          <p className="text-lg md:text-xl leading-relaxed text-muted-foreground font-medium">
-            Come dance with us, everyone is welcome!
-          </p>
+          {paragraphs.map((text, i) => (
+            <p
+              key={i}
+              className={`text-lg md:text-xl leading-relaxed text-muted-foreground${
+                i === paragraphs.length - 1 ? " font-medium" : ""
+              }`}
+            >
+              {text}
+            </p>
+          ))}
         </div>
       </section>
 
