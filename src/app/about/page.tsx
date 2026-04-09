@@ -9,25 +9,24 @@ export const metadata: Metadata = {
 };
 
 const storyParagraphs = [
-  "We are a living, breathing community rooted in movement, curiosity, and connection grown from something simple, tender, and deeply human.",
-  "Founded by Michael Bernal, carrying a quiet but familiar feeling, the sense of not quite belonging, of searching for something real. He started with a simple intention: to create a space where people could return to themselves, where connection wasn't forced, but discovered. In the beginning, it was just one or two people showing up, stepping into the unknown together, listening, moving, learning how to be.",
-  "Through contact improvisation, that small circle began to open, rooted in nervous system awareness, relational intelligence, felt physics, and deep somatic listening. Week by week, bodies gathered, trust grew, and something organic began to take shape. What started as a quiet offering slowly became a home, a community that now holds hundreds of people, each bringing their own story, their own curiosity, their own longing to belong.",
-  "A year ago, that growth became something even more alive. Alongside a handful of devoted members, the Monday Jam was born not as a class, but as a shared practice. A space held by many, where each week someone new steps forward to guide, to listen, to offer. It became a rhythm, a pulse of the community itself an unfolding, a remembering, together.",
-  "Because this is what we are really practicing: remembering how to listen. Remembering how to trust. Remembering that belonging is not something we earn, but something we allow.",
-  "This space is shaped by many hands, many bodies, many stories. It is imperfect, evolving, and alive. And somehow, that is what makes it real.",
+  "After a 10-day Vipassana retreat, Michael returned softly moved, tears welling from the tender aliveness of interdependence and compassion. He carried with him a cultivated attention, a loving awareness of the world, and the quiet equanimity of meeting life as it is. From that experience, the Art of Living series was born, not as a concept, but as a lived invitation to presence, care, and shared humanity.",
+  "He walks this path with gratitude, honoring the pioneers of Contact Improvisation, Nancy Stark Smith, Steve Paxton, Nita Little and all who have kept Buddhist (awakening) practices alive. He also deeply thanks his personal teachers and bows to the seen and unseen forces that continue to guide and inspire him.",
+  "Through Contact Improvisation, the circle slowly opened, guided by listening to their own bodies, to each other, and to the quiet rhythms of the room. Week by week, people arrived, bringing their stories, curiosity, and longing to belong.",
+  "The Monday Jam emerged through collective effort, co-created by 14 individuals as a shared practice. Today, a devoted group of 10 space holders supports the container, holding the rhythm and unfolding of each jam. From a small offering, a home emerged, a place to move, trust, and belong together.",
+  "This is the practice! Remembering how to listen, how to trust, and how belonging is not earned, but allowed.",
+  "Shaped by many hands, bodies, and stories, imperfect, evolving, and alive that is what makes it authentic.",
+  "Step in as you are. Here, you are seen. Here, you belong.",
 ];
 
 const michaelParagraphs = [
-  "Michael Bernal is a movement teacher and space holder devoted to the subtle art of living! A path shaped by curiosity, lived experience, and a deep trust in the body's innate intelligence.",
-  "His work and interests has taken him across cultures and communities around the world, where he has spent over a decade supporting individuals and groups in reconnecting with their capacity for presence, creativity, and embodied truth.",
-  "At the heart of his approach is a simple but powerful orientation: that within each person lives an infinite capacity for love, joy, equanimity, and compassion, waiting to be lived within the finite reality of being human.",
-  "A profound heartbreak marked a turning point in his life, initiating a deeply personal journey of transformation. What began as loss became a gateway into a more intimate relationship with himself and a lasting devotion to walking alongside others as they navigate their own thresholds of change.",
-  "This experience continues to inform his work, grounding it in humility, compassion, and an unwavering belief in the possibility of feeling true belonging and empowerment.",
-  "Michael's teaching lives at the intersection of Contact Improvisation, somatics, and meditation, informed by years of dedicated practice in movement, embodiment, and deep listening.",
-  "He also draws from Buddhist studies, IFS, and polyvagal theory as pathways into greater awareness and relational sensitivity.",
-  "Known for his intuitive and grounded facilitation, he creates spaces where people are invited to slow down, listen inward, and meet themselves honestly.",
-  "His approach does not seek to remove the challenges of life, but to move and be with them. Exploring discomfort, connection, and the intelligence of the nervous system as part of a life fully lived.",
-  "He remains, above all, a student, continually listening for what the body remembers, and what it may be ready to discover next.",
+  "Michael Bernal is a movement teacher and lifelong student devoted to the subtle art of living. With over 15 years of study and teaching across the globe and a parallel decade immersed in Buddhist practice specialized in meditation and archetype/parts work. His offering lives at the intersection of Contact Improvisation, somatics, and deep listening.",
+  "Rooted in a deep curiosity for how we relate, Michael explores movement through nervous system regulation, relational intelligence, and what he playfully calls \u201Cfelt physics.\u201D His teaching invites people to slow down just enough to notice: to sense, to listen, and to cultivate the quiet but radical capacities of attention and equanimity. The ability to be with what is, even when what is\u2026 isn\u2019t particularly convenient.",
+  "Rather than striving to transcend the messiness of life, Michael\u2019s approach leans toward it. Through the body, he guides students into a more intimate relationship with discomfort, uncertainty, and the ever-shifting terrain of connection.",
+  "Power dynamics become something to explore, not avoid, and where missteps are part of the choreography of life. The practice is not only about moving well, but also about the practice of a life well lived.",
+  "Known for his thoughtful, intuitive facilitation, Michael creates spaces that are at once rigorous and human, where curiosity is a compass, humor is encouraged, and belonging is something we practice together.",
+  "His teaching has been shaped by a wide range of influential mentors in the field of Contact Improvisation, movement and meditation.",
+  "After more than a decade-long lull, Michael played a key role in reigniting the Contact Improvisation scene in Denver, helping to foster a renewed sense of community, inquiry, and shared practice.",
+  "He remains, above all, a student continually listening for what the body remembers, and what it might be ready to discover next.",
 ];
 
 export default function AboutPage() {

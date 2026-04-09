@@ -18,8 +18,8 @@ export function Footer() {
               Movement. Connection. Community.
             </p>
             <p className="text-sm text-muted-foreground max-w-sm">
-              Weekly jam, classes, workshops, and mentorship rooted in consent,
-              listening, and embodied connection.
+              Weekly jams, classes, workshops, and mentorship rooted in
+              belonging, resiliency, and embodied presence.
             </p>
           </div>
 

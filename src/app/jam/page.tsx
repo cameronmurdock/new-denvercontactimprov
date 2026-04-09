@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { imagePath } from "@/lib/paths";
 
 export const metadata: Metadata = {
@@ -17,12 +16,11 @@ const introParagraphs = [
 ];
 
 const jamParagraphs = [
-  "Every Monday from 6:00 to 8:00 PM, we open the space for a Contact Improvisation jam — a space to explore connection, movement, and play through shared physical practice.",
-  "Whether you're experienced or brand new, you're welcome here. Show up, move, listen, and follow curiosity in the body.",
-  "The Monday Jam is a recurring, community-led practice facilitated by a core group of ten dedicated members, referred to as “Angels.” Each Angel takes turns holding the space, ensuring that facilitation rotates on a weekly basis and that a diversity of perspectives, styles, and approaches are consistently integrated into the experience.",
-  "This rotating facilitation model allows the Jam to remain dynamic and participant-driven, while maintaining a stable foundation of experienced guides. Rather than operating within a traditional teacher-student framework, all participants are invited to engage as active contributors in a shared process of listening, exploration, and connection.",
-  "To stay informed about the current week's facilitator, participants are encouraged to join the community WhatsApp group. This serves as the primary channel for weekly updates, announcements, and coordination.",
-  "The Monday Jam is sustained through community support. Donations directly fund the space, support logistical needs, and enable the continued growth and accessibility of this offering.",
+  “Every Monday from 6:00–8:00 PM, we meet at the WiggelRuhm for a Contact Improvisation jam!”,
+  “A time to explore connection, movement, and play through shared practice. All levels are welcome. Come as you are, move, listen, and follow curiosity in the body.”,
+  “The Monday Jam is a recurring, community-led practice supported by a core group of ten space holders. They rotate weekly, bringing diverse perspectives while maintaining a consistent, grounded container.”,
+  “The jam is sustained through community donations, which support the space and keep the offering accessible.”,
+  “For more information about the jam go to denvercontactjam.com”,
 ];
 
 export default function JamPage() {
@@ -101,26 +99,8 @@ export default function JamPage() {
               </div>
               <div>
                 <p className="font-medium text-foreground">Pay What You Can</p>
-                <p>$10-$20 We believe in accessibility. Contribute what you're able — no one turned away.</p>
+                <p>We believe in accessibility. Contribute what you&apos;re able, no one turned away.</p>
               </div>
-              <div>
-                <p className="font-medium text-foreground">Questions?</p>
-                <p>Go to Contact</p>
-              </div>
-            </div>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link
-                href="/guidelines"
-                className="rounded-full bg-warm px-5 py-3 text-sm font-medium text-background transition-colors hover:bg-warm-light"
-              >
-                Read Now
-              </Link>
-              <Link
-                href="/contact"
-                className="rounded-full border border-border/60 px-5 py-3 text-sm font-medium text-foreground transition-colors hover:border-warm/50 hover:text-warm"
-              >
-                Contact
-              </Link>
             </div>
           </aside>
         </div>

@@ -70,12 +70,6 @@ export default function Home() {
             >
               Explore Events
             </Link>
-            <Link
-              href="/jam"
-              className="px-8 py-3.5 border border-border/50 text-foreground font-medium rounded-full hover:border-warm/50 hover:text-warm transition-colors"
-            >
-              Monday Jam
-            </Link>
           </div>
         </div>
           </div>
@@ -83,13 +77,31 @@ export default function Home() {
 
       {/* Description */}
       <section className="py-24 px-6">
-        <div className="mx-auto max-w-3xl text-center">
+        <div className="mx-auto max-w-3xl text-center flex flex-col gap-6">
           <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
-            Through shared movement and physical listening, we explore adaptive
-            ways of being in relationship with uncertainty. Contact
-            Improvisation offers us a space to practice creative responsiveness,
-            collaboration, and embodied resilience in a world that is constantly
-            shifting.
+            In Denver, we gather to move, to listen with our bodies, to meet
+            uncertainty with curiosity and care.
+          </p>
+          <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
+            Contact Improvisation is our language, a place to practice presence,
+            collaboration, and the quiet courage of leaning on one another.
+          </p>
+          <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
+            This website is created and maintained by Michael Bernal. It shares
+            information about his classes, guest teachers, and other Contact
+            Improvisation opportunities in Denver.
+          </p>
+          <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
+            Our weekly jam, co-founded and held by a group of ten space holders,
+            is a space to play, explore, and be fully seen.
+          </p>
+          <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
+            For details about the jam, please visit{" "}
+            <span className="text-warm">denvercontactjam.com</span>{" "}
+            (coming soon)
+          </p>
+          <p className="text-lg md:text-xl leading-relaxed text-muted-foreground font-medium">
+            Come dance with us, everyone is welcome!
           </p>
         </div>
       </section>
