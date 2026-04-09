@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Testimonials } from "@/components/testimonials";
-import { contactInfo } from "@/lib/site-data";
+
 import { imagePath } from "@/lib/paths";
 
 export default function Home() {
@@ -158,56 +158,6 @@ export default function Home() {
                 >
                   <path d="M3 8H13M9 4L13 8L9 12" />
                 </svg>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Weekly Jam */}
-      <section className="py-24 px-6">
-        <div className="mx-auto max-w-7xl rounded-[2rem] border border-border/50 bg-card/60 p-8 md:p-12">
-          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-            <div>
-              <p className="text-warm text-sm tracking-[0.25em] uppercase mb-4">
-                Weekly Practice
-              </p>
-              <h2
-                className="text-3xl md:text-4xl font-bold text-foreground"
-                style={{ fontFamily: "var(--font-playfair)" }}
-              >
-                Monday Jam at {contactInfo.locationName}
-              </h2>
-              <p className="mt-5 text-muted-foreground leading-relaxed">
-                Every Monday from 6:00 to 8:00 PM we gather for a community-led
-                jam rooted in listening, consent, and playful rigor. If
-                you&apos;re new, start with the jam page and community guidelines
-                before stepping in.
-              </p>
-            </div>
-
-            <div className="grid gap-4 sm:grid-cols-2">
-              <Link
-                href="/jam"
-                className="rounded-[1.5rem] border border-warm/20 bg-background/60 p-6 transition-transform hover:-translate-y-1"
-              >
-                <p className="text-sm uppercase tracking-[0.25em] text-warm">
-                  Jam
-                </p>
-                <p className="mt-3 text-xl font-semibold text-foreground">
-                  Logistics, expectations, and what a CI jam is.
-                </p>
-              </Link>
-              <Link
-                href="/guidelines"
-                className="rounded-[1.5rem] border border-border/50 bg-background/60 p-6 transition-transform hover:-translate-y-1"
-              >
-                <p className="text-sm uppercase tracking-[0.25em] text-warm">
-                  Guidelines
-                </p>
-                <p className="mt-3 text-xl font-semibold text-foreground">
-                  Required reading before attending the Monday jam.
-                </p>
               </Link>
             </div>
           </div>
