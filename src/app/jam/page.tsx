@@ -106,6 +106,10 @@ export default async function JamPage() {
                 <p className="font-medium text-foreground">Pay What You Can</p>
                 <p>We believe in accessibility. Contribute what you&apos;re able, no one turned away.</p>
               </div>
+              <div>
+                <p className="font-medium text-foreground">Questions?</p>
+                <p>Denvercontactjam.com</p>
+              </div>
             </div>
           </aside>
         </div>
