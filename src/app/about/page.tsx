@@ -40,7 +40,35 @@ export default async function AboutPage() {
 
   return (
     <>
-      <section className="bg-card/30 px-6 pb-24 pt-32">
+      <section className="relative px-6 pb-24 pt-32">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
+            <div>
+              <p className="mb-4 text-sm uppercase tracking-[0.3em] text-warm">
+                About
+              </p>
+              <h1
+                className="text-4xl font-bold text-foreground md:text-6xl"
+                style={{ fontFamily: "var(--font-playfair)" }}
+              >
+                About Us
+              </h1>
+            </div>
+
+            <div className="relative aspect-[3/2] overflow-hidden rounded-[2rem]">
+              <Image
+                src={imagePath("/images/about-1.jpg")}
+                alt="Denver Contact Improv"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-card/30 px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <div className="grid items-start gap-12 lg:grid-cols-[1.1fr_0.9fr]">
             <div className="space-y-6 text-muted-foreground">
