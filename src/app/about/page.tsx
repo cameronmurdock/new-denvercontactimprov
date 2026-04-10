@@ -93,9 +93,6 @@ export default async function AboutPage() {
                     {paragraph}
                   </p>
                 ))}
-                <p className="pt-2 text-lg font-medium text-warm">
-                  Come as you are. There is a place for you here.
-                </p>
               </div>
             </div>
 
