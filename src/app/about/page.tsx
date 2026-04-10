@@ -10,6 +10,9 @@ export const metadata: Metadata = {
 };
 
 const storyParagraphs = [
+  "Michael Bernal discovered the Denver Contact Improv scene at Ape Co Movement School in April 2023, a community already alive, strong, and full of generosity, providing the perfect roots for this practice to take hold. In that space, something he had not yet named began to grow: a sense of belonging that felt both vulnerable and unwavering.",
+  "He carried a quiet ache, a yearning for connection that felt true. He sought to create a space where connection was not forced but discovered in the pauses between breaths, in the way bodies listen to one another. At first, it was just one or two people stepping into the unknown together, learning how to move, trust, and simply be.",
+  "Contact improvisation quickly became his passion, teaching him things he could not yet fully understand. The joy in those dances was so rich that it sometimes felt more meaningful than long-term relationships he had known. He wanted to learn how to access that aliveness and share it with the world.",
   "After a 10-day Vipassana retreat, Michael returned softly moved, tears welling from the tender aliveness of interdependence and compassion. He carried with him a cultivated attention, a loving awareness of the world, and the quiet equanimity of meeting life as it is. From that experience, the Art of Living series was born, not as a concept, but as a lived invitation to presence, care, and shared humanity.",
   "He walks this path with gratitude, honoring the pioneers of Contact Improvisation, Nancy Stark Smith, Steve Paxton, Nita Little and all who have kept Buddhist (awakening) practices alive. He also deeply thanks his personal teachers and bows to the seen and unseen forces that continue to guide and inspire him.",
   "Through Contact Improvisation, the circle slowly opened, guided by listening to their own bodies, to each other, and to the quiet rhythms of the room. Week by week, people arrived, bringing their stories, curiosity, and longing to belong.",
@@ -37,58 +40,7 @@ export default async function AboutPage() {
 
   return (
     <>
-      <section className="relative px-6 pb-24 pt-32">
-        <div className="mx-auto max-w-6xl">
-          <div className="grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
-            <div>
-              <p className="mb-4 text-sm uppercase tracking-[0.3em] text-warm">
-                About
-              </p>
-              <h1
-                className="text-4xl font-bold text-foreground md:text-6xl"
-                style={{ fontFamily: "var(--font-playfair)" }}
-              >
-                About Us
-              </h1>
-              <div className="mt-8 space-y-5 text-lg leading-relaxed text-muted-foreground">
-                <p>
-                  <strong className="text-foreground">
-                    Denver Contact Improv
-                  </strong>{" "}
-                  is a growing community of movers exploring connection,
-                  presence, and play through the living practice of contact
-                  improvisation.
-                </p>
-                <p>
-                  We gather each Monday at WiggelRuhm to share space, listen
-                  through the body, and discover what movement reveals about
-                  relationship through touch, weight, and spontaneous exchange.
-                  Alongside the jam, we offer classes and series to support
-                  deeper learning and a richer experience, both on and off the
-                  dance floor.
-                </p>
-                <p>
-                  Open to all bodies and all levels, this is a space to arrive
-                  as you are whether stepping in for the first time or returning
-                  home to the practice.
-                </p>
-              </div>
-            </div>
-
-            <div className="relative aspect-[3/2] overflow-hidden rounded-[2rem]">
-              <Image
-                src={imagePath("/images/about-1.jpg")}
-                alt="Denver Contact Improv"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-card/30 px-6 py-24">
+      <section className="bg-card/30 px-6 pb-24 pt-32">
         <div className="mx-auto max-w-6xl">
           <div className="grid items-start gap-12 lg:grid-cols-[1.1fr_0.9fr]">
             <div className="space-y-6 text-muted-foreground">
