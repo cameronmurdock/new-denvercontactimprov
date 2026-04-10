@@ -70,6 +70,11 @@ const TESTIMONIALS = [
     image: imagePath("/images/testimonial-karina.jpg"),
     text: "Hello! Just wanted to get on and share about my experience in the CI series with Michael. I'm a dance teacher and dancer and was amazed by Michael's wealth of knowledge paired with passion and kindness. It is rare in the dance community to find such a great blend of freedom and structure in a class. His series was seriously a highlight of my year last year and recommend it anyone and everyone! The community is so welcoming and warm and truly a no pressure learning environment where it feels safe and fun. I felt like it was a dose of therapy each week and practice life principles in a physical and relational way. Truly recommend!!!! Can't wait to do it again!!",
   },
+  {
+    name: "Courtney Cauthon",
+    image: imagePath("/images/courtney-cauthon.jpg"),
+    text: "Michael's Art of Living class is transformative. While learning a movement practice you also are invited to step into a life practice that is about being more awake, more alive, and open to the present moment.\n\nTechnically, the class builds real movement skills: sharing weight, rolling points of contact, counterbalance, using momentum, and listening through the body. Beyond that, it expands your capacity to move through life with more ease and flexibility\u2014physically, emotionally, and relationally.\n\nMichael facilitates with a blend of compassion, curiosity, respect, and playfulness. He creates an environment that feels both grounded and expansive. His classes are a fun sandbox for learning and exploring what it means to move and be moved. I leave Michael's classes a more capable mover and a more attuned and responsive human.\n\nI wholeheartedly recommend this class to anyone curious about embodiment, connection and what it means to embrace your aliveness.",
+  },
 ] as const;
 
 export function Testimonials() {

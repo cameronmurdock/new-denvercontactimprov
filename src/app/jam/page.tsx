@@ -5,7 +5,7 @@ import { fetchJamPage } from "@/lib/sanity/queries";
 
 export const metadata: Metadata = {
   title: "Jam :: Denver Contact Improv",
-  description: "Join us every Monday for our Denver Contact Improv Jam",
+  description: "Join us every Monday for our Denver Contact Jam",
 };
 
 const introParagraphs = [
@@ -34,7 +34,7 @@ export default async function JamPage() {
       <section className="relative min-h-[88svh] overflow-hidden">
         <Image
           src={imagePath("/images/featured-jam.jpg")}
-          alt="Denver Contact Improv Jam group"
+          alt="Denver Contact Jam group"
           fill
           className="object-cover"
           priority
@@ -50,7 +50,7 @@ export default async function JamPage() {
               className="text-5xl font-bold md:text-7xl"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Denver Contact Improv Jam
+              Denver Contact Jam
             </h1>
             <p className="mt-5 text-xl text-white/85">Every Monday 6:00 - 8:00 PM</p>
           </div>
@@ -77,7 +77,7 @@ export default async function JamPage() {
         <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <p className="text-sm uppercase tracking-[0.3em] text-warm">
-              Denver Contact Improv Jam
+              Denver Contact Jam
             </p>
             <h2
               className="mt-4 text-3xl font-bold text-foreground md:text-4xl"

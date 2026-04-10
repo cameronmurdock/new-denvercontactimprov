@@ -178,8 +178,14 @@ export default async function Home() {
               >
                 EMBODIED LISTENING
               </h2>
-              <p className="text-lg text-muted-foreground mb-8">
+              <p className="text-lg text-muted-foreground mb-4">
                 Mentorship with Michael Bernal
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-8">
+                If you&apos;re feeling called to explore this work more
+                personally, I offer one-on-one mentorship rooted in embodied
+                listening, curiosity, and care. Reach out to begin a
+                conversation.
               </p>
               <Link
                 href="/contact"
