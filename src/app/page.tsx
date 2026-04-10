@@ -89,7 +89,7 @@ export default async function Home() {
 
       {/* Description */}
       <section className="py-24 px-6">
-        <div className="mx-auto max-w-3xl text-center flex flex-col gap-6">
+        <div className="mx-auto max-w-3xl text-left flex flex-col gap-6">
           {paragraphs.map((text, i) => (
             <p
               key={i}
