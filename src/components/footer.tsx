@@ -4,7 +4,7 @@ import { fetchSiteSettings } from "@/lib/sanity/queries";
 
 const DEFAULT_TAGLINE = "Movement. Connection. Community.";
 const DEFAULT_DESCRIPTION =
-  "Weekly jams, classes, workshops, and mentorship rooted in belonging, resiliency, and embodied presence.";
+  "Weekly classes, events, workshops, and mentorship rooted in belonging, resilience, and embodied presence.";
 
 export async function Footer() {
   const settings = await fetchSiteSettings();
