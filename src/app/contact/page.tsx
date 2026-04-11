@@ -21,9 +21,13 @@ export default function ContactPage() {
             Contact Us
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-            Get in touch with Denver Contact Improvisation. Send anonymous
+            Get in touch with Denver Contact Improv. Send anonymous
             feedback, ask questions, or share suggestions to help us grow a
-            safe, connected, and inclusive dance community.
+            supportive, connected, and inclusive dance community.
+          </p>
+          <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+            If you have questions, concerns, or feedback specific to the
+            Monday Jam, please visit denvercontactjam.com
           </p>
         </div>
       </section>
