@@ -6,19 +6,14 @@ import { imagePath } from "@/lib/paths";
 
 const TESTIMONIALS = [
   {
-    name: "Linda",
-    image: "",
-    text: "Thanks so much for leading me to do things I thought impossible.\nMagical! Contact Improv dance with Michael hits all aspects of the perfect activity. Classes are structured to learn new dance moves, build community and friendships, expand self awareness and confidence in a safe environment as well as provide great exercise. Thank you Michael for a truly magical experience!",
+    name: "Amy Longe",
+    image: imagePath("/images/testimonial-amy.jpg"),
+    text: "Michael is a gifted human with a passion for contact improvisation that is palpable. He is extremely present & attentive creating a safe space to explore CI. The classes and community are nothing short of amazing. He layers many different exercises to build up a skill and walks around as we practice, sharing tips and tricks. I am relatively new to CI and feel it's the start of a new chapter filled with play, connection, co-regulation, body awareness, expression and most importantly, safety to explore touch with other humans. I always look forward and feel energized after class. I wish we could go for hours more! I am so grateful to Michael for sharing contact improv with Denver & I can't wait to keep learning and dancing with him, wherever CI takes him",
   },
   {
     name: "Brooke Alexander",
     image: imagePath("/images/testimonial-brooke.jpg"),
     text: "Michael Bernal is a rare kind of human and facilitator! One who effortlessly invites in a deep return to the body, while also invoking the wisdom of play, connection, and collaboration. In his contact improv series, the Art of Living, Michael holds a space for both physical and emotional contact to be explored. His skill as a teacher lies not only in his deep knowledge of contact improv and embodiment, but also in his capacity to hold a space where vulnerability and joy can co-exist. Every class with Michael feels like a return to what matters: presence, connection, and curiosity. He weaves technical guidance with intuitive emergence, creating openings for both beginners and seasoned movers to explore their own edges with care and courage. This work reminds us that being in true & meaningful contact with one another is one of the most natural and necessary acts of being alive. What emerges in his sessions is more than just movement - it's community, it's trust, it's the art of living!",
-  },
-  {
-    name: "Amy Longe",
-    image: imagePath("/images/testimonial-amy.jpg"),
-    text: "Michael is a gifted human with a passion for contact improvisation that is palpable. He is extremely present & attentive creating a safe space to explore CI. The classes and community are nothing short of amazing. He layers many different exercises to build up a skill and walks around as we practice, sharing tips and tricks. I am relatively new to CI and feel it's the start of a new chapter filled with play, connection, co-regulation, body awareness, expression and most importantly, safety to explore touch with other humans. I always look forward and feel energized after class. I wish we could go for hours more! I am so grateful to Michael for sharing contact improv with Denver & I can't wait to keep learning and dancing with him, wherever CI takes him",
   },
   {
     name: "Gabrielle Hillis",
@@ -74,6 +69,11 @@ const TESTIMONIALS = [
     name: "Courtney Cauthon",
     image: imagePath("/images/courtney-cauthon.jpg"),
     text: "Michael's Art of Living class is transformative. While learning a movement practice you also are invited to step into a life practice that is about being more awake, more alive, and open to the present moment.\n\nTechnically, the class builds real movement skills: sharing weight, rolling points of contact, counterbalance, using momentum, and listening through the body. Beyond that, it expands your capacity to move through life with more ease and flexibility\u2014physically, emotionally, and relationally.\n\nMichael facilitates with a blend of compassion, curiosity, respect, and playfulness. He creates an environment that feels both grounded and expansive. His classes are a fun sandbox for learning and exploring what it means to move and be moved. I leave Michael's classes a more capable mover and a more attuned and responsive human.\n\nI wholeheartedly recommend this class to anyone curious about embodiment, connection and what it means to embrace your aliveness.",
+  },
+  {
+    name: "Linda",
+    image: "",
+    text: "Thanks so much for leading me to do things I thought impossible.\nMagical! Contact Improv dance with Michael hits all aspects of the perfect activity. Classes are structured to learn new dance moves, build community and friendships, expand self awareness and confidence in a safe environment as well as provide great exercise. Thank you Michael for a truly magical experience!",
   },
 ] as const;
 
