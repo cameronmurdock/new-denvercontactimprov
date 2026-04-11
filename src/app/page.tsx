@@ -65,11 +65,18 @@ export default async function Home() {
             Contact Improv
           </h2>
           <p
-            className="mx-auto max-w-2xl animate-fade-up text-xl leading-relaxed text-foreground/88 md:text-2xl"
+            className="mx-auto max-w-2xl animate-fade-up text-xl leading-relaxed text-foreground/88 md:text-2xl font-medium"
             style={{ animationDelay: "0.2s" }}
           >
-            Beginner-friendly Contact Improvisation classes, weekly jam, and a
-            welcoming dance community in Denver, CO.
+            A place to practice, be supported, and grow.
+          </p>
+          <p
+            className="mx-auto mt-4 max-w-2xl animate-fade-up text-lg leading-relaxed text-foreground/75 md:text-xl"
+            style={{ animationDelay: "0.25s" }}
+          >
+            Beginner-friendly Contact Improvisation classes and a welcoming
+            dance community in Denver, CO. Offering weekly gatherings and
+            immersive experiences rooted in belonging.
           </p>
 
           <div
