@@ -1,9 +1,7 @@
 import type { NextConfig } from "next";
 import path from "node:path";
 
-const isPagesBuild = process.env.GITHUB_ACTIONS === "true";
-const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1] ?? "";
-const basePath = isPagesBuild && repoName ? `/${repoName}` : "";
+const basePath = "";
 
 const nextConfig: NextConfig = {
   output: "export",
