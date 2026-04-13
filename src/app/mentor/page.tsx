@@ -175,6 +175,39 @@ export default function MentorPage() {
           </article>
         </div>
       </section>
+
+      {/* Gallery */}
+      <section className="px-6 pb-24">
+        <div className="mx-auto max-w-6xl grid gap-6 md:grid-cols-3">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem]">
+            <Image
+              src={imagePath("/images/mentorship-forest-1.jpg")}
+              alt="Contact improvisation in nature"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 33vw"
+            />
+          </div>
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem]">
+            <Image
+              src={imagePath("/images/mentorship-forest-2.jpg")}
+              alt="Contact improvisation in nature"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 33vw"
+            />
+          </div>
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem]">
+            <Image
+              src={imagePath("/images/mentorship-forest-3.jpg")}
+              alt="Contact improvisation in nature"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 33vw"
+            />
+          </div>
+        </div>
+      </section>
     </>
   );
 }

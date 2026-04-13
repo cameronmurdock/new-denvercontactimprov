@@ -11,20 +11,6 @@ export const contactInfo = {
 
 export const upcomingEvents = [
   {
-    slug: "art-of-living-round-11",
-    type: "series",
-    title: "Art of Living Round 11",
-    subtitle: "A Four-Week Contact Improvisation Series with Michael Bernal",
-    dates: "March 18 - April 8, 2026",
-    schedule: "Wednesdays 6:15pm - 8:45pm",
-    location: "125 South Sherman Street",
-    price: "$333 regular",
-    description:
-      "A four-week series utilizing the interplay between solo & partner (ensemble) practices & games. Learning to self and co-regulate our nervous systems. Growing trust, listening & care for ourselves & each other.",
-    cta: "View details",
-    featured: false,
-  },
-  {
     slug: "durango-ci-intensive",
     type: "workshop",
     title: "The Art of Living: Durango CI Intensive",

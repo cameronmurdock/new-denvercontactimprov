@@ -2,6 +2,39 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { imagePath } from "@/lib/paths";
 
+const EVENT_TESTIMONIALS = [
+  {
+    name: "Anastasia Hill",
+    image: imagePath("/images/testimonial-anastasia.jpg"),
+    text: "I had no idea what I was getting into when I took Michael's Art of Living series, and was honestly hesitant bc not all dance spaces are as safe as they seem, but the container Michael creates is truly life changing. Michael has an almost therapeutic approach, focusing on somatic experience and self-awareness through platonic connection. This practice has softened my spirit to deeper connection and deepened my listening to both my own body and others'. Not only do I feel more embodied than I ever have, but I feel more regulated and full of love. 10/10 highly recommend his transformational teachings!",
+  },
+  {
+    name: "Brooke Alexander",
+    image: imagePath("/images/testimonial-brooke.jpg"),
+    text: "Michael Bernal is a rare kind of human and facilitator! One who effortlessly invites in a deep return to the body, while also invoking the wisdom of play, connection, and collaboration. In his contact improv series, the Art of Living, Michael holds a space for both physical and emotional contact to be explored. His skill as a teacher lies not only in his deep knowledge of contact improv and embodiment, but also in his capacity to hold a space where vulnerability and joy can co-exist. Every class with Michael feels like a return to what matters: presence, connection, and curiosity. He weaves technical guidance with intuitive emergence, creating openings for both beginners and seasoned movers to explore their own edges with care and courage. This work reminds us that being in true & meaningful contact with one another is one of the most natural and necessary acts of being alive. What emerges in his sessions is more than just movement - it's community, it's trust, it's the art of living!",
+  },
+  {
+    name: "Nick",
+    image: imagePath("/images/testimonial-nick.jpg"),
+    text: "Michael's Art of Living series has been one of the most unique and special experiences of my life. I am so grateful for the connection, awareness, joy, laughter, and tears I have found here, and for the beautiful souls who co-create this truly magical and supportive space!",
+  },
+  {
+    name: "Ashley Stenger",
+    image: imagePath("/images/testimonial-ashley.jpg"),
+    text: "I have been in the dance world for many years, but just recently got introduced to contact improv. I was so nervous my first class, but the community and Michael made me feel so welcome. Emotions are talked about, there is support in every class if needed, and autonomy is first priority. I was pleasantly surprised at how I was able to do \"edgy\" things for the first time in a while, like contact dancing with a partner. Most of my dance experience is solo, in community, but not partners. I have explored new edges of creativity, trust, surrender, and some pretty cool things my body can do, even more cool with the help from others!\nI highly recommend signing up for and being in the same room as Michael, such a special and beautifully grounded facilitator in a space that can be so ungrounding and intimidating",
+  },
+  {
+    name: "Gabrielle Hillis",
+    image: imagePath("/images/testimonial-gabrielle.jpg"),
+    text: "For me, what is so enthralling and addictive about Michael's CI series is that they feel like laboratory spaces\u2014places where we get to be true students of this sport, students of this art form. I was a highly competitive athlete for most of my life, and when I retired, I experienced an identity and purpose crisis. I deeply missed the mind-body connection required to excel in sport. Michael's classes have become that place for me again. I feel nourished, accomplished, fulfilled, and grounded when I am a student of contact improv, a student of my own body and mind, and a student of others. It is a brilliant and safe space curated for curiosity\u2014where questions are welcomed, experiments unfold, and new concepts are continuously uncovered. Thank you, thank you, thank you for creating and holding this recurring space where mind meets body and body meets mind and we all learn together!",
+  },
+  {
+    name: "Karina Okoren",
+    image: imagePath("/images/testimonial-karina.jpg"),
+    text: "Hello! Just wanted to get on and share about my experience in the CI series with Michael. I'm a dance teacher and dancer and was amazed by Michael's wealth of knowledge paired with passion and kindness. It is rare in the dance community to find such a great blend of freedom and structure in a class. His series was seriously a highlight of my year last year and recommend it anyone and everyone! The community is so welcoming and warm and truly a no pressure learning environment where it feels safe and fun. I felt like it was a dose of therapy each week and practice life principles in a physical and relational way. Truly recommend!!!!\nCan't wait to do it again!!",
+  },
+] as const;
+
 export const metadata: Metadata = {
   title: "The Art of Living: Durango CI Intensive :: Denver Contact Improv",
   description:
@@ -173,6 +206,43 @@ export default function EventPage() {
                 @the.embodied.man
               </a>
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Event Testimonials */}
+      <section className="py-24 px-6">
+        <div className="mx-auto max-w-5xl">
+          <h2
+            className="text-2xl md:text-3xl font-bold text-center mb-16 text-foreground"
+            style={{ fontFamily: "var(--font-playfair)" }}
+          >
+            What People Are Saying
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {EVENT_TESTIMONIALS.map((t) => (
+              <div
+                key={t.name}
+                className="p-6 bg-card border border-border/30 rounded-2xl"
+              >
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="relative w-10 h-10 rounded-full overflow-hidden ring-1 ring-warm/20">
+                    <Image
+                      src={t.image}
+                      alt={t.name}
+                      fill
+                      className="object-cover"
+                      sizes="40px"
+                    />
+                  </div>
+                  <p className="text-sm font-semibold text-warm">{t.name}</p>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+                  &ldquo;{t.text}&rdquo;
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

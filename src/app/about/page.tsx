@@ -109,6 +109,21 @@ export default async function AboutPage() {
         </div>
       </section>
 
+      {/* Community hands photo */}
+      <section className="px-6 py-12">
+        <div className="mx-auto max-w-4xl">
+          <div className="relative aspect-[3/2] overflow-hidden rounded-[2rem]">
+            <Image
+              src={imagePath("/images/about-hands.jpg")}
+              alt="Hands reaching up together"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, 800px"
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="px-6 py-24">
         <div className="mx-auto max-w-6xl">
           <div className="grid items-start gap-12 lg:grid-cols-[0.9fr_1.1fr]">

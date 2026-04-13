@@ -26,11 +26,6 @@ const TESTIMONIALS = [
     text: "Michael's presence and ability to instruct and lead us as a group as well as hold the container was paramount. I left class every time feeling more connected to a community, more grounded, and with a much more regulated nervous system than when I would show up. He took the time to notice each students level and was supportive and accommodating for all. I highly recommend this class to anyone wanting to connect into their body and grow with others. I will be participating in future classes moving forward. With much Gratitude",
   },
   {
-    name: "Anastasia Hill",
-    image: imagePath("/images/testimonial-anastasia.jpg"),
-    text: "I had no idea what I was getting into when I took Michael's Art of Living series, and was honestly hesitant bc not all dance spaces are as safe as they seem, but the container Michael creates is truly life changing. Michael has an almost therapeutic approach, focusing on somatic experience and self-awareness through platonic connection. This practice has softened my spirit to deeper connection and deepened my listening to both my own body and others'. Not only do I feel more embodied than I ever have, but I feel more regulated and full of love. 10/10 highly recommend his transformational teachings!",
-  },
-  {
     name: "Nick",
     image: imagePath("/images/testimonial-nick.jpg"),
     text: "Michael's Art of Living series has been one of the most unique and special experiences of my life. I am so grateful for the connection, awareness, joy, laughter, and tears I have found here, and for the beautiful souls who co-create this truly magical and supportive space!",
