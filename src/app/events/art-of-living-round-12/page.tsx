@@ -10,11 +10,6 @@ export const metadata: Metadata = {
 
 const EVENT_TESTIMONIALS = [
   {
-    name: "Anastasia Hill",
-    image: imagePath("/images/testimonial-anastasia.jpg"),
-    text: "I had no idea what I was getting into when I took Michael's Art of Living series, and was honestly hesitant bc not all dance spaces are as safe as they seem, but the container Michael creates is truly life changing. Michael has an almost therapeutic approach, focusing on somatic experience and self-awareness through platonic connection. This practice has softened my spirit to deeper connection and deepened my listening to both my own body and others'. Not only do I feel more embodied than I ever have, but I feel more regulated and full of love. 10/10 highly recommend his transformational teachings!",
-  },
-  {
     name: "Brooke Alexander",
     image: imagePath("/images/testimonial-brooke.jpg"),
     text: "Michael Bernal is a rare kind of human and facilitator! One who effortlessly invites in a deep return to the body, while also invoking the wisdom of play, connection, and collaboration. In his contact improv series, the Art of Living, Michael holds a space for both physical and emotional contact to be explored. His skill as a teacher lies not only in his deep knowledge of contact improv and embodiment, but also in his capacity to hold a space where vulnerability and joy can co-exist. Every class with Michael feels like a return to what matters: presence, connection, and curiosity. He weaves technical guidance with intuitive emergence, creating openings for both beginners and seasoned movers to explore their own edges with care and courage. This work reminds us that being in true & meaningful contact with one another is one of the most natural and necessary acts of being alive. What emerges in his sessions is more than just movement - it's community, it's trust, it's the art of living!",

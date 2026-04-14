@@ -11,6 +11,20 @@ export const contactInfo = {
 
 export const upcomingEvents = [
   {
+    slug: "1st-anniversary-jam",
+    type: "community",
+    title: "1st Anniversary Jam",
+    subtitle: "Denver Contact Improv celebrates one year!",
+    dates: "April 27, 2026",
+    schedule: "Monday 5:30 PM - 8:30 PM",
+    location: "The Wiggelruhm, 125 South Sherman Street",
+    price: "$25 class & jam / $15 jam only",
+    description:
+      "Special guests Matthew & Siri Cavanna from Denver Ecstatic Dance. Live music by Skozi.b & Shluke. Class, open jam, and community celebration. Max 40 people.",
+    cta: "View details",
+    featured: false,
+  },
+  {
     slug: "durango-ci-intensive",
     type: "workshop",
     title: "The Art of Living: Durango CI Intensive",
