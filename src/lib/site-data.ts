@@ -11,20 +11,6 @@ export const contactInfo = {
 
 export const upcomingEvents = [
   {
-    slug: "art-of-living-round-12",
-    type: "series",
-    title: "Art of Living Round 12",
-    subtitle: "A Four-Week Contact Improvisation Series with Michael Bernal",
-    dates: "April 22 - May 13, 2026",
-    schedule: "Wednesdays 6:15pm - 8:45pm",
-    location: "125 South Sherman Street",
-    price: "$333 regular",
-    description:
-      "A four-week series utilizing the interplay between solo & partner (ensemble) practices & games. Learning to self and co-regulate our nervous systems. Growing trust, listening & care for ourselves & each other.",
-    cta: "Reserve your spot",
-    featured: true,
-  },
-  {
     slug: "art-of-living-round-13",
     type: "series",
     title: "Art of Living Round 13",
@@ -35,6 +21,20 @@ export const upcomingEvents = [
     price: "$299 regular · $188 early bird (first 5)",
     description:
       "No experience needed. Come as you are and discover freedom, belonging, and play. A three-class series exploring contact improvisation through solo and partner practices.",
+    cta: "Reserve your spot",
+    featured: true,
+  },
+  {
+    slug: "art-of-living-round-12",
+    type: "series",
+    title: "Art of Living Round 12",
+    subtitle: "A Four-Week Contact Improvisation Series with Michael Bernal",
+    dates: "April 22 - May 13, 2026",
+    schedule: "Wednesdays 6:15pm - 8:45pm",
+    location: "125 South Sherman Street",
+    price: "$333 regular",
+    description:
+      "A four-week series utilizing the interplay between solo & partner (ensemble) practices & games. Learning to self and co-regulate our nervous systems. Growing trust, listening & care for ourselves & each other.",
     cta: "Reserve your spot",
     featured: false,
   },

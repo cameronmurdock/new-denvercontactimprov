@@ -150,7 +150,10 @@ export default function EventPage() {
           </h2>
 
           <div className="grid sm:grid-cols-2 gap-6 mb-10">
-            <div className="p-6 border border-border/50 rounded-2xl bg-card">
+            <div className="p-6 border border-border/50 rounded-2xl bg-card relative overflow-hidden">
+              <div className="absolute top-0 right-0 px-3 py-1 bg-red-500/20 text-red-400 text-xs font-medium rounded-bl-xl">
+                SOLD OUT
+              </div>
               <p className="text-sm text-muted-foreground mb-1">Early Bird</p>
               <p className="text-3xl font-bold text-foreground mb-1">$188</p>
               <p className="text-xs text-muted-foreground">

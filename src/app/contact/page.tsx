@@ -183,10 +183,6 @@ export default function ContactPage() {
                 <span className="font-medium text-foreground">Venmo:</span>{" "}
                 {contactInfo.venmo}
               </p>
-              <p>
-                <span className="font-medium text-foreground">Location:</span>{" "}
-                {contactInfo.addressLine1}, {contactInfo.addressLine2}
-              </p>
             </div>
           </aside>
         </div>

@@ -70,6 +70,11 @@ const TESTIMONIALS = [
     image: "",
     text: "Thanks so much for leading me to do things I thought impossible.\nMagical! Contact Improv dance with Michael hits all aspects of the perfect activity. Classes are structured to learn new dance moves, build community and friendships, expand self awareness and confidence in a safe environment as well as provide great exercise. Thank you Michael for a truly magical experience!",
   },
+  {
+    name: "Megan Phippen",
+    image: imagePath("/images/testimonial-megan.jpg"),
+    text: "Movement spaces have often felt really intimidating for me. Between some big surgeries and mobility challenges, being in my body, especially in contact with others, tends to bring up a lot. And honestly, a lot of these spaces can feel like people already have it figured out. It often seems like there's unspoken fluency, established community, and like everyone knows something I don't.\n\nWhat makes Michael's space different is the level of safety, attunement, and permission he creates. He' not curating rooms full of people who have it all dialed. He creates spaces where you can actually work with your edges, in real time, in your body with people who are doing the same. The culture he creates fosters this shared humanity and a real permission to be exactly where you are. And the community is incredible!\n\nI felt genuinely welcomed from the start, and have watched myself grow into more ease, more trust, more willingness to be seen, and more confident in my skin.\n\nThere are plenty of people on the Front Range facilitating movement. Very few are actually teaching it in this way. Michael breaks things down to a foundational level (fascia, weight distribution, points of contact) so you're not just thrown in to \"figure it out,\" but actually building a skillset you can feel and develop. From there, expression opens up in a way that feels honest and non performative, but still fluid and alive.\n\nThis space has been truly invaluable for me. I've already signed up for another series and can't wait to continue.\n\nMichael is a gem of a human and an exceptional teacher. I feel genuinely cared for, seen, and valued in his classes.",
+  },
 ] as const;
 
 export function Testimonials() {
