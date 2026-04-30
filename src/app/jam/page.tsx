@@ -21,7 +21,6 @@ const jamParagraphs = [
   "A time to explore connection, movement, and play through shared practice. All levels are welcome. Come as you are, move, listen, and follow curiosity in the body.",
   "The Monday Jam is a recurring, community-led practice supported by a core group of ten space holders. They rotate weekly, bringing diverse perspectives while maintaining a consistent, grounded container.",
   "The jam is sustained through community donations, which support the space and keep the offering accessible.",
-  "For more information about the jam go to denvercontactjam.com",
 ];
 
 export default async function JamPage() {

@@ -9,8 +9,6 @@ const DEFAULT_DESCRIPTION = [
   "In Denver, we gather to move, to listen with our bodies, to meet uncertainty with curiosity and care.",
   "Contact Improvisation is our language, a place to practice presence, collaboration, and the quiet courage of leaning on one another.",
   "This website is created and maintained by Michael Bernal. It shares information about his classes, guest teachers, and other Contact Improvisation opportunities in Denver.",
-  "Our weekly jam, co-founded and held by a group of ten space holders, is a space to play, explore, and be fully seen.",
-  "For details about the jam, please visit denvercontactjam.com (coming soon)",
   "Come dance with us, everyone is welcome!",
 ];
 
@@ -39,10 +37,10 @@ export default async function Home() {
           <div className="rounded-[2rem] border border-background/45 bg-background/28 px-5 py-8 shadow-[0_24px_80px_rgba(36,26,18,0.18)] backdrop-blur-[10px] md:px-10 md:py-10">
           <div className="mb-6 animate-fade-in">
             <Link
-              href="/events/art-of-living-round-12"
+              href="/events/art-of-living-round-13"
               className="inline-flex max-w-full items-center justify-center rounded-full border border-warm-dark/50 bg-warm-dark px-6 py-3 text-sm font-semibold text-background shadow-[0_16px_40px_rgba(58,37,24,0.28)] transition-all hover:-translate-y-0.5 hover:bg-warm sm:px-8"
             >
-              Join us for our next series: Art of Living Round 12
+              Join us for our next series: Art of Living Round 13
             </Link>
           </div>
           <h1
@@ -148,7 +146,7 @@ export default async function Home() {
                 fully alive.
               </p>
               <Link
-                href="/events/art-of-living-round-12"
+                href="/events/art-of-living-round-13"
                 className="inline-flex items-center gap-2 px-8 py-3.5 bg-warm text-background font-medium rounded-full hover:bg-warm-light transition-colors"
               >
                 Reserve Your Spot

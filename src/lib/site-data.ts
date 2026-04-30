@@ -11,34 +11,6 @@ export const contactInfo = {
 
 export const upcomingEvents = [
   {
-    slug: "1st-anniversary-jam",
-    type: "community",
-    title: "1st Anniversary Jam",
-    subtitle: "Denver Contact Improv celebrates one year!",
-    dates: "April 27, 2026",
-    schedule: "Monday 5:30 PM - 8:30 PM",
-    location: "The Wiggelruhm, 125 South Sherman Street",
-    price: "$25 class & jam / $15 jam only",
-    description:
-      "Special guests Matthew & Siri Cavanna from Denver Ecstatic Dance. Live music by Skozi.b & Shluke. Class, open jam, and community celebration. Max 40 people.",
-    cta: "View details",
-    featured: false,
-  },
-  {
-    slug: "durango-ci-intensive",
-    type: "workshop",
-    title: "The Art of Living: Durango CI Intensive",
-    subtitle: "A Contact Improvisation Intensive with Michael Bernal",
-    dates: "April 19, 2026",
-    schedule: "Sunday 10 am - 6 pm (1-3 pm break)",
-    location: "Smiley Building Studio 208 Durango, CO",
-    price: "$222 regular",
-    description:
-      "A full-day intensive utilizing the interplay between solo & partner (ensemble) practices & games. Learning to self and co-regulate our nervous systems. Growing trust, listening & care for ourselves & each other.",
-    cta: "View details",
-    featured: false,
-  },
-  {
     slug: "art-of-living-round-12",
     type: "series",
     title: "Art of Living Round 12",
@@ -51,6 +23,20 @@ export const upcomingEvents = [
       "A four-week series utilizing the interplay between solo & partner (ensemble) practices & games. Learning to self and co-regulate our nervous systems. Growing trust, listening & care for ourselves & each other.",
     cta: "Reserve your spot",
     featured: true,
+  },
+  {
+    slug: "art-of-living-round-13",
+    type: "series",
+    title: "Art of Living Round 13",
+    subtitle: "A Three-Class Contact Improvisation Series with Michael Bernal",
+    dates: "May 20, 27 & 30, 2026",
+    schedule: "May 20 & 27 6:15-8:45 PM · May 30 12:00-2:30 PM",
+    location: "Silver City, 2121 Larimer St, Denver, CO 80205",
+    price: "$299 regular · $188 early bird (first 5)",
+    description:
+      "No experience needed. Come as you are and discover freedom, belonging, and play. A three-class series exploring contact improvisation through solo and partner practices.",
+    cta: "Reserve your spot",
+    featured: false,
   },
 ] as const;
 

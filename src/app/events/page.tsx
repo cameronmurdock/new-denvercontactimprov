@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { upcomingEvents } from "@/lib/site-data";
+import { imagePath } from "@/lib/paths";
 
 export const metadata: Metadata = {
   title: "Events :: Denver Contact Improv",
@@ -12,18 +14,32 @@ export default function EventsPage() {
   return (
     <>
       <section className="relative overflow-hidden px-6 pb-20 pt-32">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(170,108,69,0.22),_transparent_48%)]" />
+        <div className="absolute inset-0">
+          <Image
+            src={imagePath("/images/events-hero-bg.jpg")}
+            alt="Denver Contact Improv community circle"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(33,26,22,0.55)_0%,rgba(33,26,22,0.45)_55%,rgba(234,223,205,0.92)_100%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(170,108,69,0.22),_transparent_48%)]" />
+        </div>
         <div className="relative mx-auto max-w-5xl">
-          <p className="mb-4 text-sm uppercase tracking-[0.35em] text-warm">
+          <p className="mb-4 text-sm uppercase tracking-[0.35em] text-warm-light">
             Events
           </p>
           <h1
-            className="max-w-3xl text-4xl font-bold text-foreground md:text-6xl"
-            style={{ fontFamily: "var(--font-playfair)" }}
+            className="max-w-3xl text-4xl font-bold text-background md:text-6xl"
+            style={{
+              fontFamily: "var(--font-playfair)",
+              textShadow: "0 4px 20px rgba(0,0,0,0.4)",
+            }}
           >
             Weekly practice, immersive series, and community gatherings.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-background/90">
             Explore current classes, workshops, and community gatherings in the
             Denver Contact Improv orbit.
           </p>

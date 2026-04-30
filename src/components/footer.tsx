@@ -64,11 +64,6 @@ export async function Footer() {
             <p className="text-xs font-semibold tracking-[0.25em] uppercase text-warm">
               Connect
             </p>
-            <p className="text-sm text-muted-foreground">
-              {contactInfo.addressLine1}
-              <br />
-              {contactInfo.addressLine2}
-            </p>
             <a
               href={contactInfo.instagram}
               target="_blank"
