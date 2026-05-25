@@ -5,9 +5,18 @@ import { contactInfo } from "@/lib/site-data";
 import { imagePath } from "@/lib/paths";
 
 export const metadata: Metadata = {
-  title: "Mentorship :: Denver Contact Improv",
+  title: "Mentorship — Contact Improvisation Mentorship with Michael Bernal",
   description:
-    "Personalized mentorship in Contact Improvisation with Michael Bernal. Embody the art, refine your teaching, and grow through real-world guidance and support.",
+    "Personalized one-on-one Contact Improvisation mentorship with Michael Bernal in Denver, CO. Embody the art, refine your teaching, and grow through real-world guidance and support.",
+  alternates: {
+    canonical: "https://denvercontactimprov.com/mentor/",
+  },
+  openGraph: {
+    title: "Mentorship — Denver Contact Improv",
+    description:
+      "Personalized Contact Improvisation mentorship with Michael Bernal in Denver. Embody the art, refine your teaching, and grow.",
+    url: "https://denvercontactimprov.com/mentor/",
+  },
 };
 
 const included = [

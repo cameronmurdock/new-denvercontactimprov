@@ -25,10 +25,6 @@ export default function ContactPage() {
             feedback, ask questions, or share suggestions to help us grow a
             supportive, connected, and inclusive dance community.
           </p>
-          <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-            If you have questions, concerns, or feedback specific to the
-            Monday Jam, please visit denvercontactjam.com
-          </p>
         </div>
       </section>
 
@@ -154,35 +150,65 @@ export default function ContactPage() {
             </form>
           </div>
 
-          <aside className="rounded-[2rem] border border-warm/25 bg-card/70 p-8">
-            <p className="text-xs uppercase tracking-[0.28em] text-warm">
-              Direct Contact
-            </p>
-            <div className="mt-6 space-y-5 text-muted-foreground">
-              <p>
-                <span className="font-medium text-foreground">Instagram:</span>{" "}
-                <a
-                  href={contactInfo.instagram}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-warm transition-colors hover:text-warm-light"
+          <aside className="space-y-6">
+            <div className="rounded-[2rem] border border-warm/25 bg-card/70 p-8">
+              <p className="text-xs uppercase tracking-[0.28em] text-warm">
+                Direct Contact
+              </p>
+              <div className="mt-6 space-y-5 text-muted-foreground">
+                <p>
+                  <span className="font-medium text-foreground">Instagram:</span>{" "}
+                  <a
+                    href={contactInfo.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-warm transition-colors hover:text-warm-light"
+                  >
+                    {contactInfo.instagramHandle}
+                  </a>
+                </p>
+                <p>
+                  <span className="font-medium text-foreground">Text:</span>{" "}
+                  <a
+                    href={`sms:${contactInfo.rawPhone}`}
+                    className="text-warm transition-colors hover:text-warm-light"
+                  >
+                    {contactInfo.textNumber}
+                  </a>
+                </p>
+                <p>
+                  <span className="font-medium text-foreground">Venmo:</span>{" "}
+                  {contactInfo.venmo}
+                </p>
+              </div>
+            </div>
+
+            <div className="rounded-[2rem] border border-warm/25 bg-card/70 p-8">
+              <p className="text-xs uppercase tracking-[0.28em] text-warm">
+                Leave a Review
+              </p>
+              <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
+                Enjoyed your experience? Leave us a review on Google to help
+                others find Denver Contact Improv.
+              </p>
+              <a
+                href={contactInfo.googleReview}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center gap-2 rounded-full bg-warm px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-warm-light"
+              >
+                Leave a Google Review
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                 >
-                  {contactInfo.instagramHandle}
-                </a>
-              </p>
-              <p>
-                <span className="font-medium text-foreground">Text:</span>{" "}
-                <a
-                  href={`sms:${contactInfo.rawPhone}`}
-                  className="text-warm transition-colors hover:text-warm-light"
-                >
-                  {contactInfo.textNumber}
-                </a>
-              </p>
-              <p>
-                <span className="font-medium text-foreground">Venmo:</span>{" "}
-                {contactInfo.venmo}
-              </p>
+                  <path d="M3 8H13M9 4L13 8L9 12" />
+                </svg>
+              </a>
             </div>
           </aside>
         </div>

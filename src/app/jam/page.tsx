@@ -4,8 +4,18 @@ import { imagePath } from "@/lib/paths";
 import { fetchJamPage } from "@/lib/sanity/queries";
 
 export const metadata: Metadata = {
-  title: "Jam :: Denver Contact Improv",
-  description: "Join us every Monday for our Denver Contact Jam",
+  title: "Contact Improv Jam — Weekly Contact Improvisation Jam in Denver",
+  description:
+    "Join Denver Contact Improv for our weekly Contact Improvisation jam. A shared space for spontaneous movement, weight-sharing, and community connection in Denver, Colorado.",
+  alternates: {
+    canonical: "https://denvercontactimprov.com/jam/",
+  },
+  openGraph: {
+    title: "Contact Improv Jam — Denver Contact Improv",
+    description:
+      "Weekly Contact Improvisation jam in Denver. A shared space for spontaneous movement and community connection.",
+    url: "https://denvercontactimprov.com/jam/",
+  },
 };
 
 const introParagraphs = [

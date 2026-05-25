@@ -1,0 +1,5 @@
+# Denver Contact Improv
+User-agent: *
+Allow: /
+
+Sitemap: https://denvercontactimprov.com/sitemap.xml

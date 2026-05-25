@@ -3,8 +3,12 @@ import Link from "next/link";
 import { contactInfo } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "Open Jam & Workshop :: Denver Contact Improv",
-  description: "Open jam for play and skill building.",
+  title: "Open Jam & Workshop — Contact Improv Open Jam in Denver",
+  description:
+    "Join Denver Contact Improv for our open jam and workshop. A space for play, skill building, and community connection through Contact Improvisation in Denver, CO.",
+  alternates: {
+    canonical: "https://denvercontactimprov.com/events/open-jam-and-workshop/",
+  },
 };
 
 export default function OpenJamAndWorkshopPage() {

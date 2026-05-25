@@ -5,8 +5,18 @@ import { imagePath } from "@/lib/paths";
 import { fetchAboutPage } from "@/lib/sanity/queries";
 
 export const metadata: Metadata = {
-  title: "About :: Denver Contact Improv",
-  description: "About the instructor Michael Bernal",
+  title: "About Us — Michael Bernal & Denver Contact Improvisation Community",
+  description:
+    "Meet Michael Bernal, the movement teacher behind Denver Contact Improv. Learn about our story, our values, and the growing Contact Improvisation community in Denver, Colorado.",
+  alternates: {
+    canonical: "https://denvercontactimprov.com/about/",
+  },
+  openGraph: {
+    title: "About Us — Denver Contact Improv",
+    description:
+      "Meet Michael Bernal, the movement teacher behind Denver Contact Improv. Learn about our story and the growing Contact Improvisation community in Denver, CO.",
+    url: "https://denvercontactimprov.com/about/",
+  },
 };
 
 const storyParagraphs = [
@@ -16,7 +26,6 @@ const storyParagraphs = [
   "After a 10-day Vipassana retreat, Michael returned softly moved, tears welling from the tender aliveness of interdependence and compassion. He carried with him a cultivated attention, a loving awareness of the world, and the quiet equanimity of meeting life as it is. From that experience, the Art of Living series was born, not as a concept, but as a lived invitation to presence, care, and shared humanity.",
   "He walks this path with gratitude, honoring the pioneers of Contact Improvisation, Nancy Stark Smith, Steve Paxton, Nita Little and all who have kept Buddhist (awakening) practices alive. He also deeply thanks his personal teachers and bows to the seen and unseen forces that continue to guide and inspire him.",
   "Through Contact Improvisation, the circle slowly opened, guided by listening to their own bodies, to each other, and to the quiet rhythms of the room. Week by week, people arrived, bringing their stories, curiosity, and longing to belong.",
-  "The Monday Jam emerged through collective effort, co-created by 14 individuals as a shared practice. Today, a devoted group of 10 space holders supports the container, holding the rhythm and unfolding of each jam. From a small offering, a home emerged, a place to move, trust, and belong together.",
   "This is the practice! Remembering how to listen, how to trust, and how belonging is not earned, but allowed.",
   "Shaped by many hands, bodies, and stories, imperfect, evolving, and alive that is what makes it authentic.",
   "Step in as you are. Here, you are seen. Here, you belong.",
@@ -166,12 +175,12 @@ export default async function AboutPage() {
                 <p className="text-sm text-muted-foreground">
                   Instagram:{" "}
                   <a
-                    href="https://www.instagram.com/the.embodied.man/"
+                    href="https://www.instagram.com/denvercontactimprov"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-warm transition-colors hover:text-warm-light"
                   >
-                    the.embodied.man
+                    @denvercontactimprov
                   </a>
                 </p>
                 <Link

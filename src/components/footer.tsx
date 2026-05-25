@@ -58,6 +58,18 @@ export async function Footer() {
             >
               Guidelines
             </Link>
+            <Link
+              href="/faq"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              FAQ
+            </Link>
+            <Link
+              href="/blog"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Blog
+            </Link>
           </div>
 
           <div className="flex flex-col gap-3">

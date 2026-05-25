@@ -37,10 +37,10 @@ export default async function Home() {
           <div className="rounded-[2rem] border border-background/45 bg-background/28 px-5 py-8 shadow-[0_24px_80px_rgba(36,26,18,0.18)] backdrop-blur-[10px] md:px-10 md:py-10">
           <div className="mb-6 animate-fade-in">
             <Link
-              href="/events/art-of-living-round-13"
+              href="/events/art-of-living-aug-2026"
               className="inline-flex max-w-full items-center justify-center rounded-full border border-warm-dark/50 bg-warm-dark px-6 py-3 text-sm font-semibold text-background shadow-[0_16px_40px_rgba(58,37,24,0.28)] transition-all hover:-translate-y-0.5 hover:bg-warm sm:px-8"
             >
-              Join us for our next series: Art of Living Round 13
+              Join us for our next series: The Art of Living — Aug 5 – Sept 2
             </Link>
           </div>
           <h1
@@ -108,13 +108,46 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* Community Photos */}
+      <section className="px-6 pb-24">
+        <div className="mx-auto max-w-7xl grid gap-6 md:grid-cols-3">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+            <Image
+              src={imagePath("/images/landing-group.jpg")}
+              alt="Denver Contact Improv community group photo"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 33vw"
+            />
+          </div>
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+            <Image
+              src={imagePath("/images/landing-hands-circle.jpg")}
+              alt="Community hands reaching together in a circle"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 33vw"
+            />
+          </div>
+          <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+            <Image
+              src={imagePath("/images/landing-dance-duo.jpg")}
+              alt="Two dancers sharing weight in contact improvisation"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 33vw"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Featured Series */}
       <section className="py-24 px-6 bg-card/30">
         <div className="mx-auto max-w-7xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src={imagePath("/images/featured-jam.jpg")}
+                src={imagePath("/images/art-of-living-aug-flyer.png")}
                 alt="The Art of Living contact improvisation series"
                 fill
                 className="object-cover"
@@ -134,19 +167,20 @@ export default async function Home() {
                 The Art of Living
               </h2>
               <h3 className="text-lg text-muted-foreground mb-4">
-                Contact Improvisation Series
+                A Four-Week Contact Improvisation Series with Michael Bernal
               </h3>
-              <p className="text-muted-foreground leading-relaxed mb-8">
-                Come as you are and enter a space where movement becomes a
-                doorway into trust, connection, and belonging. Through contact
-                improvisation, we&apos;ll learn to listen, softly and honestly
-                to our bodies, our nervous systems, and each other, rooted in
-                care and consent. Together we&apos;ll unwind old patterns, grow
-                confidence, and rediscover the freedom to move, relate, and be
-                fully alive.
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                No experience needed. Come as you are and discover freedom,
+                belonging, and play.
+              </p>
+              <p className="text-sm text-muted-foreground mb-2">
+                Wednesdays Aug 5 – Sept 2 &middot; 6:15–8:45 PM &middot; *no class Aug 26
+              </p>
+              <p className="text-sm text-muted-foreground mb-8">
+                The Savoy Denver &middot; 2700 Arapahoe St, Denver, CO 80205
               </p>
               <Link
-                href="/events/art-of-living-round-13"
+                href="/events/art-of-living-aug-2026"
                 className="inline-flex items-center gap-2 px-8 py-3.5 bg-warm text-background font-medium rounded-full hover:bg-warm-light transition-colors"
               >
                 Reserve Your Spot

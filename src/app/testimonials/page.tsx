@@ -29,11 +29,6 @@ const TESTIMONIALS = [
     text: "Michael's presence and ability to instruct and lead us as a group as well as hold the container was paramount. I left class every time feeling more connected to a community, more grounded, and with a much more regulated nervous system than when I would show up.\nHe took the time to notice each students level and was supportive and accommodating for all.\nI highly recommend this class to anyone wanting to connect into their body and grow with others. I will be participating in future classes moving forward.\nWith much Gratitude",
   },
   {
-    name: "Anastasia Hill",
-    image: imagePath("/images/testimonial-anastasia.jpg"),
-    text: "I had no idea what I was getting into when I took Michael's Art of Living series, and was honestly hesitant bc not all dance spaces are as safe as they seem, but the container Michael creates is truly life changing. Michael has an almost therapeutic approach, focusing on somatic experience and self-awareness through platonic connection. This practice has softened my spirit to deeper connection and deepened my listening to both my own body and others'. Not only do I feel more embodied than I ever have, but I feel more regulated and full of love. 10/10 highly recommend his transformational teachings!",
-  },
-  {
     name: "Nick",
     image: imagePath("/images/testimonial-nick.jpg"),
     text: "Michael's Art of Living series has been one of the most unique and special experiences of my life. I am so grateful for the connection, awareness, joy, laughter, and tears I have found here, and for the beautiful souls who co-create this truly magical and supportive space!",
@@ -76,9 +71,18 @@ const TESTIMONIALS = [
 ] as const;
 
 export const metadata: Metadata = {
-  title: "Testimonials :: Denver Contact Improv",
+  title: "Testimonials — What People Say About Denver Contact Improv",
   description:
-    "Read testimonials from dancers and community members sharing their experiences with Denver Contact Improv classes, jams, and events.",
+    "Read testimonials from dancers and community members sharing their experiences with Denver Contact Improv classes, jams, and events led by Michael Bernal in Denver, Colorado.",
+  alternates: {
+    canonical: "https://denvercontactimprov.com/testimonials/",
+  },
+  openGraph: {
+    title: "Testimonials — Denver Contact Improv",
+    description:
+      "Hear from our community about their experiences with Contact Improvisation classes and jams in Denver.",
+    url: "https://denvercontactimprov.com/testimonials/",
+  },
 };
 
 export default function TestimonialsPage() {

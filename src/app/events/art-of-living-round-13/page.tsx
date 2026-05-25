@@ -3,9 +3,12 @@ import Image from "next/image";
 import { imagePath } from "@/lib/paths";
 
 export const metadata: Metadata = {
-  title: "Art of Living Round 13 :: Denver Contact Improv",
+  title: "Art of Living Round 13 — Contact Improv Series in Denver",
   description:
     "A Three-Class Contact Improvisation Series with Michael Bernal. May 20, 27 & 30, 2026 at Silver City, Denver.",
+  alternates: {
+    canonical: "https://denvercontactimprov.com/events/art-of-living-round-13/",
+  },
 };
 
 const EVENT_TESTIMONIALS = [
@@ -199,12 +202,12 @@ export default function EventPage() {
             <p className="text-muted-foreground mb-6">
               Instagram:{" "}
               <a
-                href="https://www.instagram.com/the.embodied.man"
+                href="https://www.instagram.com/denvercontactimprov"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-warm hover:text-warm-light transition-colors"
               >
-                @the.embodied.man
+                @denvercontactimprov
               </a>
             </p>
             <div className="relative w-64 mx-auto aspect-[16/10] rounded-xl overflow-hidden">

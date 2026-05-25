@@ -5,9 +5,18 @@ import { upcomingEvents } from "@/lib/site-data";
 import { imagePath } from "@/lib/paths";
 
 export const metadata: Metadata = {
-  title: "Events :: Denver Contact Improv",
+  title: "Events — Contact Improv Classes, Workshops & Jams in Denver",
   description:
-    "Upcoming classes, workshops, jams, and immersive offerings from Denver Contact Improv.",
+    "Browse upcoming Contact Improvisation classes, workshops, jams, and immersive series from Denver Contact Improv. Beginner-friendly offerings in Denver, Colorado.",
+  alternates: {
+    canonical: "https://denvercontactimprov.com/events/",
+  },
+  openGraph: {
+    title: "Events — Denver Contact Improv",
+    description:
+      "Upcoming Contact Improvisation classes, workshops, jams, and immersive offerings in Denver, CO.",
+    url: "https://denvercontactimprov.com/events/",
+  },
 };
 
 export default function EventsPage() {

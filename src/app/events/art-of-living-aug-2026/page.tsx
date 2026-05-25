@@ -3,11 +3,17 @@ import Image from "next/image";
 import { imagePath } from "@/lib/paths";
 
 export const metadata: Metadata = {
-  title: "Art of Living Round 12 — Contact Improv Series in Denver",
+  title: "The Art of Living — Aug 2026 Contact Improv Series in Denver",
   description:
-    "A Four-Week Contact Improvisation Series with Michael Bernal. April 22 - May 13, 2026. Wednesdays 6:15pm - 8:45pm.",
+    "A Four-Week beginner-friendly Contact Improvisation Series with Michael Bernal. Wednesdays Aug 5 – Sept 2, 2026 at The Savoy Denver. No experience needed.",
   alternates: {
-    canonical: "https://denvercontactimprov.com/events/art-of-living-round-12/",
+    canonical: "https://denvercontactimprov.com/events/art-of-living-aug-2026/",
+  },
+  openGraph: {
+    title: "The Art of Living — Aug 2026 Contact Improv Series",
+    description:
+      "Four-Week Contact Improvisation Series with Michael Bernal. Aug 5 – Sept 2, 2026 at The Savoy Denver.",
+    url: "https://denvercontactimprov.com/events/art-of-living-aug-2026/",
   },
 };
 
@@ -30,7 +36,7 @@ const EVENT_TESTIMONIALS = [
   {
     name: "Gabrielle Hillis",
     image: imagePath("/images/testimonial-gabrielle.jpg"),
-    text: "For me, what is so enthralling and addictive about Michael's CI series is that they feel like laboratory spaces—places where we get to be true students of this sport, students of this art form. I was a highly competitive athlete for most of my life, and when I retired, I experienced an identity and purpose crisis. I deeply missed the mind-body connection required to excel in sport. Michael's classes have become that place for me again. I feel nourished, accomplished, fulfilled, and grounded when I am a student of contact improv, a student of my own body and mind, and a student of others. It is a brilliant and safe space curated for curiosity—where questions are welcomed, experiments unfold, and new concepts are continuously uncovered. Thank you, thank you, thank you for creating and holding this recurring space where mind meets body and body meets mind and we all learn together!",
+    text: "For me, what is so enthralling and addictive about Michael's CI series is that they feel like laboratory spaces\u2014places where we get to be true students of this sport, students of this art form. I was a highly competitive athlete for most of my life, and when I retired, I experienced an identity and purpose crisis. I deeply missed the mind-body connection required to excel in sport. Michael's classes have become that place for me again. I feel nourished, accomplished, fulfilled, and grounded when I am a student of contact improv, a student of my own body and mind, and a student of others. It is a brilliant and safe space curated for curiosity\u2014where questions are welcomed, experiments unfold, and new concepts are continuously uncovered. Thank you, thank you, thank you for creating and holding this recurring space where mind meets body and body meets mind and we all learn together!",
   },
   {
     name: "Karina Okoren",
@@ -46,8 +52,8 @@ export default function EventPage() {
       <section className="relative pt-24 pb-0 overflow-hidden">
         <div className="relative aspect-[21/9] max-h-[500px] w-full">
           <Image
-            src={imagePath("/images/event-banner.jpg")}
-            alt="Art of Living Round 12"
+            src={imagePath("/images/art-of-living-aug-flyer.png")}
+            alt="The Art of Living — A Four-Week Contact Improvisation Series"
             fill
             className="object-cover"
             priority
@@ -68,10 +74,14 @@ export default function EventPage() {
               className="text-3xl md:text-5xl font-bold mb-6 text-foreground"
               style={{ fontFamily: "var(--font-playfair)" }}
             >
-              Art of Living Round 12
+              The Art of Living
             </h1>
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="text-lg text-muted-foreground mb-2">
               A Four-Week Contact Improvisation Series with Michael Bernal
+            </p>
+            <p className="italic text-muted-foreground mb-8">
+              No experience needed. Come as you are and discover freedom,
+              belonging, and play.
             </p>
 
             {/* Details Grid */}
@@ -81,7 +91,11 @@ export default function EventPage() {
                   Dates
                 </p>
                 <p className="text-sm font-medium text-foreground">
-                  April 22 &ndash; May 13, 2026
+                  Wednesdays Aug 5 &ndash; Sept 2, 2026
+                  <br />
+                  <span className="text-xs text-muted-foreground">
+                    *no class Aug 26
+                  </span>
                 </p>
               </div>
               <div className="p-4 bg-secondary/50 rounded-xl">
@@ -89,7 +103,7 @@ export default function EventPage() {
                   Time
                 </p>
                 <p className="text-sm font-medium text-foreground">
-                  Wednesdays 6:15pm &ndash; 8:45pm
+                  6:15&ndash;8:45 PM
                 </p>
               </div>
               <div className="p-4 bg-secondary/50 rounded-xl">
@@ -97,7 +111,9 @@ export default function EventPage() {
                   Location
                 </p>
                 <p className="text-sm font-medium text-foreground">
-                  125 South Sherman Street
+                  The Savoy Denver
+                  <br />
+                  2700 Arapahoe St, Denver, CO 80205
                 </p>
               </div>
               <div className="p-4 bg-secondary/50 rounded-xl">
@@ -113,20 +129,21 @@ export default function EventPage() {
             {/* Description */}
             <div className="prose prose-invert max-w-none">
               <p className="text-muted-foreground leading-relaxed">
-                In this series we will utilize the interplay between solo &
-                partner (ensemble) practices & games. Learning to self and
-                co-regulate our nervous systems. Growing trust, listening & care
-                for ourselves & each other. We will experience how to thrive
-                with the inevitable hardships of life. Learn the art of consent.
-                Cultivate our attention & equanimity. Enhance our social &
-                physical interactions for genuine heartfelt connections. We will
-                do this through the lens of contact improvisation via felt
-                physics, relational intelligence & somatic self-observation. This
-                will allow you to break habit patterns that no longer serve you.
-                Allow a sense of belonging (interbeing). Cultivate confidence in
-                your body&apos;s capacity to move & improvise. Create a practice
-                that enriches your life & helps you develop your mind-body
-                capacity for true empowerment & freedom.
+                In this series we will utilize the interplay between solo &amp;
+                partner (ensemble) practices &amp; games. Learning to self and
+                co-regulate our nervous systems. Growing trust, listening &amp;
+                care for ourselves &amp; each other. We will experience how to
+                thrive with the inevitable hardships of life. Learn the art of
+                consent. Cultivate our attention &amp; equanimity. Enhance our
+                social &amp; physical interactions for genuine heartfelt
+                connections. We will do this through the lens of contact
+                improvisation via felt physics, relational intelligence &amp;
+                somatic self-observation. This will allow you to break habit
+                patterns that no longer serve you. Allow a sense of belonging
+                (interbeing). Cultivate confidence in your body&apos;s capacity
+                to move &amp; improvise. Create a practice that enriches your
+                life &amp; helps you develop your mind-body capacity for true
+                empowerment &amp; freedom.
               </p>
             </div>
           </div>
@@ -144,11 +161,8 @@ export default function EventPage() {
           </h2>
 
           <div className="grid sm:grid-cols-2 gap-6 mb-10">
-            <div className="p-6 border border-border/50 rounded-2xl bg-card relative overflow-hidden">
-              <div className="absolute top-0 right-0 px-3 py-1 bg-red-500/20 text-red-400 text-xs font-medium rounded-bl-xl">
-                SOLD OUT
-              </div>
-              <p className="text-sm text-muted-foreground mb-1">Early Bird</p>
+            <div className="p-6 border border-warm/30 rounded-2xl bg-card">
+              <p className="text-sm text-warm mb-1">Early Bird</p>
               <p className="text-3xl font-bold text-foreground mb-1">$222</p>
               <p className="text-xs text-muted-foreground">
                 First 5 to register
@@ -165,25 +179,17 @@ export default function EventPage() {
           <div className="space-y-4 text-sm text-muted-foreground">
             <p>
               <span className="text-foreground font-medium">
-                Educator Discount Available:
-              </span>{" "}
-              Special pricing for professional dancers, artists, and teachers.
-            </p>
-            <p>
-              <span className="text-foreground font-medium">
-                Sliding Scale Available:
+                Community Pricing &middot; Sliding Scale:
               </span>{" "}
               Our pricing is community-supported. When you pay the full price or
               more, you help make it possible for someone else to attend at a
               deeply discounted rate.
             </p>
             <p className="italic">
-              If cost is a barrier, simply ask, and you shall receive! We&apos;re
-              happy to offer sliding scale support so everyone who wants to be
-              here can join.
+              If cost is a barrier, reach out &mdash; we&apos;ll make it work.
             </p>
             <p className="text-xs">
-              Registration may be transferred, no refunds.
+              No refunds &middot; Transferable.
             </p>
           </div>
 
@@ -264,8 +270,8 @@ export default function EventPage() {
         <div className="mx-auto max-w-md">
           <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src={imagePath("/images/art-of-living-flyer.jpg")}
-              alt="Art of Living Round 11 flyer"
+              src={imagePath("/images/art-of-living-aug-flyer.png")}
+              alt="The Art of Living flyer"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 448px"

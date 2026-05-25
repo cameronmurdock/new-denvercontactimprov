@@ -2,9 +2,18 @@ import type { Metadata } from "next";
 import { guidelineSections } from "@/lib/site-data";
 
 export const metadata: Metadata = {
-  title: "Guidelines :: Denver Contact Improv",
+  title: "Community Guidelines — Consent, Safety & Inclusion",
   description:
-    "Explore the values and guidelines of Denver Contact Improv, including consent, safety, inclusion, and collective care.",
+    "Explore the values and guidelines of Denver Contact Improv, including principles of consent, safety, inclusion, and collective care. Learn how we cultivate a supportive, respectful, and mindful dance space for all participants.",
+  alternates: {
+    canonical: "https://denvercontactimprov.com/guidelines/",
+  },
+  openGraph: {
+    title: "Community Guidelines — Denver Contact Improv",
+    description:
+      "Our principles of consent, safety, inclusion, and collective care for a supportive Contact Improvisation community.",
+    url: "https://denvercontactimprov.com/guidelines/",
+  },
 };
 
 export default function GuidelinesPage() {
@@ -43,7 +52,7 @@ export default function GuidelinesPage() {
               >
                 {section.title}
               </h2>
-              <p className="mt-4 leading-relaxed text-muted-foreground">
+              <p className="mt-4 leading-relaxed text-muted-foreground whitespace-pre-line">
                 {section.body}
               </p>
             </article>
