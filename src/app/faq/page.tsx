@@ -17,9 +17,19 @@ export const metadata: Metadata = {
 
 const FAQ_ITEMS = [
   {
-    question: "What is a Contact Improvisation Jam?",
+    question: "What is Contact Improvisation?",
     answer:
-      "Some people dance continuously, others rest, observe, or move in and out of the space. Jams can include silence, live music, guided scores, and community connection.",
+      "Contact Improvisation is a movement practice and relational dance form rooted in listening, touch, weight-sharing, improvisation, and embodied awareness. It invites people to explore movement, creativity, connection, and presence through shared physical dialogue.",
+  },
+  {
+    question: "Do I need dance experience?",
+    answer:
+      "No experience is necessary. Our Denver Contact Improv classes are beginner friendly and welcome movers of all backgrounds, ages, and experience levels.",
+  },
+  {
+    question: "What happens at a Contact Improv jam?",
+    answer:
+      "A jam is an open movement space where people practice improvisational movement together. Some people dance continuously, others rest, observe, or move in and out of the space. Jams can include silence, live music, guided scores, and community connection.",
   },
   {
     question: "What should I wear?",
