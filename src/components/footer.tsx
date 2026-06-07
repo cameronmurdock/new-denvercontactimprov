@@ -96,6 +96,8 @@ export async function Footer() {
         <div className="mt-8 pt-8 border-t border-border/30 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted-foreground">
             &copy; 2026 Denver Contact Improv. All rights reserved.
+            <br />
+            Website is maintained by Michael Bernal.
           </p>
           <p className="text-xs text-muted-foreground">
             website by{" "}

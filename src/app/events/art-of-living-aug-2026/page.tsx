@@ -161,11 +161,16 @@ export default function EventPage() {
           </h2>
 
           <div className="grid sm:grid-cols-2 gap-6 mb-10">
-            <div className="p-6 border border-warm/30 rounded-2xl bg-card">
+            <div className="relative p-6 border border-warm/30 rounded-2xl bg-card opacity-75">
+              <span className="absolute right-4 top-4 rounded-full bg-warm/15 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-warm">
+                Sold Out
+              </span>
               <p className="text-sm text-warm mb-1">Early Bird</p>
-              <p className="text-3xl font-bold text-foreground mb-1">$222</p>
+              <p className="text-3xl font-bold text-foreground mb-1 line-through decoration-warm/60">
+                $222
+              </p>
               <p className="text-xs text-muted-foreground">
-                First 5 to register
+                First 5 to register &middot; Sold out
               </p>
             </div>
 

@@ -1,20 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Testimonials } from "@/components/testimonials";
-import { fetchHomePage } from "@/lib/sanity/queries";
 
 import { imagePath } from "@/lib/paths";
 
-const DEFAULT_DESCRIPTION = [
+const DESCRIPTION_PARAGRAPHS = [
   "In Denver, we gather to move, to listen with our bodies, to meet uncertainty with curiosity and care.",
   "Contact Improvisation is our language, a place to practice presence, collaboration, and the quiet courage of leaning on one another.",
-  "This website is created and maintained by Michael Bernal. It shares information about his classes, guest teachers, and other Contact Improvisation opportunities in Denver.",
+  "Out beyond what ought to be is all that is. Let us learn to live there, together.",
   "Come dance with us, everyone is welcome!",
 ];
 
-export default async function Home() {
-  const homeData = await fetchHomePage();
-  const paragraphs: string[] = homeData?.descriptionParagraphs ?? DEFAULT_DESCRIPTION;
+export default function Home() {
+  const paragraphs = DESCRIPTION_PARAGRAPHS;
   return (
     <>
       {/* Hero */}
@@ -40,7 +38,7 @@ export default async function Home() {
               href="/events/art-of-living-aug-2026"
               className="inline-flex max-w-full items-center justify-center rounded-full border border-warm-dark/50 bg-warm-dark px-6 py-3 text-sm font-semibold text-background shadow-[0_16px_40px_rgba(58,37,24,0.28)] transition-all hover:-translate-y-0.5 hover:bg-warm sm:px-8"
             >
-              Join us for our next series: The Art of Living — Aug 5 – Sept 2
+              Join us for our next series: The Art of Living
             </Link>
           </div>
           <h1
@@ -108,6 +106,25 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* SEO Intro */}
+      <section className="px-6 pb-24">
+        <div className="mx-auto max-w-3xl text-left">
+          <h2
+            className="text-2xl md:text-3xl font-bold mb-6 text-foreground"
+            style={{ fontFamily: "var(--font-playfair)" }}
+          >
+            Contact Improvisation Classes in Denver
+          </h2>
+          <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
+            Denver Contact Improv offers weekly Contact Improvisation classes,
+            workshops, movement practices, and community events in Denver,
+            Colorado. Whether you&apos;re new to contact improv or an experienced
+            mover, our classes help cultivate presence, connection, creativity,
+            and embodied awareness.
+          </p>
+        </div>
+      </section>
+
       {/* Community Photos */}
       <section className="px-6 pb-24">
         <div className="mx-auto max-w-7xl grid gap-6 md:grid-cols-3">
@@ -147,7 +164,7 @@ export default async function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src={imagePath("/images/art-of-living-aug-flyer.png")}
+                src={imagePath("/images/art-of-living-featured.jpg")}
                 alt="The Art of Living contact improvisation series"
                 fill
                 className="object-cover"
@@ -176,8 +193,11 @@ export default async function Home() {
               <p className="text-sm text-muted-foreground mb-2">
                 Wednesdays Aug 5 – Sept 2 &middot; 6:15–8:45 PM &middot; *no class Aug 26
               </p>
-              <p className="text-sm text-muted-foreground mb-8">
+              <p className="text-sm text-muted-foreground mb-4">
                 The Savoy Denver &middot; 2700 Arapahoe St, Denver, CO 80205
+              </p>
+              <p className="text-sm font-semibold uppercase tracking-wide text-warm mb-8">
+                Early Bird &mdash; Sold Out
               </p>
               <Link
                 href="/events/art-of-living-aug-2026"
