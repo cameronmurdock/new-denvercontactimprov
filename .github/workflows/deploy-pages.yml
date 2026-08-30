@@ -1,11 +1,13 @@
 name: Deploy GitHub Pages
 
+# Production deploys are deliberate, not automatic.
+#
+# The Sovereign Builder control plane pushes to main on every deploy, so a
+# push trigger would publish work-in-progress straight to the live site. The
+# builder publishes to its own origin and the dev subdomains; GitHub is a
+# mirror. Run this workflow manually to update GitHub Pages.
 on:
-  push:
-    branches: ["main"]
   workflow_dispatch:
-  repository_dispatch:
-    types: [sanity_publish]
 
 permissions:
   contents: read
