@@ -15,6 +15,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  // Absolute base for canonical and og URLs emitted by Next.
+  metadataBase: new URL("https://denvercontactimprov.com"),
   title: {
     default: "Denver Contact Improv — Contact Improvisation Classes, Jams & Community in Denver, CO",
     template: "%s :: Denver Contact Improv",
@@ -45,6 +47,7 @@ export const metadata: Metadata = {
     "contact dance Denver Colorado",
   ],
   openGraph: {
+    images: [{ url: "/images/events-hero-bg.jpg", width: 1200, height: 630, alt: "Contact Improvisation in Denver, Colorado" }],
     title: "Denver Contact Improv — Contact Improvisation Classes & Community",
     description:
       "Beginner-friendly Contact Improvisation classes, jams, workshops, and community events in Denver, CO. Offering weekly gatherings and immersive experiences rooted in belonging.",
@@ -55,6 +58,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/images/events-hero-bg.jpg"],
     title: "Denver Contact Improv — Contact Improvisation Classes & Community",
     description:
       "Beginner-friendly Contact Improvisation classes, jams, workshops, and community events in Denver, CO.",
