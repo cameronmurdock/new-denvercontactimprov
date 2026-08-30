@@ -164,7 +164,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src={imagePath("/images/art-of-living-featured.jpg")}
+                src={imagePath("/images/copy-of-purple-futuristic-modern-music-flyer-portrait.png")}
                 alt="The Art of Living contact improvisation series"
                 fill
                 className="object-cover"

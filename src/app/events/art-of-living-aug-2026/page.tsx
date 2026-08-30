@@ -52,10 +52,10 @@ export default function EventPage() {
       <section className="relative pt-24 pb-0 overflow-hidden">
         <div className="relative aspect-[21/9] max-h-[500px] w-full">
           <Image
-            src={imagePath("/images/art-of-living-aug-flyer.png")}
+            src={imagePath("/images/copy-of-purple-futuristic-modern-music-flyer-portrait.png")}
             alt="The Art of Living — A Four-Week Contact Improvisation Series"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             priority
             sizes="100vw"
           />
@@ -275,7 +275,7 @@ export default function EventPage() {
         <div className="mx-auto max-w-md">
           <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src={imagePath("/images/art-of-living-aug-flyer.png")}
+              src={imagePath("/images/copy-of-purple-futuristic-modern-music-flyer-portrait.png")}
               alt="The Art of Living flyer"
               fill
               className="object-cover"
