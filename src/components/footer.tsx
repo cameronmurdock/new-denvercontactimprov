@@ -1,15 +1,13 @@
 import Link from "next/link";
 import { contactInfo } from "@/lib/site-data";
-import { fetchSiteSettings } from "@/lib/sanity/queries";
 
 const DEFAULT_TAGLINE = "Movement. Connection. Community.";
 const DEFAULT_DESCRIPTION =
   "Weekly classes, events, workshops, and mentorship rooted in belonging, resilience, and embodied presence.";
 
 export async function Footer() {
-  const settings = await fetchSiteSettings();
-  const tagline = settings?.footerTagline ?? DEFAULT_TAGLINE;
-  const description = settings?.footerDescription ?? DEFAULT_DESCRIPTION;
+  const tagline = DEFAULT_TAGLINE;
+  const description = DEFAULT_DESCRIPTION;
   return (
     <footer className="border-t border-border/50 bg-background">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 py-12">

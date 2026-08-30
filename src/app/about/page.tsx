@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { imagePath } from "@/lib/paths";
-import { fetchAboutPage } from "@/lib/sanity/queries";
 
 export const metadata: Metadata = {
   title: "About Us — Michael Bernal & Denver Contact Improvisation Community",
@@ -43,9 +42,8 @@ const michaelParagraphs = [
 ];
 
 export default async function AboutPage() {
-  const aboutData = await fetchAboutPage();
-  const story: string[] = aboutData?.storyParagraphs ?? storyParagraphs;
-  const bio: string[] = aboutData?.michaelParagraphs ?? michaelParagraphs;
+  const story: string[] = storyParagraphs;
+  const bio: string[] = michaelParagraphs;
 
   return (
     <>

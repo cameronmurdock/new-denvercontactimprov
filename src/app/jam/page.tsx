@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { fetchJamPage } from "@/lib/sanity/queries";
 
 export const metadata: Metadata = {
   title: "Contact Improv Jam — Weekly Contact Improvisation Jam in Denver",
@@ -25,8 +24,7 @@ const introParagraphs = [
 ];
 
 export default async function JamPage() {
-  const jamData = await fetchJamPage();
-  const intro: string[] = jamData?.introParagraphs ?? introParagraphs;
+  const intro: string[] = introParagraphs;
 
   return (
     <>
