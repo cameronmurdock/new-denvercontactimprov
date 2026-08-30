@@ -26,17 +26,11 @@ const introParagraphs = [
   "With that groundwork in place, a jam becomes something truly special! A space where you can relax into the unknown, trust your body and your partners, and discover the joy of movement as a shared, unfolding experience.",
 ];
 
-const jamParagraphs = [
-  "Every Monday from 6:00–8:00 PM, we meet at the WiggelRuhm for a Contact Improvisation jam!",
-  "A time to explore connection, movement, and play through shared practice. All levels are welcome. Come as you are, move, listen, and follow curiosity in the body.",
-  "The Monday Jam is a recurring, community-led practice supported by a core group of ten space holders. They rotate weekly, bringing diverse perspectives while maintaining a consistent, grounded container.",
-  "The jam is sustained through community donations, which support the space and keep the offering accessible.",
-];
+
 
 export default async function JamPage() {
   const jamData = await fetchJamPage();
   const intro: string[] = jamData?.introParagraphs ?? introParagraphs;
-  const jam: string[] = jamData?.jamParagraphs ?? jamParagraphs;
 
   return (
     <>
@@ -82,47 +76,7 @@ export default async function JamPage() {
         </div>
       </section>
 
-      <section className="bg-card/30 px-6 py-24">
-        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1.1fr_0.9fr]">
-          <div>
-            <p className="text-sm uppercase tracking-[0.3em] text-warm">
-              Denver Contact Jam
-            </p>
-            <h2
-              className="mt-4 text-3xl font-bold text-foreground md:text-4xl"
-              style={{ fontFamily: "var(--font-playfair)" }}
-            >
-              Come dance with us.
-            </h2>
-            <div className="mt-8 space-y-5 leading-relaxed text-muted-foreground">
-              {jam.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
-            </div>
-          </div>
 
-          <aside className="rounded-[2rem] border border-warm/20 bg-card p-8 shadow-[0_24px_80px_rgba(58,37,24,0.08)]">
-            <p className="text-xs uppercase tracking-[0.3em] text-warm">
-              Jam Details
-            </p>
-            <div className="mt-6 space-y-5 text-muted-foreground">
-              <div>
-                <p className="font-medium text-foreground">Location</p>
-                <p>125 S. Sherman St.</p>
-                <p>Denver, CO</p>
-              </div>
-              <div>
-                <p className="font-medium text-foreground">Pay What You Can</p>
-                <p>We believe in accessibility. Contribute what you&apos;re able, no one turned away.</p>
-              </div>
-              <div>
-                <p className="font-medium text-foreground">Questions?</p>
-                <p>Denvercontactjam.com</p>
-              </div>
-            </div>
-          </aside>
-        </div>
-      </section>
     </>
   );
 }
