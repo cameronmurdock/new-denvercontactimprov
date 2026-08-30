@@ -35,6 +35,12 @@ export async function Footer() {
               Explore
             </p>
             <Link
+              href="/jam"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+            >
+              Monday Jam
+            </Link>
+            <Link
               href="/events"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
