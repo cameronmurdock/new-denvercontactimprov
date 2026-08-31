@@ -164,8 +164,8 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
               <Image
-                src={imagePath("/images/copy-of-purple-futuristic-modern-music-flyer-portrait.png")}
-                alt="The Art of Living contact improvisation series"
+                src={imagePath("/images/img-0482.jpg")}
+                alt="Two dancers in contact improvisation in an aspen forest"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -196,8 +196,11 @@ export default function Home() {
               <p className="text-sm text-muted-foreground mb-4">
                 The Savoy Denver &middot; 2700 Arapahoe St, Denver, CO 80205
               </p>
-              <p className="text-sm font-semibold uppercase tracking-wide text-warm mb-8">
+              <p className="text-sm font-semibold uppercase tracking-wide text-warm mb-1">
                 Early Bird &mdash; Sold Out
+              </p>
+              <p className="text-sm font-semibold text-foreground mb-8">
+                Only 2 spots left at regular pricing!
               </p>
               <Link
                 href="/events/art-of-living-aug-2026"
