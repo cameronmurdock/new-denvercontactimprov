@@ -163,11 +163,17 @@ export default function EventPage() {
               <p className="text-xs font-semibold uppercase tracking-wide text-warm">Sold Out</p>
             </div>
 
-            <div className="p-6 border border-warm/30 rounded-2xl bg-card ring-1 ring-warm/20">
+            <a
+              href="https://venmo.com/u/Michael-Bernal-333"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block p-6 border border-warm/30 rounded-2xl bg-card ring-1 ring-warm/20 hover:ring-2 hover:ring-warm transition-all"
+            >
               <p className="text-sm text-warm mb-1">Regular Registration</p>
               <p className="text-3xl font-bold text-foreground mb-1">$266</p>
               <p className="text-xs font-semibold text-foreground">Only 2 spots left!</p>
-            </div>
+              <p className="text-xs text-warm mt-2">Tap to pay via Venmo →</p>
+            </a>
           </div>
 
           <div className="space-y-4 text-sm text-muted-foreground">
@@ -194,9 +200,14 @@ export default function EventPage() {
             </h3>
             <p className="text-muted-foreground mb-2">
               Venmo:{" "}
-              <span className="text-warm font-medium">
+              <a
+                href="https://venmo.com/u/Michael-Bernal-333"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-warm font-medium hover:text-warm-light transition-colors"
+              >
                 @Michael-Bernal-333
-              </span>
+              </a>
             </p>
             <p className="text-muted-foreground mb-6">
               Instagram:{" "}

@@ -195,9 +195,14 @@ export default function EventPage() {
             </h3>
             <p className="text-muted-foreground mb-2">
               Venmo:{" "}
-              <span className="text-warm font-medium">
+              <a
+                href="https://venmo.com/u/Michael-Bernal-333"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-warm font-medium hover:text-warm-light transition-colors"
+              >
                 @Michael-Bernal-333
-              </span>
+              </a>
             </p>
             <p className="text-muted-foreground mb-6">
               Instagram:{" "}

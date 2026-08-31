@@ -178,7 +178,14 @@ export default function ContactPage() {
                 </p>
                 <p>
                   <span className="font-medium text-foreground">Venmo:</span>{" "}
-                  {contactInfo.venmo}
+                  <a
+                    href="https://venmo.com/u/Michael-Bernal-333"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-warm hover:text-warm-light transition-colors"
+                  >
+                    {contactInfo.venmo}
+                  </a>
                 </p>
               </div>
             </div>
