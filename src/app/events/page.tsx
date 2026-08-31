@@ -80,6 +80,16 @@ export default function EventsPage() {
                 {event.dates}
               </p>
               <p className="mt-2 text-muted-foreground">{event.schedule}</p>
+              {"earlyBirdSoldOut" in event && event.earlyBirdSoldOut && (
+                <p className="mt-6 text-sm font-semibold uppercase tracking-[0.2em] text-muted-foreground line-through">
+                  Early Bird — Sold Out
+                </p>
+              )}
+              {"spotsLeft" in event && event.spotsLeft && (
+                <p className="mt-1 text-sm font-semibold text-warm">
+                  {event.spotsLeft}
+                </p>
+              )}
               <p className="mt-6 leading-relaxed text-muted-foreground">
                 {event.description}
               </p>

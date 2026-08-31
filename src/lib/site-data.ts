@@ -20,6 +20,8 @@ export const upcomingEvents = [
     schedule: "6:15–8:45 PM",
     location: "Inca Collective · 855 Inca St, Denver, CO 80204",
     price: "$333 regular · $222 early bird (first 5)",
+    earlyBirdSoldOut: true,
+    spotsLeft: "Only 2 spots left at regular pricing!",
     description:
       "No experience needed. Come as you are and discover freedom, belonging, and play.",
     cta: "Reserve your spot",
