@@ -15,9 +15,9 @@ export const upcomingEvents = [
     slug: "art-of-living-aug-2026",
     type: "series",
     title: "The Art of Living",
-    subtitle: "A Four-Week Contact Improvisation Series with Michael Bernal",
-    dates: "Wednesdays Aug 5 – Sept 2, 2026",
-    schedule: "6:15–8:45 PM · *no class Aug 26",
+    subtitle: "A Contact Improvisation Series with Michael Bernal",
+    dates: "Wednesdays Sept 3 – Oct 1, 2025",
+    schedule: "6:15–8:45 PM · *no class Sept 24",
     location: "The Savoy Denver, 2700 Arapahoe St, Denver, CO 80205",
     price: "$333 regular · $222 early bird (first 5)",
     description:
