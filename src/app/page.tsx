@@ -20,8 +20,8 @@ export default function Home() {
         {/* Background image */}
         <div className="absolute inset-0">
           <Image
-            src={imagePath("/images/10-theartofliving-ci-041926-2-2.jpg")}
-            alt="Two dancers laughing and moving together in a Contact Improvisation class"
+            src={imagePath("/images/32-theartofliving-ci-041926-2.jpg")}
+            alt="A large circle of Contact Improvisation dancers with hands joined in the center"
             fill
             className="object-cover object-top"
             priority
