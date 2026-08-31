@@ -3,16 +3,16 @@ import Image from "next/image";
 import { imagePath } from "@/lib/paths";
 
 export const metadata: Metadata = {
-  title: "The Art of Living — Aug 2026 Contact Improv Series in Denver",
+  title: "The Art of Living — Sept 2025 Contact Improv Series in Denver",
   description:
-    "A Four-Week beginner-friendly Contact Improvisation Series with Michael Bernal. Wednesdays Aug 5 – Sept 2, 2026 at The Savoy Denver. No experience needed.",
+    "A Three-Week beginner-friendly Contact Improvisation Series with Michael Bernal. Wednesdays Sept 9 – Sept 23 at Inca Collective, Denver. No experience needed.",
   alternates: {
     canonical: "https://denvercontactimprov.com/events/art-of-living-aug-2026/",
   },
   openGraph: {
-    title: "The Art of Living — Aug 2026 Contact Improv Series",
+    title: "The Art of Living — Sept 2025 Contact Improv Series",
     description:
-      "Four-Week Contact Improvisation Series with Michael Bernal. Aug 5 – Sept 2, 2026 at The Savoy Denver.",
+      "Three-Week Contact Improvisation Series with Michael Bernal. Wednesdays Sept 9 – Sept 23 at Inca Collective, Denver.",
     url: "https://denvercontactimprov.com/events/art-of-living-aug-2026/",
   },
 };
@@ -52,8 +52,8 @@ export default function EventPage() {
       <section className="relative pt-24 pb-0 overflow-hidden">
         <div className="relative aspect-[21/9] max-h-[500px] w-full">
           <Image
-            src={imagePath("/images/copy-of-purple-futuristic-modern-music-flyer-portrait.png")}
-            alt="The Art of Living — A Four-Week Contact Improvisation Series"
+            src={imagePath("/images/img-0021.jpg")}
+            alt="Two dancers sharing weight in contact improvisation"
             fill
             className="object-cover object-top"
             priority
@@ -77,7 +77,7 @@ export default function EventPage() {
               The Art of Living
             </h1>
             <p className="text-lg text-muted-foreground mb-2">
-              A Four-Week Contact Improvisation Series with Michael Bernal
+              A Three-Week Contact Improvisation Series with Michael Bernal
             </p>
             <p className="italic text-muted-foreground mb-8">
               No experience needed. Come as you are and discover freedom,
@@ -91,11 +91,7 @@ export default function EventPage() {
                   Dates
                 </p>
                 <p className="text-sm font-medium text-foreground">
-                  Wednesdays Aug 5 &ndash; Sept 2, 2026
-                  <br />
-                  <span className="text-xs text-muted-foreground">
-                    *no class Aug 26
-                  </span>
+                  Wednesdays Sept 9 &ndash; Sept 23
                 </p>
               </div>
               <div className="p-4 bg-secondary/50 rounded-xl">
@@ -111,9 +107,9 @@ export default function EventPage() {
                   Location
                 </p>
                 <p className="text-sm font-medium text-foreground">
-                  The Savoy Denver
+                  Inca Collective
                   <br />
-                  2700 Arapahoe St, Denver, CO 80205
+                  855 Inca St, Denver, CO 80204
                 </p>
               </div>
               <div className="p-4 bg-secondary/50 rounded-xl">
@@ -161,22 +157,15 @@ export default function EventPage() {
           </h2>
 
           <div className="grid sm:grid-cols-2 gap-6 mb-10">
-            <div className="relative p-6 border border-warm/30 rounded-2xl bg-card opacity-75">
-              <span className="absolute right-4 top-4 rounded-full bg-warm/15 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-warm">
-                Sold Out
-              </span>
-              <p className="text-sm text-warm mb-1">Early Bird</p>
-              <p className="text-3xl font-bold text-foreground mb-1 line-through decoration-warm/60">
-                $222
-              </p>
-              <p className="text-xs text-muted-foreground">
-                First 5 to register &middot; Sold out
-              </p>
+            <div className="p-6 border border-warm/30 rounded-2xl bg-card ring-1 ring-warm/20">
+              <p className="text-sm text-warm mb-1">Early Bird (first 5)</p>
+              <p className="text-3xl font-bold text-foreground mb-1">$166</p>
+              <p className="text-xs text-muted-foreground">First 5 to register</p>
             </div>
 
             <div className="p-6 border border-warm/30 rounded-2xl bg-card ring-1 ring-warm/20">
               <p className="text-sm text-warm mb-1">Regular Registration</p>
-              <p className="text-3xl font-bold text-foreground mb-1">$333</p>
+              <p className="text-3xl font-bold text-foreground mb-1">$266</p>
               <p className="text-xs text-muted-foreground">Open enrollment</p>
             </div>
           </div>
@@ -275,8 +264,8 @@ export default function EventPage() {
         <div className="mx-auto max-w-md">
           <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src={imagePath("/images/copy-of-purple-futuristic-modern-music-flyer-portrait.png")}
-              alt="The Art of Living flyer"
+              src={imagePath("/images/img-0021.jpg")}
+              alt="Two dancers sharing weight in contact improvisation"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 448px"

@@ -17,8 +17,8 @@ export default function EventPage() {
       <section className="relative pt-24 pb-0 overflow-hidden">
         <div className="relative aspect-[21/9] max-h-[500px] w-full">
           <Image
-            src={imagePath("/images/event-banner.jpg")}
-            alt="Art of Living Round 11"
+            src={imagePath("/images/img-0021.jpg")}
+            alt="Two dancers sharing weight in contact improvisation"
             fill
             className="object-cover"
             priority
