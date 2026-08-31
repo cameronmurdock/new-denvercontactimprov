@@ -184,17 +184,17 @@ export default function Home() {
                 The Art of Living
               </h2>
               <h3 className="text-lg text-muted-foreground mb-4">
-                A Contact Improvisation Series with Michael Bernal
+                A Three-Week Contact Improvisation Series with Michael Bernal
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 No experience needed. Come as you are and discover freedom,
                 belonging, and play.
               </p>
               <p className="text-sm text-muted-foreground mb-2">
-                Wednesdays Sept 3 – Oct 1, 2025 &middot; 6:15–8:45 PM &middot; *no class Sept 24
+                Wednesdays Sept 9 – Sept 23 &middot; 6:15–8:45 PM
               </p>
               <p className="text-sm text-muted-foreground mb-4">
-                The Savoy Denver &middot; 2700 Arapahoe St, Denver, CO 80205
+                Inca Collective &middot; 855 Inca St, Denver, CO 80204
               </p>
               <p className="text-sm font-semibold uppercase tracking-wide text-warm mb-1">
                 Early Bird &mdash; Sold Out
