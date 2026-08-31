@@ -42,16 +42,13 @@ export default function ContactPage() {
             </p>
 
             <form
-              action="https://formspree.io/f/mpqoqzqr"
+              action="https://api.web3forms.com/submit"
               method="POST"
               className="mt-8 space-y-5"
             >
-              <input
-                type="hidden"
-                name="_subject"
-                value="Denver Contact Improv inquiry"
-              />
-              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="access_key" value="9e802dca-66a8-4cdd-b748-6bf8c9fa2191" />
+              <input type="hidden" name="subject" value="Denver Contact Improv — website inquiry" />
+              <input type="hidden" name="from_name" value="Denver Contact Improv website" />
 
               <label className="flex items-center justify-between rounded-2xl border border-border/50 bg-secondary/25 p-4">
                 <div className="pr-4">
@@ -134,7 +131,7 @@ export default function ContactPage() {
 
               <input
                 type="text"
-                name="website"
+                name="botcheck"
                 tabIndex={-1}
                 autoComplete="off"
                 aria-hidden="true"
