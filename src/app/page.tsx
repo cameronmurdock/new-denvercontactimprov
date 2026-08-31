@@ -20,12 +20,12 @@ export default function Home() {
         {/* Background image */}
         <div className="absolute inset-0">
           <Image
-            src={imagePath("/images/hero-main.jpg")}
-            alt="Denver Contact Improv community dancing"
+            src={imagePath("/images/10-theartofliving-ci-041926-2-2.jpg")}
+            alt="Two dancers laughing and moving together in a Contact Improvisation class"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             priority
-            sizes="100vw"
+            sizes="(max-width: 640px) 640px, (max-width: 1024px) 1024px, 1920px"
           />
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(234,223,205,0.78)_0%,rgba(234,223,205,0.62)_26%,rgba(33,26,22,0.38)_58%,rgba(234,223,205,0.92)_100%)]" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,248,239,0.22),transparent_40%)]" />
