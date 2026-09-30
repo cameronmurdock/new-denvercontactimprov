@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbList } from "@/lib/structured-data";
+import { sharedOpenGraph } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Blog — Articles About Contact Improvisation in Denver",
@@ -9,6 +12,7 @@ export const metadata: Metadata = {
     canonical: "https://denvercontactimprov.com/blog/",
   },
   openGraph: {
+    ...sharedOpenGraph,
     title: "Blog — Denver Contact Improv",
     description:
       "Articles about Contact Improvisation, movement practices, and the Denver Contact Improv community.",
@@ -29,6 +33,11 @@ const BLOG_POSTS = [
 export default function BlogPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbList([
+          { name: "Blog", path: "/blog/" },
+        ])}
+      />
       <section className="px-6 pb-16 pt-32">
         <div className="mx-auto max-w-4xl text-center">
           <p className="mb-4 text-sm uppercase tracking-[0.35em] text-warm">

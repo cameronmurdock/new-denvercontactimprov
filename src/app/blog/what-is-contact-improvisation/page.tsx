@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbList } from "@/lib/structured-data";
+import { sharedOpenGraph } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title:
@@ -10,6 +13,7 @@ export const metadata: Metadata = {
     canonical: "https://denvercontactimprov.com/blog/what-is-contact-improvisation/",
   },
   openGraph: {
+    ...sharedOpenGraph,
     title: "What is Contact Improvisation? A Beginner\u2019s Guide",
     description:
       "Contact Improvisation is a movement practice rooted in listening, touch, and shared physical awareness. Learn what to expect at classes and jams in Denver.",
@@ -43,6 +47,12 @@ const articleJsonLd = {
 export default function BlogPost() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbList([
+          { name: "Blog", path: "/blog/" },
+          { name: "What is Contact Improvisation?", path: "/blog/what-is-contact-improvisation/" },
+        ])}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}

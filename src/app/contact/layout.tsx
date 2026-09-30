@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbList } from "@/lib/structured-data";
+import { sharedOpenGraph } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Contact Us — Get in Touch with Denver Contact Improv",
@@ -8,6 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://denvercontactimprov.com/contact/",
   },
   openGraph: {
+    ...sharedOpenGraph,
     title: "Contact Us — Denver Contact Improv",
     description:
       "Get in touch with Denver Contact Improv. Ask questions or share feedback about our Contact Improvisation community.",
@@ -20,5 +24,10 @@ export default function ContactLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return children;
+  return (
+    <>
+      <JsonLd data={breadcrumbList([{ name: "Contact", path: "/contact/" }])} />
+      {children}
+    </>
+  );
 }

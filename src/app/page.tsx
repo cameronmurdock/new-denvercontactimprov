@@ -1,8 +1,16 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Testimonials } from "@/components/testimonials";
 
 import { imagePath } from "@/lib/paths";
+
+// Each page names its own canonical URL; the homepage's is the bare domain.
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "https://denvercontactimprov.com/",
+  },
+};
 
 const DESCRIPTION_PARAGRAPHS = [
   "In Denver, we gather to move, to listen with our bodies, to meet uncertainty with curiosity and care.",
@@ -41,25 +49,24 @@ export default function Home() {
               Join us for our next series: The Art of Living
             </Link>
           </div>
-          <h1
-            className="mb-2 animate-fade-up text-6xl font-bold tracking-tight md:text-7xl lg:text-8xl"
-            style={{
-              fontFamily: "var(--font-playfair)",
-              textShadow: "0 10px 28px rgba(255, 248, 239, 0.18)",
-            }}
-          >
-            <span className="text-foreground">DENVER</span>
+          {/* One heading for search engines and screen readers, set as two lines. */}
+          <h1 style={{ fontFamily: "var(--font-playfair)" }}>
+            <span
+              className="mb-2 block animate-fade-up text-6xl font-bold tracking-tight text-foreground md:text-7xl lg:text-8xl"
+              style={{ textShadow: "0 10px 28px rgba(255, 248, 239, 0.18)" }}
+            >
+              DENVER
+            </span>{" "}
+            <span
+              className="mb-8 block animate-fade-up text-5xl font-light text-warm md:text-6xl lg:text-7xl"
+              style={{
+                animationDelay: "0.1s",
+                textShadow: "0 10px 24px rgba(255, 248, 239, 0.14)",
+              }}
+            >
+              Contact Improv
+            </span>
           </h1>
-          <h2
-            className="mb-8 animate-fade-up text-5xl font-light text-warm md:text-6xl lg:text-7xl"
-            style={{
-              fontFamily: "var(--font-playfair)",
-              animationDelay: "0.1s",
-              textShadow: "0 10px 24px rgba(255, 248, 239, 0.14)",
-            }}
-          >
-            Contact Improv
-          </h2>
           <p
             className="mx-auto max-w-2xl animate-fade-up text-xl leading-relaxed text-foreground/88 md:text-2xl font-medium"
             style={{ animationDelay: "0.2s" }}

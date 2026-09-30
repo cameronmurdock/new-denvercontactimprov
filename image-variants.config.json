@@ -1,0 +1,18 @@
+{
+  "sourceDir": "public/images",
+  "outputDir": "public/images/optimized",
+  "publicSourcePrefix": "/images",
+  "publicOutputPrefix": "/images/optimized",
+  "manifestPath": "src/lib/image-manifest.json",
+  "sourceExtensions": [".jpg", ".jpeg", ".png", ".webp"],
+  "deviceSizes": [640, 828, 1200, 1920],
+  "imageSizes": [96, 256, 384],
+  "webpQuality": 72,
+  "openGraph": {
+    "source": "events-hero-bg.jpg",
+    "output": "og-default.jpg",
+    "width": 1200,
+    "height": 630,
+    "jpegQuality": 80
+  }
+}

@@ -1,16 +1,21 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { imagePath } from "@/lib/paths";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbList, eventSchema } from "@/lib/structured-data";
+import { upcomingEvents } from "@/lib/site-data";
+import { sharedOpenGraph } from "@/lib/metadata";
 
 export const metadata: Metadata = {
-  title: "The Art of Living — Sept 2025 Contact Improv Series in Denver",
+  title: "The Art of Living — Sept 2026 Contact Improv Series in Denver",
   description:
     "A Three-Week beginner-friendly Contact Improvisation Series with Michael Bernal. Wednesdays Sept 9 – Sept 23 at Inca Collective, Denver. No experience needed.",
   alternates: {
     canonical: "https://denvercontactimprov.com/events/art-of-living-aug-2026/",
   },
   openGraph: {
-    title: "The Art of Living — Sept 2025 Contact Improv Series",
+    ...sharedOpenGraph,
+    title: "The Art of Living — Sept 2026 Contact Improv Series",
     description:
       "Three-Week Contact Improvisation Series with Michael Bernal. Wednesdays Sept 9 – Sept 23 at Inca Collective, Denver.",
     url: "https://denvercontactimprov.com/events/art-of-living-aug-2026/",
@@ -45,9 +50,18 @@ const EVENT_TESTIMONIALS = [
   },
 ] as const;
 
+const SERIES = upcomingEvents.find((event) => event.slug === "art-of-living-aug-2026");
+
 export default function EventPage() {
   return (
     <>
+      {SERIES && <JsonLd data={eventSchema(SERIES)} />}
+      <JsonLd
+        data={breadcrumbList([
+          { name: "Events", path: "/events/" },
+          { name: "The Art of Living", path: "/events/art-of-living-aug-2026/" },
+        ])}
+      />
       {/* Hero */}
       <section className="relative pt-24 pb-0 overflow-hidden">
         <div className="relative aspect-[21/9] max-h-[500px] w-full">

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { imagePath } from "@/lib/paths";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbList } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "Art of Living Round 11 — Contact Improv Series in Denver",
@@ -14,6 +16,12 @@ export const metadata: Metadata = {
 export default function EventPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbList([
+          { name: "Events", path: "/events/" },
+          { name: "The Art of Living, Round 11", path: "/events/art-of-living-round-11/" },
+        ])}
+      />
       <section className="relative pt-24 pb-0 overflow-hidden">
         <div className="relative aspect-[21/9] max-h-[500px] w-full">
           <Image
