@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { contactInfo } from "@/lib/site-data";
 import { imagePath } from "@/lib/paths";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbList } from "@/lib/structured-data";
+import { sharedOpenGraph } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Mentorship — Contact Improvisation Mentorship with Michael Bernal",
@@ -12,6 +15,7 @@ export const metadata: Metadata = {
     canonical: "https://denvercontactimprov.com/mentor/",
   },
   openGraph: {
+    ...sharedOpenGraph,
     title: "Mentorship — Denver Contact Improv",
     description:
       "Personalized Contact Improvisation mentorship with Michael Bernal in Denver. Embody the art, refine your teaching, and grow.",
@@ -40,6 +44,11 @@ const forWho = [
 export default function MentorPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbList([
+          { name: "Mentorship", path: "/mentor/" },
+        ])}
+      />
       <section className="relative overflow-hidden px-6 pb-20 pt-32">
         <div className="absolute inset-x-0 top-0 h-80 bg-[radial-gradient(circle_at_top,_rgba(170,108,69,0.22),_transparent_55%)]" />
         <div className="relative mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-center">

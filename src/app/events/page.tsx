@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { upcomingEvents } from "@/lib/site-data";
 import { imagePath } from "@/lib/paths";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbList, eventSchema } from "@/lib/structured-data";
+import { sharedOpenGraph } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Events — Contact Improv Classes, Workshops & Jams in Denver",
@@ -12,6 +15,7 @@ export const metadata: Metadata = {
     canonical: "https://denvercontactimprov.com/events/",
   },
   openGraph: {
+    ...sharedOpenGraph,
     title: "Events — Denver Contact Improv",
     description:
       "Upcoming Contact Improvisation classes, workshops, jams, and immersive offerings in Denver, CO.",
@@ -22,6 +26,14 @@ export const metadata: Metadata = {
 export default function EventsPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbList([
+          { name: "Events", path: "/events/" },
+        ])}
+      />
+      {upcomingEvents.map((event) => (
+        <JsonLd key={event.slug} data={eventSchema(event)} />
+      ))}
       <section className="relative overflow-hidden px-6 pb-20 pt-32">
         <div className="absolute inset-0">
           <Image

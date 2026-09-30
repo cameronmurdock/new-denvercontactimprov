@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbList } from "@/lib/structured-data";
+import { sharedOpenGraph } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "FAQ — Frequently Asked Questions About Contact Improvisation",
@@ -8,6 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://denvercontactimprov.com/faq/",
   },
   openGraph: {
+    ...sharedOpenGraph,
     title: "FAQ — Denver Contact Improv",
     description:
       "Frequently asked questions about Contact Improvisation classes, jams, and community events in Denver.",
@@ -84,6 +88,11 @@ const faqJsonLd = {
 export default function FAQPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbList([
+          { name: "FAQ", path: "/faq/" },
+        ])}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}

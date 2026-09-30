@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbList } from "@/lib/structured-data";
+import { sharedOpenGraph } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Contact Improv Jam — Weekly Contact Improvisation Jam in Denver",
@@ -8,6 +11,7 @@ export const metadata: Metadata = {
     canonical: "https://denvercontactimprov.com/jam/",
   },
   openGraph: {
+    ...sharedOpenGraph,
     title: "Contact Improv Jam — Denver Contact Improv",
     description:
       "Weekly Contact Improvisation jam in Denver. A shared space for spontaneous movement and community connection.",
@@ -28,14 +32,19 @@ export default async function JamPage() {
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbList([
+          { name: "Jam", path: "/jam/" },
+        ])}
+      />
       <section className="px-6 py-24">
         <div className="mx-auto max-w-5xl">
-          <h2
+          <h1
             className="text-3xl font-bold text-foreground md:text-4xl"
             style={{ fontFamily: "var(--font-playfair)" }}
           >
             What is a contact improvisation jam?
-          </h2>
+          </h1>
           <div className="mt-8 space-y-5 text-lg leading-relaxed text-muted-foreground">
             {intro.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>

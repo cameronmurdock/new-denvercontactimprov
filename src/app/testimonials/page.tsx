@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { imagePath } from "@/lib/paths";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbList } from "@/lib/structured-data";
+import { sharedOpenGraph } from "@/lib/metadata";
 
 const TESTIMONIALS = [
   {
@@ -78,6 +81,7 @@ export const metadata: Metadata = {
     canonical: "https://denvercontactimprov.com/testimonials/",
   },
   openGraph: {
+    ...sharedOpenGraph,
     title: "Testimonials — Denver Contact Improv",
     description:
       "Hear from our community about their experiences with Contact Improvisation classes and jams in Denver.",
@@ -88,6 +92,11 @@ export const metadata: Metadata = {
 export default function TestimonialsPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbList([
+          { name: "Testimonials", path: "/testimonials/" },
+        ])}
+      />
       <section className="px-6 pb-16 pt-32">
         <div className="mx-auto max-w-4xl text-center">
           <p className="mb-4 text-sm uppercase tracking-[0.35em] text-warm">

@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { guidelineSections } from "@/lib/site-data";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbList } from "@/lib/structured-data";
+import { sharedOpenGraph } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Community Guidelines — Consent, Safety & Inclusion",
@@ -9,6 +12,7 @@ export const metadata: Metadata = {
     canonical: "https://denvercontactimprov.com/guidelines/",
   },
   openGraph: {
+    ...sharedOpenGraph,
     title: "Community Guidelines — Denver Contact Improv",
     description:
       "Our principles of consent, safety, inclusion, and collective care for a supportive Contact Improvisation community.",
@@ -19,6 +23,11 @@ export const metadata: Metadata = {
 export default function GuidelinesPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbList([
+          { name: "Guidelines", path: "/guidelines/" },
+        ])}
+      />
       <section className="px-6 pb-16 pt-32">
         <div className="mx-auto max-w-4xl text-center">
           <p className="mb-4 text-sm uppercase tracking-[0.35em] text-warm">

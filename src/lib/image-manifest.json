@@ -1,0 +1,532 @@
+{
+  "socialImage": "/images/optimized/og-default.a76c11de.jpg",
+  "images": {
+    "/images/10-theartofliving-ci-041926-2-2.jpg": {
+      "width": 3600,
+      "height": 2400,
+      "variants": {
+        "96": "/images/optimized/10-theartofliving-ci-041926-2-2.d4f17968-96.webp",
+        "256": "/images/optimized/10-theartofliving-ci-041926-2-2.d4f17968-256.webp",
+        "384": "/images/optimized/10-theartofliving-ci-041926-2-2.d4f17968-384.webp",
+        "640": "/images/optimized/10-theartofliving-ci-041926-2-2.d4f17968-640.webp",
+        "828": "/images/optimized/10-theartofliving-ci-041926-2-2.d4f17968-828.webp",
+        "1200": "/images/optimized/10-theartofliving-ci-041926-2-2.d4f17968-1200.webp",
+        "1920": "/images/optimized/10-theartofliving-ci-041926-2-2.d4f17968-1920.webp"
+      }
+    },
+    "/images/32-theartofliving-ci-041926-2.jpg": {
+      "width": 3600,
+      "height": 2400,
+      "variants": {
+        "96": "/images/optimized/32-theartofliving-ci-041926-2.ec27731b-96.webp",
+        "256": "/images/optimized/32-theartofliving-ci-041926-2.ec27731b-256.webp",
+        "384": "/images/optimized/32-theartofliving-ci-041926-2.ec27731b-384.webp",
+        "640": "/images/optimized/32-theartofliving-ci-041926-2.ec27731b-640.webp",
+        "828": "/images/optimized/32-theartofliving-ci-041926-2.ec27731b-828.webp",
+        "1200": "/images/optimized/32-theartofliving-ci-041926-2.ec27731b-1200.webp",
+        "1920": "/images/optimized/32-theartofliving-ci-041926-2.ec27731b-1920.webp"
+      }
+    },
+    "/images/about-1.jpg": {
+      "width": 3600,
+      "height": 2400,
+      "variants": {
+        "96": "/images/optimized/about-1.9025cd54-96.webp",
+        "256": "/images/optimized/about-1.9025cd54-256.webp",
+        "384": "/images/optimized/about-1.9025cd54-384.webp",
+        "640": "/images/optimized/about-1.9025cd54-640.webp",
+        "828": "/images/optimized/about-1.9025cd54-828.webp",
+        "1200": "/images/optimized/about-1.9025cd54-1200.webp",
+        "1920": "/images/optimized/about-1.9025cd54-1920.webp"
+      }
+    },
+    "/images/about-2.jpg": {
+      "width": 3600,
+      "height": 2400,
+      "variants": {
+        "96": "/images/optimized/about-2.d166528a-96.webp",
+        "256": "/images/optimized/about-2.d166528a-256.webp",
+        "384": "/images/optimized/about-2.d166528a-384.webp",
+        "640": "/images/optimized/about-2.d166528a-640.webp",
+        "828": "/images/optimized/about-2.d166528a-828.webp",
+        "1200": "/images/optimized/about-2.d166528a-1200.webp",
+        "1920": "/images/optimized/about-2.d166528a-1920.webp"
+      }
+    },
+    "/images/about-3.jpg": {
+      "width": 1068,
+      "height": 1600,
+      "variants": {
+        "96": "/images/optimized/about-3.4691b5eb-96.webp",
+        "256": "/images/optimized/about-3.4691b5eb-256.webp",
+        "384": "/images/optimized/about-3.4691b5eb-384.webp",
+        "640": "/images/optimized/about-3.4691b5eb-640.webp",
+        "828": "/images/optimized/about-3.4691b5eb-828.webp",
+        "1068": "/images/optimized/about-3.4691b5eb-1068.webp"
+      }
+    },
+    "/images/about-group.jpg": {
+      "width": 1024,
+      "height": 682,
+      "variants": {
+        "96": "/images/optimized/about-group.6f5464aa-96.webp",
+        "256": "/images/optimized/about-group.6f5464aa-256.webp",
+        "384": "/images/optimized/about-group.6f5464aa-384.webp",
+        "640": "/images/optimized/about-group.6f5464aa-640.webp",
+        "828": "/images/optimized/about-group.6f5464aa-828.webp",
+        "1024": "/images/optimized/about-group.6f5464aa-1024.webp"
+      }
+    },
+    "/images/about-hands.jpg": {
+      "width": 3381,
+      "height": 4706,
+      "variants": {
+        "96": "/images/optimized/about-hands.90b1b455-96.webp",
+        "256": "/images/optimized/about-hands.90b1b455-256.webp",
+        "384": "/images/optimized/about-hands.90b1b455-384.webp",
+        "640": "/images/optimized/about-hands.90b1b455-640.webp",
+        "828": "/images/optimized/about-hands.90b1b455-828.webp",
+        "1200": "/images/optimized/about-hands.90b1b455-1200.webp",
+        "1920": "/images/optimized/about-hands.90b1b455-1920.webp"
+      }
+    },
+    "/images/anniversary-jam-flyer.jpg": {
+      "width": 2550,
+      "height": 3300,
+      "variants": {
+        "96": "/images/optimized/anniversary-jam-flyer.65df5303-96.webp",
+        "256": "/images/optimized/anniversary-jam-flyer.65df5303-256.webp",
+        "384": "/images/optimized/anniversary-jam-flyer.65df5303-384.webp",
+        "640": "/images/optimized/anniversary-jam-flyer.65df5303-640.webp",
+        "828": "/images/optimized/anniversary-jam-flyer.65df5303-828.webp",
+        "1200": "/images/optimized/anniversary-jam-flyer.65df5303-1200.webp",
+        "1920": "/images/optimized/anniversary-jam-flyer.65df5303-1920.webp"
+      }
+    },
+    "/images/art-of-living-aug-flyer.png": {
+      "width": 1545,
+      "height": 2000,
+      "variants": {
+        "96": "/images/optimized/art-of-living-aug-flyer.e1d3bfb7-96.webp",
+        "256": "/images/optimized/art-of-living-aug-flyer.e1d3bfb7-256.webp",
+        "384": "/images/optimized/art-of-living-aug-flyer.e1d3bfb7-384.webp",
+        "640": "/images/optimized/art-of-living-aug-flyer.e1d3bfb7-640.webp",
+        "828": "/images/optimized/art-of-living-aug-flyer.e1d3bfb7-828.webp",
+        "1200": "/images/optimized/art-of-living-aug-flyer.e1d3bfb7-1200.webp",
+        "1545": "/images/optimized/art-of-living-aug-flyer.e1d3bfb7-1545.webp"
+      }
+    },
+    "/images/art-of-living-featured.jpg": {
+      "width": 3600,
+      "height": 2400,
+      "variants": {
+        "96": "/images/optimized/art-of-living-featured.b7ad367a-96.webp",
+        "256": "/images/optimized/art-of-living-featured.b7ad367a-256.webp",
+        "384": "/images/optimized/art-of-living-featured.b7ad367a-384.webp",
+        "640": "/images/optimized/art-of-living-featured.b7ad367a-640.webp",
+        "828": "/images/optimized/art-of-living-featured.b7ad367a-828.webp",
+        "1200": "/images/optimized/art-of-living-featured.b7ad367a-1200.webp",
+        "1920": "/images/optimized/art-of-living-featured.b7ad367a-1920.webp"
+      }
+    },
+    "/images/art-of-living-flyer.jpg": {
+      "width": 1545,
+      "height": 1999,
+      "variants": {
+        "96": "/images/optimized/art-of-living-flyer.b2bc110d-96.webp",
+        "256": "/images/optimized/art-of-living-flyer.b2bc110d-256.webp",
+        "384": "/images/optimized/art-of-living-flyer.b2bc110d-384.webp",
+        "640": "/images/optimized/art-of-living-flyer.b2bc110d-640.webp",
+        "828": "/images/optimized/art-of-living-flyer.b2bc110d-828.webp",
+        "1200": "/images/optimized/art-of-living-flyer.b2bc110d-1200.webp",
+        "1545": "/images/optimized/art-of-living-flyer.b2bc110d-1545.webp"
+      }
+    },
+    "/images/art-of-living-round-13-flyer.jpg": {
+      "width": 1545,
+      "height": 2000,
+      "variants": {
+        "96": "/images/optimized/art-of-living-round-13-flyer.44e826a6-96.webp",
+        "256": "/images/optimized/art-of-living-round-13-flyer.44e826a6-256.webp",
+        "384": "/images/optimized/art-of-living-round-13-flyer.44e826a6-384.webp",
+        "640": "/images/optimized/art-of-living-round-13-flyer.44e826a6-640.webp",
+        "828": "/images/optimized/art-of-living-round-13-flyer.44e826a6-828.webp",
+        "1200": "/images/optimized/art-of-living-round-13-flyer.44e826a6-1200.webp",
+        "1545": "/images/optimized/art-of-living-round-13-flyer.44e826a6-1545.webp"
+      }
+    },
+    "/images/copy-of-purple-futuristic-modern-music-flyer-portrait.png": {
+      "width": 1545,
+      "height": 2000,
+      "variants": {
+        "96": "/images/optimized/copy-of-purple-futuristic-modern-music-flyer-portrait.72766d05-96.webp",
+        "256": "/images/optimized/copy-of-purple-futuristic-modern-music-flyer-portrait.72766d05-256.webp",
+        "384": "/images/optimized/copy-of-purple-futuristic-modern-music-flyer-portrait.72766d05-384.webp",
+        "640": "/images/optimized/copy-of-purple-futuristic-modern-music-flyer-portrait.72766d05-640.webp",
+        "828": "/images/optimized/copy-of-purple-futuristic-modern-music-flyer-portrait.72766d05-828.webp",
+        "1200": "/images/optimized/copy-of-purple-futuristic-modern-music-flyer-portrait.72766d05-1200.webp",
+        "1545": "/images/optimized/copy-of-purple-futuristic-modern-music-flyer-portrait.72766d05-1545.webp"
+      }
+    },
+    "/images/courtney-cauthon.jpg": {
+      "width": 1600,
+      "height": 1066,
+      "variants": {
+        "96": "/images/optimized/courtney-cauthon.39e59181-96.webp",
+        "256": "/images/optimized/courtney-cauthon.39e59181-256.webp",
+        "384": "/images/optimized/courtney-cauthon.39e59181-384.webp",
+        "640": "/images/optimized/courtney-cauthon.39e59181-640.webp",
+        "828": "/images/optimized/courtney-cauthon.39e59181-828.webp",
+        "1200": "/images/optimized/courtney-cauthon.39e59181-1200.webp",
+        "1600": "/images/optimized/courtney-cauthon.39e59181-1600.webp"
+      }
+    },
+    "/images/event-banner.jpg": {
+      "width": 2304,
+      "height": 1536,
+      "variants": {
+        "96": "/images/optimized/event-banner.b0415cf2-96.webp",
+        "256": "/images/optimized/event-banner.b0415cf2-256.webp",
+        "384": "/images/optimized/event-banner.b0415cf2-384.webp",
+        "640": "/images/optimized/event-banner.b0415cf2-640.webp",
+        "828": "/images/optimized/event-banner.b0415cf2-828.webp",
+        "1200": "/images/optimized/event-banner.b0415cf2-1200.webp",
+        "1920": "/images/optimized/event-banner.b0415cf2-1920.webp"
+      }
+    },
+    "/images/events-hero-bg.jpg": {
+      "width": 3600,
+      "height": 2400,
+      "variants": {
+        "96": "/images/optimized/events-hero-bg.a76c11de-96.webp",
+        "256": "/images/optimized/events-hero-bg.a76c11de-256.webp",
+        "384": "/images/optimized/events-hero-bg.a76c11de-384.webp",
+        "640": "/images/optimized/events-hero-bg.a76c11de-640.webp",
+        "828": "/images/optimized/events-hero-bg.a76c11de-828.webp",
+        "1200": "/images/optimized/events-hero-bg.a76c11de-1200.webp",
+        "1920": "/images/optimized/events-hero-bg.a76c11de-1920.webp"
+      }
+    },
+    "/images/featured-jam.jpg": {
+      "width": 3600,
+      "height": 2400,
+      "variants": {
+        "96": "/images/optimized/featured-jam.b7ad367a-96.webp",
+        "256": "/images/optimized/featured-jam.b7ad367a-256.webp",
+        "384": "/images/optimized/featured-jam.b7ad367a-384.webp",
+        "640": "/images/optimized/featured-jam.b7ad367a-640.webp",
+        "828": "/images/optimized/featured-jam.b7ad367a-828.webp",
+        "1200": "/images/optimized/featured-jam.b7ad367a-1200.webp",
+        "1920": "/images/optimized/featured-jam.b7ad367a-1920.webp"
+      }
+    },
+    "/images/hero-cutout.png": {
+      "width": 2048,
+      "height": 1278,
+      "variants": {
+        "96": "/images/optimized/hero-cutout.776f46ad-96.webp",
+        "256": "/images/optimized/hero-cutout.776f46ad-256.webp",
+        "384": "/images/optimized/hero-cutout.776f46ad-384.webp",
+        "640": "/images/optimized/hero-cutout.776f46ad-640.webp",
+        "828": "/images/optimized/hero-cutout.776f46ad-828.webp",
+        "1200": "/images/optimized/hero-cutout.776f46ad-1200.webp",
+        "1920": "/images/optimized/hero-cutout.776f46ad-1920.webp"
+      }
+    },
+    "/images/hero-main.jpg": {
+      "width": 3600,
+      "height": 2400,
+      "variants": {
+        "96": "/images/optimized/hero-main.66d7955c-96.webp",
+        "256": "/images/optimized/hero-main.66d7955c-256.webp",
+        "384": "/images/optimized/hero-main.66d7955c-384.webp",
+        "640": "/images/optimized/hero-main.66d7955c-640.webp",
+        "828": "/images/optimized/hero-main.66d7955c-828.webp",
+        "1200": "/images/optimized/hero-main.66d7955c-1200.webp",
+        "1920": "/images/optimized/hero-main.66d7955c-1920.webp"
+      }
+    },
+    "/images/hero-mobile.png": {
+      "width": 1347,
+      "height": 2396,
+      "variants": {
+        "96": "/images/optimized/hero-mobile.d8464d74-96.webp",
+        "256": "/images/optimized/hero-mobile.d8464d74-256.webp",
+        "384": "/images/optimized/hero-mobile.d8464d74-384.webp",
+        "640": "/images/optimized/hero-mobile.d8464d74-640.webp",
+        "828": "/images/optimized/hero-mobile.d8464d74-828.webp",
+        "1200": "/images/optimized/hero-mobile.d8464d74-1200.webp",
+        "1347": "/images/optimized/hero-mobile.d8464d74-1347.webp"
+      }
+    },
+    "/images/img-0021.jpg": {
+      "width": 2304,
+      "height": 1536,
+      "variants": {
+        "96": "/images/optimized/img-0021.d548762c-96.webp",
+        "256": "/images/optimized/img-0021.d548762c-256.webp",
+        "384": "/images/optimized/img-0021.d548762c-384.webp",
+        "640": "/images/optimized/img-0021.d548762c-640.webp",
+        "828": "/images/optimized/img-0021.d548762c-828.webp",
+        "1200": "/images/optimized/img-0021.d548762c-1200.webp",
+        "1920": "/images/optimized/img-0021.d548762c-1920.webp"
+      }
+    },
+    "/images/img-0482.jpg": {
+      "width": 6000,
+      "height": 4000,
+      "variants": {
+        "96": "/images/optimized/img-0482.a054487a-96.webp",
+        "256": "/images/optimized/img-0482.a054487a-256.webp",
+        "384": "/images/optimized/img-0482.a054487a-384.webp",
+        "640": "/images/optimized/img-0482.a054487a-640.webp",
+        "828": "/images/optimized/img-0482.a054487a-828.webp",
+        "1200": "/images/optimized/img-0482.a054487a-1200.webp",
+        "1920": "/images/optimized/img-0482.a054487a-1920.webp"
+      }
+    },
+    "/images/landing-dance-duo.jpg": {
+      "width": 3600,
+      "height": 2400,
+      "variants": {
+        "96": "/images/optimized/landing-dance-duo.2bb39e51-96.webp",
+        "256": "/images/optimized/landing-dance-duo.2bb39e51-256.webp",
+        "384": "/images/optimized/landing-dance-duo.2bb39e51-384.webp",
+        "640": "/images/optimized/landing-dance-duo.2bb39e51-640.webp",
+        "828": "/images/optimized/landing-dance-duo.2bb39e51-828.webp",
+        "1200": "/images/optimized/landing-dance-duo.2bb39e51-1200.webp",
+        "1920": "/images/optimized/landing-dance-duo.2bb39e51-1920.webp"
+      }
+    },
+    "/images/landing-group.jpg": {
+      "width": 3600,
+      "height": 2400,
+      "variants": {
+        "96": "/images/optimized/landing-group.522e7247-96.webp",
+        "256": "/images/optimized/landing-group.522e7247-256.webp",
+        "384": "/images/optimized/landing-group.522e7247-384.webp",
+        "640": "/images/optimized/landing-group.522e7247-640.webp",
+        "828": "/images/optimized/landing-group.522e7247-828.webp",
+        "1200": "/images/optimized/landing-group.522e7247-1200.webp",
+        "1920": "/images/optimized/landing-group.522e7247-1920.webp"
+      }
+    },
+    "/images/landing-hands-circle.jpg": {
+      "width": 3600,
+      "height": 2400,
+      "variants": {
+        "96": "/images/optimized/landing-hands-circle.4227e0db-96.webp",
+        "256": "/images/optimized/landing-hands-circle.4227e0db-256.webp",
+        "384": "/images/optimized/landing-hands-circle.4227e0db-384.webp",
+        "640": "/images/optimized/landing-hands-circle.4227e0db-640.webp",
+        "828": "/images/optimized/landing-hands-circle.4227e0db-828.webp",
+        "1200": "/images/optimized/landing-hands-circle.4227e0db-1200.webp",
+        "1920": "/images/optimized/landing-hands-circle.4227e0db-1920.webp"
+      }
+    },
+    "/images/mentorship-forest-1.jpg": {
+      "width": 2304,
+      "height": 1536,
+      "variants": {
+        "96": "/images/optimized/mentorship-forest-1.d548762c-96.webp",
+        "256": "/images/optimized/mentorship-forest-1.d548762c-256.webp",
+        "384": "/images/optimized/mentorship-forest-1.d548762c-384.webp",
+        "640": "/images/optimized/mentorship-forest-1.d548762c-640.webp",
+        "828": "/images/optimized/mentorship-forest-1.d548762c-828.webp",
+        "1200": "/images/optimized/mentorship-forest-1.d548762c-1200.webp",
+        "1920": "/images/optimized/mentorship-forest-1.d548762c-1920.webp"
+      }
+    },
+    "/images/mentorship-forest-2.jpg": {
+      "width": 6000,
+      "height": 4000,
+      "variants": {
+        "96": "/images/optimized/mentorship-forest-2.767f62e2-96.webp",
+        "256": "/images/optimized/mentorship-forest-2.767f62e2-256.webp",
+        "384": "/images/optimized/mentorship-forest-2.767f62e2-384.webp",
+        "640": "/images/optimized/mentorship-forest-2.767f62e2-640.webp",
+        "828": "/images/optimized/mentorship-forest-2.767f62e2-828.webp",
+        "1200": "/images/optimized/mentorship-forest-2.767f62e2-1200.webp",
+        "1920": "/images/optimized/mentorship-forest-2.767f62e2-1920.webp"
+      }
+    },
+    "/images/mentorship-forest-3.jpg": {
+      "width": 6000,
+      "height": 4000,
+      "variants": {
+        "96": "/images/optimized/mentorship-forest-3.a054487a-96.webp",
+        "256": "/images/optimized/mentorship-forest-3.a054487a-256.webp",
+        "384": "/images/optimized/mentorship-forest-3.a054487a-384.webp",
+        "640": "/images/optimized/mentorship-forest-3.a054487a-640.webp",
+        "828": "/images/optimized/mentorship-forest-3.a054487a-828.webp",
+        "1200": "/images/optimized/mentorship-forest-3.a054487a-1200.webp",
+        "1920": "/images/optimized/mentorship-forest-3.a054487a-1920.webp"
+      }
+    },
+    "/images/mentorship.jpg": {
+      "width": 6440,
+      "height": 5152,
+      "variants": {
+        "96": "/images/optimized/mentorship.47df269a-96.webp",
+        "256": "/images/optimized/mentorship.47df269a-256.webp",
+        "384": "/images/optimized/mentorship.47df269a-384.webp",
+        "640": "/images/optimized/mentorship.47df269a-640.webp",
+        "828": "/images/optimized/mentorship.47df269a-828.webp",
+        "1200": "/images/optimized/mentorship.47df269a-1200.webp",
+        "1920": "/images/optimized/mentorship.47df269a-1920.webp"
+      }
+    },
+    "/images/testimonial-adam.jpg": {
+      "width": 208,
+      "height": 207,
+      "variants": {
+        "96": "/images/optimized/testimonial-adam.e46548cd-96.webp",
+        "208": "/images/optimized/testimonial-adam.e46548cd-208.webp"
+      }
+    },
+    "/images/testimonial-amy.jpg": {
+      "width": 513,
+      "height": 514,
+      "variants": {
+        "96": "/images/optimized/testimonial-amy.bbbfc8e3-96.webp",
+        "256": "/images/optimized/testimonial-amy.bbbfc8e3-256.webp",
+        "384": "/images/optimized/testimonial-amy.bbbfc8e3-384.webp",
+        "513": "/images/optimized/testimonial-amy.bbbfc8e3-513.webp"
+      }
+    },
+    "/images/testimonial-anastasia.jpg": {
+      "width": 345,
+      "height": 345,
+      "variants": {
+        "96": "/images/optimized/testimonial-anastasia.603e48c3-96.webp",
+        "256": "/images/optimized/testimonial-anastasia.603e48c3-256.webp",
+        "345": "/images/optimized/testimonial-anastasia.603e48c3-345.webp"
+      }
+    },
+    "/images/testimonial-ashley.jpg": {
+      "width": 1066,
+      "height": 1600,
+      "variants": {
+        "96": "/images/optimized/testimonial-ashley.5ce49bcc-96.webp",
+        "256": "/images/optimized/testimonial-ashley.5ce49bcc-256.webp",
+        "384": "/images/optimized/testimonial-ashley.5ce49bcc-384.webp",
+        "640": "/images/optimized/testimonial-ashley.5ce49bcc-640.webp",
+        "828": "/images/optimized/testimonial-ashley.5ce49bcc-828.webp",
+        "1066": "/images/optimized/testimonial-ashley.5ce49bcc-1066.webp"
+      }
+    },
+    "/images/testimonial-austin.jpg": {
+      "width": 1166,
+      "height": 1202,
+      "variants": {
+        "96": "/images/optimized/testimonial-austin.e229a1f1-96.webp",
+        "256": "/images/optimized/testimonial-austin.e229a1f1-256.webp",
+        "384": "/images/optimized/testimonial-austin.e229a1f1-384.webp",
+        "640": "/images/optimized/testimonial-austin.e229a1f1-640.webp",
+        "828": "/images/optimized/testimonial-austin.e229a1f1-828.webp",
+        "1166": "/images/optimized/testimonial-austin.e229a1f1-1166.webp"
+      }
+    },
+    "/images/testimonial-brooke.jpg": {
+      "width": 1179,
+      "height": 786,
+      "variants": {
+        "96": "/images/optimized/testimonial-brooke.4f78fe77-96.webp",
+        "256": "/images/optimized/testimonial-brooke.4f78fe77-256.webp",
+        "384": "/images/optimized/testimonial-brooke.4f78fe77-384.webp",
+        "640": "/images/optimized/testimonial-brooke.4f78fe77-640.webp",
+        "828": "/images/optimized/testimonial-brooke.4f78fe77-828.webp",
+        "1179": "/images/optimized/testimonial-brooke.4f78fe77-1179.webp"
+      }
+    },
+    "/images/testimonial-gabrielle.jpg": {
+      "width": 1876,
+      "height": 2083,
+      "variants": {
+        "96": "/images/optimized/testimonial-gabrielle.1a91c6eb-96.webp",
+        "256": "/images/optimized/testimonial-gabrielle.1a91c6eb-256.webp",
+        "384": "/images/optimized/testimonial-gabrielle.1a91c6eb-384.webp",
+        "640": "/images/optimized/testimonial-gabrielle.1a91c6eb-640.webp",
+        "828": "/images/optimized/testimonial-gabrielle.1a91c6eb-828.webp",
+        "1200": "/images/optimized/testimonial-gabrielle.1a91c6eb-1200.webp",
+        "1876": "/images/optimized/testimonial-gabrielle.1a91c6eb-1876.webp"
+      }
+    },
+    "/images/testimonial-heidi.jpg": {
+      "width": 1200,
+      "height": 1200,
+      "variants": {
+        "96": "/images/optimized/testimonial-heidi.5029ac1d-96.webp",
+        "256": "/images/optimized/testimonial-heidi.5029ac1d-256.webp",
+        "384": "/images/optimized/testimonial-heidi.5029ac1d-384.webp",
+        "640": "/images/optimized/testimonial-heidi.5029ac1d-640.webp",
+        "828": "/images/optimized/testimonial-heidi.5029ac1d-828.webp",
+        "1200": "/images/optimized/testimonial-heidi.5029ac1d-1200.webp"
+      }
+    },
+    "/images/testimonial-karina.jpg": {
+      "width": 761,
+      "height": 707,
+      "variants": {
+        "96": "/images/optimized/testimonial-karina.b34e9dc8-96.webp",
+        "256": "/images/optimized/testimonial-karina.b34e9dc8-256.webp",
+        "384": "/images/optimized/testimonial-karina.b34e9dc8-384.webp",
+        "640": "/images/optimized/testimonial-karina.b34e9dc8-640.webp",
+        "761": "/images/optimized/testimonial-karina.b34e9dc8-761.webp"
+      }
+    },
+    "/images/testimonial-matt.jpg": {
+      "width": 269,
+      "height": 269,
+      "variants": {
+        "96": "/images/optimized/testimonial-matt.14a716f4-96.webp",
+        "256": "/images/optimized/testimonial-matt.14a716f4-256.webp",
+        "269": "/images/optimized/testimonial-matt.14a716f4-269.webp"
+      }
+    },
+    "/images/testimonial-megan.jpg": {
+      "width": 782,
+      "height": 836,
+      "variants": {
+        "96": "/images/optimized/testimonial-megan.42d305f4-96.webp",
+        "256": "/images/optimized/testimonial-megan.42d305f4-256.webp",
+        "384": "/images/optimized/testimonial-megan.42d305f4-384.webp",
+        "640": "/images/optimized/testimonial-megan.42d305f4-640.webp",
+        "782": "/images/optimized/testimonial-megan.42d305f4-782.webp"
+      }
+    },
+    "/images/testimonial-nick.jpg": {
+      "width": 618,
+      "height": 618,
+      "variants": {
+        "96": "/images/optimized/testimonial-nick.c6d40017-96.webp",
+        "256": "/images/optimized/testimonial-nick.c6d40017-256.webp",
+        "384": "/images/optimized/testimonial-nick.c6d40017-384.webp",
+        "618": "/images/optimized/testimonial-nick.c6d40017-618.webp"
+      }
+    },
+    "/images/testimonial-ryan.jpg": {
+      "width": 649,
+      "height": 648,
+      "variants": {
+        "96": "/images/optimized/testimonial-ryan.c37d6492-96.webp",
+        "256": "/images/optimized/testimonial-ryan.c37d6492-256.webp",
+        "384": "/images/optimized/testimonial-ryan.c37d6492-384.webp",
+        "640": "/images/optimized/testimonial-ryan.c37d6492-640.webp",
+        "649": "/images/optimized/testimonial-ryan.c37d6492-649.webp"
+      }
+    },
+    "/images/venmo-qr.jpg": {
+      "width": 1080,
+      "height": 679,
+      "variants": {
+        "96": "/images/optimized/venmo-qr.67924ed3-96.webp",
+        "256": "/images/optimized/venmo-qr.67924ed3-256.webp",
+        "384": "/images/optimized/venmo-qr.67924ed3-384.webp",
+        "640": "/images/optimized/venmo-qr.67924ed3-640.webp",
+        "828": "/images/optimized/venmo-qr.67924ed3-828.webp",
+        "1080": "/images/optimized/venmo-qr.67924ed3-1080.webp"
+      }
+    }
+  }
+}

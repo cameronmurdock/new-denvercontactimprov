@@ -2,6 +2,14 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { JsonLd } from "@/components/json-ld";
+import { sharedOpenGraph } from "@/lib/metadata";
+import {
+  SITE_URL,
+  SOCIAL_IMAGE_PATH,
+  organizationSchema,
+  websiteSchema,
+} from "@/lib/structured-data";
 import "./globals.css";
 
 const inter = Inter({
@@ -16,13 +24,13 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   // Absolute base for canonical and og URLs emitted by Next.
-  metadataBase: new URL("https://denvercontactimprov.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Denver Contact Improv — Contact Improvisation Classes, Jams & Community in Denver, CO",
+    default: "Denver Contact Improv — Contact Improvisation Dance Classes, Jams & Community in Denver, CO",
     template: "%s :: Denver Contact Improv",
   },
   description:
-    "Denver Contact Improv offers beginner-friendly Contact Improvisation classes, jams, workshops, and community events in Denver, Colorado. Join our welcoming movement community rooted in connection, belonging, and embodied presence.",
+    "Denver Contact Improv offers beginner-friendly Contact Improvisation (contact improv dance) classes, jams, workshops, and community events in Denver, Colorado. Join a welcoming movement community rooted in connection, belonging, and embodied presence.",
   keywords: [
     "contact improvisation",
     "contact improv",
@@ -47,24 +55,18 @@ export const metadata: Metadata = {
     "contact dance Denver Colorado",
   ],
   openGraph: {
-    images: [{ url: "/images/events-hero-bg.jpg", width: 1200, height: 630, alt: "Contact Improvisation in Denver, Colorado" }],
+    ...sharedOpenGraph,
     title: "Denver Contact Improv — Contact Improvisation Classes & Community",
     description:
       "Beginner-friendly Contact Improvisation classes, jams, workshops, and community events in Denver, CO. Offering weekly gatherings and immersive experiences rooted in belonging.",
-    url: "https://denvercontactimprov.com",
-    siteName: "Denver Contact Improv",
-    locale: "en_US",
-    type: "website",
+    url: SITE_URL,
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/events-hero-bg.jpg"],
+    images: [SOCIAL_IMAGE_PATH],
     title: "Denver Contact Improv — Contact Improvisation Classes & Community",
     description:
       "Beginner-friendly Contact Improvisation classes, jams, workshops, and community events in Denver, CO.",
-  },
-  alternates: {
-    canonical: "https://denvercontactimprov.com",
   },
   robots: {
     index: true,
@@ -87,45 +89,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              name: "Denver Contact Improv",
-              description:
-                "Beginner-friendly Contact Improvisation classes, jams, workshops, and community events in Denver, Colorado.",
-              url: "https://denvercontactimprov.com",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Denver",
-                addressRegion: "CO",
-                addressCountry: "US",
-              },
-              sameAs: [
-                "https://www.instagram.com/denvercontactimprov",
-              ],
-              areaServed: {
-                "@type": "City",
-                name: "Denver",
-              },
-              keywords:
-                "contact improvisation, contact improv, dance classes, jams, workshops, Denver, Colorado",
-            }),
-          }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: "Denver Contact Improv",
-              url: "https://denvercontactimprov.com",
-            }),
-          }}
-        />
+        <JsonLd data={organizationSchema} />
+        <JsonLd data={websiteSchema} />
       </head>
       <body className="antialiased">
         <Navbar />

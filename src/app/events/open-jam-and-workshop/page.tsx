@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { contactInfo } from "@/lib/site-data";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbList } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "Open Jam & Workshop — Contact Improv Open Jam in Denver",
@@ -14,6 +16,12 @@ export const metadata: Metadata = {
 export default function OpenJamAndWorkshopPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbList([
+          { name: "Events", path: "/events/" },
+          { name: "Open Jam and Workshop", path: "/events/open-jam-and-workshop/" },
+        ])}
+      />
       <section className="px-6 pb-16 pt-32">
         <div className="mx-auto max-w-4xl">
           <p className="mb-4 text-sm uppercase tracking-[0.35em] text-warm">

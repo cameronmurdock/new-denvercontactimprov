@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { imagePath } from "@/lib/paths";
+import { JsonLd } from "@/components/json-ld";
+import { breadcrumbList, teacherSchema } from "@/lib/structured-data";
+import { sharedOpenGraph } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "About Us — Michael Bernal & Denver Contact Improvisation Community",
@@ -11,6 +14,7 @@ export const metadata: Metadata = {
     canonical: "https://denvercontactimprov.com/about/",
   },
   openGraph: {
+    ...sharedOpenGraph,
     title: "About Us — Denver Contact Improv",
     description:
       "Meet Michael Bernal, the movement teacher behind Denver Contact Improv. Learn about our story and the growing Contact Improvisation community in Denver, CO.",
@@ -47,6 +51,12 @@ export default async function AboutPage() {
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbList([
+          { name: "About", path: "/about/" },
+        ])}
+      />
+      <JsonLd data={teacherSchema} />
       <section className="relative px-6 pb-24 pt-32">
         <div className="mx-auto max-w-6xl">
           <div className="grid items-center gap-12 lg:grid-cols-[0.95fr_1.05fr]">
