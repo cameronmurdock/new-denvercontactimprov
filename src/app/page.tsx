@@ -196,11 +196,8 @@ export default function Home() {
               <p className="text-sm text-muted-foreground mb-4">
                 1400 Dallas St, Aurora, CO 80010
               </p>
-              <p className="text-sm font-semibold uppercase tracking-wide text-warm mb-1">
+              <p className="text-sm font-semibold uppercase tracking-wide text-warm mb-8">
                 Early Bird &mdash; Sold Out
-              </p>
-              <p className="text-sm font-semibold text-foreground mb-8">
-                Only 2 spots left at regular pricing!
               </p>
               <Link
                 href="/events/art-of-living-aug-2026"

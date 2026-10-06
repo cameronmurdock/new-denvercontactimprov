@@ -21,7 +21,6 @@ export const upcomingEvents = [
     location: "1400 Dallas St, Aurora, CO 80010",
     price: "$345 regular · $234 early bird (first 5)",
     earlyBirdSoldOut: true,
-    spotsLeft: "Only 2 spots left at regular pricing!",
     description:
       "No experience needed. Come as you are and discover freedom, belonging, and play.",
     cta: "Reserve your spot",
