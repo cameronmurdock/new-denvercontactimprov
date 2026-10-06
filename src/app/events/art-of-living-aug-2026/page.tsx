@@ -3,16 +3,16 @@ import Image from "next/image";
 import { imagePath } from "@/lib/paths";
 
 export const metadata: Metadata = {
-  title: "The Art of Living — Sept 2025 Contact Improv Series in Denver",
+  title: "The Art of Living — Dec 2025 Contact Improv Series in Aurora/Denver",
   description:
-    "A Three-Week beginner-friendly Contact Improvisation Series with Michael Bernal. Wednesdays Sept 9 – Sept 23 at Inca Collective, Denver. No experience needed.",
+    "A Four-Week beginner-friendly Contact Improvisation Series with Michael Bernal. Wednesdays Dec 2 – Dec 30 at 1400 Dallas St, Aurora, CO. No experience needed.",
   alternates: {
     canonical: "https://denvercontactimprov.com/events/art-of-living-aug-2026/",
   },
   openGraph: {
-    title: "The Art of Living — Sept 2025 Contact Improv Series",
+    title: "The Art of Living — Dec 2025 Contact Improv Series",
     description:
-      "Three-Week Contact Improvisation Series with Michael Bernal. Wednesdays Sept 9 – Sept 23 at Inca Collective, Denver.",
+      "Four-Week Contact Improvisation Series with Michael Bernal. Wednesdays Dec 2 – Dec 30 at 1400 Dallas St, Aurora, CO.",
     url: "https://denvercontactimprov.com/events/art-of-living-aug-2026/",
   },
 };
@@ -77,7 +77,7 @@ export default function EventPage() {
               The Art of Living
             </h1>
             <p className="text-lg text-muted-foreground mb-2">
-              A Three-Week Contact Improvisation Series with Michael Bernal
+              A Four-Week Contact Improvisation Series with Michael Bernal
             </p>
             <p className="italic text-muted-foreground mb-8">
               No experience needed. Come as you are and discover freedom,
@@ -91,8 +91,9 @@ export default function EventPage() {
                   Dates
                 </p>
                 <p className="text-sm font-medium text-foreground">
-                  Wednesdays Sept 9 &ndash; Sept 23
+                  Wednesdays Dec 2 &ndash; Dec 30
                 </p>
+                <p className="text-xs text-muted-foreground">*no class Dec 9th</p>
               </div>
               <div className="p-4 bg-secondary/50 rounded-xl">
                 <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">
@@ -107,9 +108,9 @@ export default function EventPage() {
                   Location
                 </p>
                 <p className="text-sm font-medium text-foreground">
-                  Inca Collective
+                  1400 Dallas St
                   <br />
-                  855 Inca St, Denver, CO 80204
+                  Aurora, CO 80010
                 </p>
               </div>
               <div className="p-4 bg-secondary/50 rounded-xl">
