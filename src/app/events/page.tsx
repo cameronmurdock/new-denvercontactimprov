@@ -85,9 +85,9 @@ export default function EventsPage() {
                   Early Bird — Sold Out
                 </p>
               )}
-              {"spotsLeft" in event && event.spotsLeft && (
+              {"spotsLeft" in event && typeof event.spotsLeft === "string" && event.spotsLeft && (
                 <p className="mt-1 text-sm font-semibold text-warm">
-                  {event.spotsLeft as string}
+                  {event.spotsLeft}
                 </p>
               )}
               <p className="mt-6 leading-relaxed text-muted-foreground">
