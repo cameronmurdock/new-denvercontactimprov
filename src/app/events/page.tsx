@@ -87,7 +87,7 @@ export default function EventsPage() {
               )}
               {"spotsLeft" in event && event.spotsLeft && (
                 <p className="mt-1 text-sm font-semibold text-warm">
-                  {event.spotsLeft}
+                  {event.spotsLeft as string}
                 </p>
               )}
               <p className="mt-6 leading-relaxed text-muted-foreground">
