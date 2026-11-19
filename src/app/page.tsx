@@ -184,14 +184,14 @@ export default function Home() {
                 The Art of Living
               </h2>
               <h3 className="text-lg text-muted-foreground mb-4">
-                A Four-Week Contact Improvisation Series with Michael Bernal
+                A Three-Week Contact Improvisation Series with Michael Bernal
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
                 No experience needed. Come as you are and discover freedom,
                 belonging, and play.
               </p>
               <p className="text-sm text-muted-foreground mb-2">
-                Wednesdays Dec 2 – Dec 30 &middot; 6:15–8:45 PM &middot; *no class Dec 9th
+                Wednesdays Dec 2 – Dec 23 &middot; 6:15–8:30 PM &middot; *no class Dec 9th
               </p>
               <p className="text-sm text-muted-foreground mb-4">
                 1400 Dallas St, Aurora, CO 80010
