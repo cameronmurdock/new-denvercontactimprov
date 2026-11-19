@@ -166,7 +166,7 @@ export default function EventPage() {
 
             <div className="p-6 border border-warm/30 rounded-2xl bg-card ring-1 ring-warm/20">
               <p className="text-sm text-warm mb-1">Regular Registration</p>
-              <p className="text-3xl font-bold text-foreground mb-1">$299</p>
+              <p className="text-3xl font-bold text-foreground mb-1">$288</p>
               <p className="text-xs text-muted-foreground">Open enrollment</p>
             </div>
           </div>
